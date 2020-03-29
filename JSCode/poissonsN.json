@@ -1,0 +1,18 @@
+[
+   {
+      "nom":"Anchois",
+      "période":"Toute l'année",
+      "heure":"4h - 21h",
+      "lieu":"Océan",
+      "prix":200,
+      "taille":"Petit"
+   },
+   {
+      "nom":"Arapaïma",
+      "période":"Juin - Septembre",
+      "heure":"16h - 9h",
+      "lieu":"Rivière",
+      "prix":10000,
+      "taille":"Énorme"
+   }
+]
