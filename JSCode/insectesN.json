@@ -19,5 +19,12 @@
       "heure":"8h - 17h",
       "lieu":"Sol",
       "prix":160
+   },
+   {
+     "nom":"Abeille naine",
+     "période":"Mars - Juillet",
+     "heure":"8h - 17h",
+     "lieu":"Ciel",
+     "prix":200
    }
 ]
