@@ -3,13 +3,10 @@ const client = new Discord.Client();
 var insectesN = require('./insectesN.json');
 var poissonsN = require('./poissonsN.json');
 var listeCommandes = '!insectes nord\n!poissons nord';
-var date = new Date();
-var month = date.getMonth();
 const nomMois = ["Janvier", "Février" ,"Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  console.log(monthToString(month));
  });
 
 client.on('message', msg => {
@@ -27,7 +24,7 @@ client.login('NjkzODI5NjE3NDIwNTk5MzM4.XoCxhA.PeMxCsTF7wldYrTPrQ75VzanSY4');
 function listeAnimauxNow(liste) {
   var animaux = "";
   for (i = 0; i < liste.length; i++) {
-    if (liste[i].période === "Toute l'année") {
+    if (liste[i].période === "Toute l'année" || isActual(liste[i].période)) {
       animaux += "Nom: " + liste[i].nom + "\n";
       animaux += "Période: " + liste[i].période + "\n";
       animaux += "Heure: " + liste[i].heure + "\n";
@@ -39,6 +36,16 @@ function listeAnimauxNow(liste) {
   return animaux;
 }
 
-function monthToString(month) {
-  return nomMois[month];
+function monthToInt(mois) {
+  return nomMois.indexOf(mois);
+}
+
+function isActual(periode) {
+  var debut = periode.split(' - ')[0];
+  var fin = periode.split(' - ')[1];
+  debut = monthToInt(debut);
+  fin = monthToInt(fin);
+  var date = new Date();
+  var actuel = date.getMonth();
+  return debut <= actuel && actuel <= fin;
 }
