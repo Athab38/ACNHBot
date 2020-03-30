@@ -17,14 +17,17 @@ client.on('message', msg => {
   { // Si c'est une commande concernant les insectes ou les poissons
     if(msg.content.split(' ')[1]!='nord' && msg.content.split(' ')[1]!='sud')
     { // si le premier parametre n'est pas l'hemisphere
-      msg.reply("oups, tu as oublié l'hémisphère, saisis 'sud' ou 'nord'.");
+      msg.reply("tu as oublié l'hémisphère, saisis 'sud' ou 'nord' après ta commande.");
     }
     else
-    { // si le premier parametre est l'hemisphere
-      if (msg.content.split(' ')[0]==='!insectes') {
-        msg.reply('voici la liste des insectes disponibles actuellement : \n' + listeInsectesNow(insectesN));
-      } else if (msg.content.split(' ')[0]==='!poissons') {
-        msg.reply('voici la liste des poissons disponibles actuellement : \n' + listePoissonsNow(poissonsN));
+    {
+      if (msg.content.split(' ')[0] === '!insectes') {
+        msg.reply('voici la liste des insectes disponibles actuellement : \n' + listeInsectesNow(insectesN, 0, insectesN.length/2));
+        msg.reply('\n' + listeInsectesNow(insectesN, insectesN.length/2, insectesN.length));
+      } else if (msg.content.split(' ')[0] === '!poissons') {
+        msg.reply('voici la liste des poissons disponibles actuellement : \n' + listePoissonsNow(poissonsN, 0, poissonsN.length/2));
+        msg.reply('\n' + listeInsectesNow(poissonsN, poissonsN.length/2, poissonsN.length));
+
       }
     }
   } else if (msg.content.split(' ')[0] === '!details') {
@@ -43,13 +46,13 @@ client.on('message', msg => {
 });
 
 // Token du bot
-client.login('NjkzOTU0MjUxMzQ4NTA4NzUy.XoElTQ.XiXC-gm3DefG3BloLv7OiWROI-E');
+client.login('NjkzODI5NjE3NDIwNTk5MzM4.XoDb0A.giPfY0oShei-ws4yJS4ZuKqTito');
 
-function listeInsectesNow(liste) {
+function listeInsectesNow(liste, start, end) {
   var animaux = "";
-  for (i = 0; i < liste.length; i++) {
+  for (i = start; i < end; i++) {
     if (liste[i].période === "Toute l'année" || isActualM(liste[i].période)) {
-      if (isActualH(liste[i].heure)) {
+      if (liste[i].heure === "Toute la journée" || isActualH(liste[i].heure)) {
         animaux += afficheInsecte(liste[i]);
       }
     }
@@ -57,11 +60,11 @@ function listeInsectesNow(liste) {
   return animaux;
 }
 
-function listePoissonsNow(liste) {
+function listePoissonsNow(liste, start, end) {
   var animaux = "";
-  for (i = 0; i < liste.length; i++) {
+  for (i = start; i < end; i++) {
     if (liste[i].période === "Toute l'année" || isActualM(liste[i].période)) {
-      if (isActualH(liste[i].heure)) {
+      if (liste[i].heure === "Toute la journée" || isActualH(liste[i].heure)) {
         animaux += affichePoisson(liste[i]);
       }
     }
@@ -74,13 +77,23 @@ function monthToInt(mois) {
 }
 
 function isActualM(periode) {
+  if (periode.split(', ')[1]) {
+    return isActualM(periode.split(', ')[0]) || isActualM(periode.split(', ')[1]);
+  }
   var debutM = periode.split(' - ')[0];
+  if (!periode.split(' - ')[1]) {
+    return actuelM == debutM;
+  }
   var finM = periode.split(' - ')[1];
   debutM = monthToInt(debutM);
   finM = monthToInt(finM);
   var date = new Date();
   var actuelM = date.getMonth();
-  return debutM <= actuelM && actuelM <= finM;
+  if (debutM <= finM) {
+    return debutM <= actuelM && actuelM <= finM;
+  } else {
+    return actuelM <= finM || debutM <= actuelM;
+  }
 }
 
 function isActualH(heure) {
