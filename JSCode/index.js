@@ -123,12 +123,13 @@ function isActualH(heure) {
 
 function findAnimal(nomAnimal) {
   var found = false;
+  nomAnimal = nomAnimal.toUpperCase();
   for (i = 0; !found && i < insectesN.length; i++) {
-    if (!found && insectesN[i].nom === nomAnimal) {
+    if (!found && insectesN[i].nom.toUpperCase() === nomAnimal) {
       found = true;
       return afficheInsecte(insectesN[i]);
     }
-    if (!found && poissonsN[i].nom === nomAnimal) {
+    if (!found && poissonsN[i].nom.toUpperCase() === nomAnimal) {
       found = true;
       return affichePoisson(poissonsN[i]);
     }
