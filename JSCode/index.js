@@ -186,7 +186,7 @@ function commandesToString() {
 }
 
 //se lance à 6h du matin tous les jours
-let jobBulletin = cron.schedule('50 * * * * *', function() {
+let jobBulletin = cron.schedule('00 00 06 * * *', function() {
   bulletinInsulaire();
 });
 
@@ -194,6 +194,10 @@ function bulletinInsulaire() {
   console.log('oui');
   client.login('NjkzODI5NjE3NDIwNTk5MzM4.XoDb0A.giPfY0oShei-ws4yJS4ZuKqTito');
   // channel bulletin-insulaire
+  // nettoyer l'ancien bulletin bulletinInsulaire
+  client.channels.fetch('694146170527940618')
+    .then(channel => channel.bulkDelete(1))
+    .catch(console.error);
   client.channels.fetch('694146170527940618')
     .then(channel => channel.send(texteBulletinInsulaire()))
     .catch(console.error);
@@ -222,7 +226,7 @@ function texteBulletinInsulaire() {
   txt += "\t" + "\t" + premierMoisPoissons();
 
   console.log(txt);
-  //return txt;
+  return txt;
 }
 
 function dernierMoisInsectes() {
