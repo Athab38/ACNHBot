@@ -31,18 +31,22 @@ client.on('message', msg => {
       }
     }
   } else if (msg.content.split(' ')[0] === '!details') {
-    // Garder seulement le nom de l'animal, apres l'espace
-    nomAnimal = msg.content.slice(9 , msg.content.length);
-    infoAnimal = findAnimal(nomAnimal);
-    console.log(infoAnimal);
-    if (infoAnimal != null) {
-      msg.reply("voici le détail de l'animal : \n" + infoAnimal);
+    if (!msg.content.split(' ')[1]) {
+      msg.reply('tu dois préciser un animal, par exemple !details Taupe-grillon');
     } else {
-      msg.reply("ton animal n'a pas été trouvé.");
+      // Garder seulement le nom de l'animal, apres l'espace
+      nomAnimal = msg.content.slice(9 , msg.content.length);
+      infoAnimal = findAnimal(nomAnimal);
+      console.log(infoAnimal);
+      if (infoAnimal != null) {
+        msg.reply("voici le détail de l'animal : \n" + infoAnimal);
+      } else {
+        msg.reply("ton animal n'a pas été trouvé.");
+      }
     }
-  } else if (msg.content === '!aide') {
-    msg.reply('voici la liste des commandes disponibles : \n' + listeCommandes);
-  }
+    } else if (msg.content === '!aide') {
+      msg.reply('voici la liste des commandes disponibles : \n' + commandesToString());
+    }
 });
 
 // Token du bot
@@ -161,7 +165,7 @@ function commandesToString() {
 
   for(i=0; i<listeCommandes.length; i++)
   {
-    res += listeCommandes[i];
+    res += listeCommandes[i] + '\n';
   }
 
   return res;
