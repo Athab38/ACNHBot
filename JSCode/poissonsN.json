@@ -9,7 +9,7 @@
    },
    {
       "nom":"Arapaïma",
-      "période":"Juin - septembre",
+      "période":"Juin - Septembre",
       "heure":"16h - 9h",
       "lieu":"Rivière",
       "prix":10000,
@@ -17,7 +17,7 @@
    },
    {
       "nom":"Arowana",
-      "période":"Juin - septembre",
+      "période":"Juin - Septembre",
       "heure":"16h - 9h",
       "lieu":"Rivière",
       "prix":10000,
@@ -25,7 +25,7 @@
    },
    {
       "nom":"Ayu",
-      "période":"Juillet - septembre",
+      "période":"Juillet - Septembre",
       "heure":"Toute la journée",
       "lieu":"Rivière",
       "prix":900,
@@ -49,7 +49,7 @@
    },
    {
       "nom":"Bichir",
-      "période":"Juin - septembre",
+      "période":"Juin - Septembre",
       "heure":"21h - 4h",
       "lieu":"Rivière",
       "prix":4000,
@@ -57,7 +57,7 @@
    },
    {
       "nom":"Bouvière",
-      "période":"Novembre - mars",
+      "période":"Novembre - Mars",
       "heure":"Toute la journée",
       "lieu":"Rivière",
       "prix":900,
@@ -65,7 +65,7 @@
    },
    {
       "nom":"Brochet",
-      "période":"Septembre - décembre",
+      "période":"Septembre - Décembre",
       "heure":"Toute la journée",
       "lieu":"Rivière",
       "prix":1800,
@@ -73,7 +73,7 @@
    },
    {
       "nom":"Calmar",
-      "période":"Décembre - août",
+      "période":"Décembre - Août",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":500,
@@ -81,7 +81,7 @@
    },
    {
       "nom":"Carangue grosse tête",
-      "période":"Mai - octobre",
+      "période":"Mai - Octobre",
       "heure":"Toute la journée",
       "lieu":"Océan (ponton)",
       "prix":4500,
@@ -137,7 +137,7 @@
    },
    {
       "nom":"Clione",
-      "période":"Décembre - mars",
+      "période":"Décembre - Mars",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":1000,
@@ -145,7 +145,7 @@
    },
    {
       "nom":"Combattant",
-      "période":"Mai - octobre",
+      "période":"Mai - Octobre",
       "heure":"9h - 16h",
       "lieu":"Rivière",
       "prix":2500,
@@ -153,7 +153,7 @@
    },
    {
       "nom":"Coryphène",
-      "période":"Mai - octobre",
+      "période":"Mai - Octobre",
       "heure":"Toute la journée",
       "lieu":"Océan (ponton)",
       "prix":6000,
@@ -161,7 +161,7 @@
    },
    {
       "nom":"Crabe chinois",
-      "période":"Septembre - novembre",
+      "période":"Septembre - Novembre",
       "heure":"16h - 9h",
       "lieu":"Rivière",
       "prix":2000,
@@ -193,7 +193,7 @@
    },
    {
       "nom":"Dai yu",
-      "période":"Décembre - mars",
+      "période":"Décembre - Mars",
       "heure":"16h - 9h",
       "lieu":"Rivière (falaise)",
       "prix":15000,
@@ -201,7 +201,7 @@
    },
    {
       "nom":"Dorade",
-      "période":"Juin - septembre",
+      "période":"Juin - Septembre",
       "heure":"4h - 21h",
       "lieu":"Rivière",
       "prix":15000,
@@ -209,7 +209,7 @@
    },
    {
       "nom":"Ecrevisse",
-      "période":"Avril - septembre",
+      "période":"Avril - Septembre",
       "heure":"Toute la journée",
       "lieu":"Étang",
       "prix":200,
@@ -217,7 +217,7 @@
    },
    {
       "nom":"Eperlan",
-      "période":"Décembre - février",
+      "période":"Décembre - Février",
       "heure":"Toute la journée",
       "lieu":"Rivière",
       "prix":320,
@@ -225,7 +225,7 @@
    },
    {
       "nom":"Esturgeon",
-      "période":"Septembre - mars",
+      "période":"Septembre - Mars",
       "heure":"Toute la journée",
       "lieu":"Embouchure de rivière",
       "prix":10000,
@@ -233,7 +233,7 @@
    },
    {
       "nom":"Fondule barré",
-      "période":"Avril - août",
+      "période":"Avril - Août",
       "heure":"Toute la journée",
       "lieu":"Étang",
       "prix":300,
@@ -241,7 +241,7 @@
    },
    {
       "nom":"Gar",
-      "période":"Juin - septembre",
+      "période":"Juin - Septembre",
       "heure":"16h - 9h",
       "lieu":"Étang",
       "prix":6000,
@@ -257,7 +257,7 @@
    },
    {
       "nom":"Grand requin blanc",
-      "période":"Juin - septembre",
+      "période":"Juin - Septembre",
       "heure":"16h - 9h",
       "lieu":"Océan",
       "prix":15000,
@@ -265,7 +265,7 @@
    },
    {
       "nom":"Grenouille",
-      "période":"Mai - août",
+      "période":"Mai - Août",
       "heure":"Toute la journée",
       "lieu":"Étang",
       "prix":120,
@@ -273,7 +273,7 @@
    },
    {
       "nom":"Guppy",
-      "période":"Avril - novembre",
+      "période":"Avril - Novembre",
       "heure":"9h - 16h",
       "lieu":"Rivière",
       "prix":1300,
@@ -281,7 +281,7 @@
    },
    {
       "nom":"Hippocampe",
-      "période":"Avril - novembre",
+      "période":"Avril - Novembre",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":1100,
@@ -289,7 +289,7 @@
    },
    {
       "nom":"Limande",
-      "période":"Octobre - avril",
+      "période":"Octobre - Avril",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":300,
@@ -297,7 +297,7 @@
    },
    {
       "nom":"Loche d'étang",
-      "période":"Mars - mai",
+      "période":"Mars - Mai",
       "heure":"Toute la journée",
       "lieu":"Rivière",
       "prix":400,
@@ -305,7 +305,7 @@
    },
    {
       "nom":"Lune de mer",
-      "période":"Juillet - septembre",
+      "période":"Juillet - Septembre",
       "heure":"4h - 21h",
       "lieu":"Océan",
       "prix":4000,
@@ -321,7 +321,7 @@
    },
    {
       "nom":"Marlin bleu",
-      "période":"Juillet - septembre, novembre - avril",
+      "période":"Juillet - Septembre, Novembre - Avril",
       "heure":"Toute la journée",
       "lieu":"Océan (ponton)",
       "prix":10000,
@@ -329,7 +329,7 @@
    },
    {
       "nom":"Murène",
-      "période":"Août - octobre",
+      "période":"Août - Octobre",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":2000,
@@ -337,7 +337,7 @@
    },
    {
       "nom":"Murène ruban bleue",
-      "période":"Juin - octobre",
+      "période":"Juin - Octobre",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":600,
@@ -345,7 +345,7 @@
    },
    {
       "nom":"Napoléon",
-      "période":"Juillet - août",
+      "période":"Juillet - Août",
       "heure":"4h - 21h",
       "lieu":"Océan",
       "prix":10000,
@@ -353,7 +353,7 @@
    },
    {
       "nom":"Néon bleu",
-      "période":"Avril - novembre",
+      "période":"Avril - Novembre",
       "heure":"9h - 16h",
       "lieu":"Rivière",
       "prix":500,
@@ -361,7 +361,7 @@
    },
    {
       "nom":"Omble",
-      "période":"Mars - juin, septembre - novembre",
+      "période":"Mars - Juin, Septembre - Novembre",
       "heure":"16h - 9h",
       "lieu":"Rivière (falaise)",
       "prix":3800,
@@ -369,7 +369,7 @@
    },
    {
       "nom":"Perche jaune",
-      "période":"Octobre - mars",
+      "période":"Octobre - Mars",
       "heure":"Toute la journée",
       "lieu":"Rivière",
       "prix":300,
@@ -377,7 +377,7 @@
    },
    {
       "nom":"Piranha",
-      "période":"Juin - septembre",
+      "période":"Juin - Septembre",
       "heure":"9h - 16h, 21h - 4h",
       "lieu":"Rivière",
       "prix":2500,
@@ -385,7 +385,7 @@
    },
    {
       "nom":"Poisson arc-en-ciel",
-      "période":"Mai - octobre",
+      "période":"Mai - Octobre",
       "heure":"9h - 16h",
       "lieu":"Rivière",
       "prix":800,
@@ -393,7 +393,7 @@
    },
    {
       "nom":"Poisson chirurgien",
-      "période":"Avril - septembre",
+      "période":"Avril - Septembre",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":1000,
@@ -401,7 +401,7 @@
    },
    {
       "nom":"Poisson docteur",
-      "période":"Mai - septembre",
+      "période":"Mai - Septembre",
       "heure":"9h - 16h",
       "lieu":"Rivière",
       "prix":1500,
@@ -409,7 +409,7 @@
    },
    {
       "nom":"Poisson lanterne",
-      "période":"Novembre - mars",
+      "période":"Novembre - Mars",
       "heure":"16h - 9h",
       "lieu":"Océan",
       "prix":2500,
@@ -425,7 +425,7 @@
    },
    {
       "nom":"Poisson-ange",
-      "période":"Mai - octobre",
+      "période":"Mai - Octobre",
       "heure":"16h - 9h",
       "lieu":"Rivière",
       "prix":3000,
@@ -433,7 +433,7 @@
    },
    {
       "nom":"Poisson-ballon",
-      "période":"Novembre - février",
+      "période":"Novembre - Février",
       "heure":"21h - 4h",
       "lieu":"Océan",
       "prix":5000,
@@ -441,7 +441,7 @@
    },
    {
       "nom":"Poisson-clown",
-      "période":"Avril - septembre",
+      "période":"Avril - Septembre",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":650,
@@ -449,7 +449,7 @@
    },
    {
       "nom":"Poisson-papillon",
-      "période":"Avril - septembre",
+      "période":"Avril - Septembre",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":1000,
@@ -457,7 +457,7 @@
    },
    {
       "nom":"Poisson-porc-épic",
-      "période":"Juillet - septembre",
+      "période":"Juillet - Septembre",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":250,
@@ -465,7 +465,7 @@
    },
    {
       "nom":"Poisson-ruban",
-      "période":"Décembre - mai",
+      "période":"Décembre - Mai",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":9000,
@@ -473,7 +473,7 @@
    },
    {
       "nom":"Poisson-scorpion",
-      "période":"Avril - novembre",
+      "période":"Avril - Novembre",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":500,
@@ -481,7 +481,7 @@
    },
    {
       "nom":"Raie",
-      "période":"Août - novembre",
+      "période":"Août - Novembre",
       "heure":"4h - 21h",
       "lieu":"Océan",
       "prix":3000,
@@ -497,7 +497,7 @@
    },
    {
       "nom":"Rémora rayé",
-      "période":"Juin - septembre",
+      "période":"Juin - Septembre",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":1500,
@@ -505,7 +505,7 @@
    },
    {
       "nom":"Requin marteau",
-      "période":"Juin - septembre",
+      "période":"Juin - Septembre",
       "heure":"16h - 9h",
       "lieu":"Océan",
       "prix":8000,
@@ -513,7 +513,7 @@
    },
    {
       "nom":"Requin scie",
-      "période":"Juin - septembre",
+      "période":"Juin - Septembre",
       "heure":"16h - 9h",
       "lieu":"Océan",
       "prix":12000,
@@ -521,7 +521,7 @@
    },
    {
       "nom":"Requin-baleine",
-      "période":"Juin - septembre",
+      "période":"Juin - Septembre",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":13000,
@@ -537,7 +537,7 @@
    },
    {
       "nom":"Saumon masou",
-      "période":"Mars - juin, septembre - novembre",
+      "période":"Mars - Juin, Septembre - Novembre",
       "heure":"16h - 9h",
       "lieu":"Rivière (falaise)",
       "prix":1000,
@@ -553,7 +553,7 @@
    },
    {
       "nom":"Scarus",
-      "période":"Mars - novembre",
+      "période":"Mars - Novembre",
       "heure":"Toute la journée",
       "lieu":"Océan",
       "prix":5000,
@@ -561,7 +561,7 @@
    },
    {
       "nom":"Silure",
-      "période":"Mai - octobre",
+      "période":"Mai - Octobre",
       "heure":"16h - 9h",
       "lieu":"Étang",
       "prix":800,
@@ -569,7 +569,7 @@
    },
    {
       "nom":"Têtard",
-      "période":"Mars - juillet",
+      "période":"Mars - Juillet",
       "heure":"Toute la journée",
       "lieu":"Étang",
       "prix":100,
@@ -577,7 +577,7 @@
    },
    {
       "nom":"Tête-de-serpent",
-      "période":"Juin - août",
+      "période":"Juin - Août",
       "heure":"9h - 16h",
       "lieu":"Étang",
       "prix":5500,
@@ -585,7 +585,7 @@
    },
    {
       "nom":"Thon",
-      "période":"Novembre - avril",
+      "période":"Novembre - Avril",
       "heure":"Toute la journée",
       "lieu":"Océan (ponton)",
       "prix":7000,
@@ -593,7 +593,7 @@
    },
    {
       "nom":"Tilapia",
-      "période":"Juin - octobre",
+      "période":"Juin - Octobre",
       "heure":"Toute la journée",
       "lieu":"Rivière",
       "prix":800,
@@ -601,7 +601,7 @@
    },
    {
       "nom":"Tortue serpentine",
-      "période":"Avril - octobre",
+      "période":"Avril - Octobre",
       "heure":"21h - 4h",
       "lieu":"Rivière",
       "prix":5000,
@@ -609,7 +609,7 @@
    },
    {
       "nom":"Tortue trionyx",
-      "période":"Août - septembre",
+      "période":"Août - Septembre",
       "heure":"16h - 9h",
       "lieu":"Rivière",
       "prix":3750,
@@ -617,7 +617,7 @@
    },
    {
       "nom":"Truite dorée",
-      "période":"Mars - mai, septembre - novembre",
+      "période":"Mars - Mai, Septembre - Novembre",
       "heure":"16h - 9h",
       "lieu":"Rivière (falaise)",
       "prix":15000,
