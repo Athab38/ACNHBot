@@ -1,1 +1,1 @@
-worker: node ./JSCode/index.js
+worker: node index.js
