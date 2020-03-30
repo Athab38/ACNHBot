@@ -4,14 +4,13 @@
   "description": "An Animal Crossing New Horizons bot for Discord",
   "main": "index.js",
   "dependencies": {
+    "cron": "^1.8.2",
     "discord.js": "^12.1.1",
-    "node-cron": "^2.0.3",
-    "cron": "^1.8.2"
+    "node-cron": "^2.0.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --inspect ./JSCode/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -21,9 +20,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SimonRibaut/ACBot/issues"
-  },
-  "engines": {
-    "node": "12.16.1"
   },
   "homepage": "https://github.com/SimonRibaut/ACBot#readme"
 }
