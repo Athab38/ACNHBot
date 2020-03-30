@@ -2,7 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 var insectesN = require('./insectesN.json');
 var poissonsN = require('./poissonsN.json');
-var listeCommandes = '!insectes nord\n!poissons nord\n!info';
+//TODO: traiter, eventuellement, plus de filtres (sans ordre)
+var listeCommandes = ["!insectes nord","!poissons nord","!aide"];
 const nomMois = ["Janvier", "Février" ,"Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
 
 client.on('ready', () => {
@@ -30,7 +31,7 @@ client.on('message', msg => {
   }
 });
 
-client.login('NjkzODI5NjE3NDIwNTk5MzM4.XoCxhA.PeMxCsTF7wldYrTPrQ75VzanSY4');
+client.login('NjkzOTU0MjUxMzQ4NTA4NzUy.XoElTQ.XiXC-gm3DefG3BloLv7OiWROI-E');
 
 function listeInsectesNow(liste) {
   var animaux = "";
