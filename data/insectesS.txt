@@ -1,0 +1,1039 @@
+<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Abeille naine.png" alt="Abeille naine - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Abeille naine</h4></span><span class="first infosline"><strong>Période : </strong> Mars - juillet</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">200</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2427" name="" type="checkbox" >
+				<label id="checkboxtotal-2427" for="checkboxtotal-2427"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2427"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Acrida cinerea.png" alt="Acrida cinerea - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Acrida cinerea</h4></span><span class="first infosline"><strong>Période : </strong> Avril - novembre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Sol</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">200</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2428" name="" type="checkbox" >
+				<label id="checkboxtotal-2428" for="checkboxtotal-2428"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2428"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Agrias.png" alt="Agrias - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Agrias</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Avril - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">3000</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2429" name="" type="checkbox" >
+				<label id="checkboxtotal-2429" for="checkboxtotal-2429"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2429"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Anax napolitain.png" alt="Anax napolitain - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Anax napolitain</h4></span><span class="first infosline"><strong>Période : </strong> Avril - octobre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">230</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2430" name="" type="checkbox" >
+				<label id="checkboxtotal-2430" for="checkboxtotal-2430"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2430"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Araignée.png" alt="Araignée - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Araignée</h4></span><span class="first infosline"><strong>Période : </strong> Toute l'année</span>
+			<span class="infosline"><strong>Heure : </strong>19h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">600</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2431" name="" type="checkbox" >
+				<label id="checkboxtotal-2431" for="checkboxtotal-2431"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2431"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Attacus Atlas.png" alt="Attacus Atlas - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Attacus Atlas</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Avril - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>19h - 4h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">3000</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2447" name="" type="checkbox" >
+				<label id="checkboxtotal-2447" for="checkboxtotal-2447"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2447"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Bernard-l'ermite.png" alt="Bernard-l'ermite - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Bernard-l'ermite</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Toute l'année</span>
+			<span class="infosline"><strong>Heure : </strong>19h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Plage</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">1000</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2432" name="" type="checkbox" >
+				<label id="checkboxtotal-2432" for="checkboxtotal-2432"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2432"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Bousier.png" alt="Bousier - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Bousier</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Décembre - février</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Boules de neige</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">2500</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2433" name="" type="checkbox" >
+				<label id="checkboxtotal-2433" for="checkboxtotal-2433"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2433"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Bupreste.png" alt="Bupreste - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Bupreste</h4></span><span class="first infosline"><strong>Période : </strong> Avril - août</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Souches d'arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">2400</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2435" name="" type="checkbox" >
+				<label id="checkboxtotal-2435" for="checkboxtotal-2435"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2435"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Capricorne des agrumes.png" alt="Capricorne des agrumes - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Capricorne des agrumes</h4></span><span class="first infosline"><strong>Période : </strong> Toute l'année</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Souches d'arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">350</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2461" name="" type="checkbox" >
+				<label id="checkboxtotal-2461" for="checkboxtotal-2461"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2461"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Catacanthus.png" alt="Catacanthus - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Catacanthus</h4></span><span class="first infosline"><strong>Période : </strong> Mars - octobre</span>
+			<span class="infosline"><strong>Heure : </strong>19h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Fleurs</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">1000</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2492" name="" type="checkbox" >
+				<label id="checkboxtotal-2492" for="checkboxtotal-2492"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2492"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Cétoine dorée.png" alt="Cétoine dorée - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Cétoine dorée</h4></span><span class="first infosline"><strong>Période : </strong> Juin - août</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">200</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2436" name="" type="checkbox" >
+				<label id="checkboxtotal-2436" for="checkboxtotal-2436"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2436"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Chrysiridia rhipheus.png" alt="Chrysiridia rhipheus - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Chrysiridia rhipheus</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Avril - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 16h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">2500</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2482" name="" type="checkbox" >
+				<label id="checkboxtotal-2482" for="checkboxtotal-2482"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2482"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Cicindèle.png" alt="Cicindèle - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Cicindèle</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Février - octobre</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Sol</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">1500</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2437" name="" type="checkbox" >
+				<label id="checkboxtotal-2437" for="checkboxtotal-2437"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2437"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Cigale cercope.png" alt="Cigale cercope - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Cigale cercope</h4></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">250</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2438" name="" type="checkbox" >
+				<label id="checkboxtotal-2438" for="checkboxtotal-2438"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2438"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Cigale cicadelle.png" alt="Cigale cicadelle - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Cigale cicadelle</h4></span><span class="first infosline"><strong>Période : </strong> Août - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">400</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2439" name="" type="checkbox" >
+				<label id="checkboxtotal-2439" for="checkboxtotal-2439"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2439"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Cigale géante.png" alt="Cigale géante - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Cigale géante</h4></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">500</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2440" name="" type="checkbox" >
+				<label id="checkboxtotal-2440" for="checkboxtotal-2440"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2440"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Cigale higurashi.png" alt="Cigale higurashi - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Cigale higurashi</h4></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>4h - 8h, 16h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2441" name="" type="checkbox" >
+				<label id="checkboxtotal-2441" for="checkboxtotal-2441"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2441"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Cigale hyalessa.png" alt="Cigale hyalessa - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Cigale hyalessa</h4></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2442" name="" type="checkbox" >
+				<label id="checkboxtotal-2442" for="checkboxtotal-2442"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2442"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Citrin.png" alt="Citrin - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Citrin</h4></span><span class="first infosline"><strong>Période : </strong> Mars - juin, septembre - octobre</span>
+			<span class="infosline"><strong>Heure : </strong>4h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">160</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2443" name="" type="checkbox" >
+				<label id="checkboxtotal-2443" for="checkboxtotal-2443"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2443"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Cloporte.png" alt="Cloporte - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Cloporte</h4></span><span class="first infosline"><strong>Période : </strong> Septembre - juin</span>
+			<span class="infosline"><strong>Heure : </strong>23h - 16h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Rochers</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">250</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2444" name="" type="checkbox" >
+				<label id="checkboxtotal-2444" for="checkboxtotal-2444"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2444"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Coccinelle.png" alt="Coccinelle - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Coccinelle</h4></span><span class="first infosline"><strong>Période : </strong> Mars - juin, octobre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Fleurs</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">200</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2445" name="" type="checkbox" >
+				<label id="checkboxtotal-2445" for="checkboxtotal-2445"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2445"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Cordulégastre.png" alt="Cordulégastre - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Cordulégastre</h4></span><span class="first infosline"><strong>Période : </strong> Mai - octobre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">4500</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2446" name="" type="checkbox" >
+				<label id="checkboxtotal-2446" for="checkboxtotal-2446"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2446"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Criquet.png" alt="Criquet - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Criquet</h4></span><span class="first infosline"><strong>Période : </strong> Août - novembre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Sol</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">400</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2448" name="" type="checkbox" >
+				<label id="checkboxtotal-2448" for="checkboxtotal-2448"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2448"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Criquet pèlerin.png" alt="Criquet pèlerin - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Criquet pèlerin</h4></span><span class="first infosline"><strong>Période : </strong> Août - novembre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Sol</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">600</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2449" name="" type="checkbox" >
+				<label id="checkboxtotal-2449" for="checkboxtotal-2449"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2449"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Demoiselle.png" alt="Demoiselle - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Demoiselle</h4></span><span class="first infosline"><strong>Période : </strong> Novembre - février</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">500</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2450" name="" type="checkbox" >
+				<label id="checkboxtotal-2450" for="checkboxtotal-2450"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2450"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Dytique.png" alt="Dytique - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Dytique</h4></span><span class="first infosline"><strong>Période : </strong> Mai - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Surface de l'eau</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">800</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2451" name="" type="checkbox" >
+				<label id="checkboxtotal-2451" for="checkboxtotal-2451"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2451"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Escargot.png" alt="Escargot - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Escargot</h4></span><span class="first infosline"><strong>Période : </strong> Toute l'année</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Rochers (pluie)</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">250</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2452" name="" type="checkbox" >
+				<label id="checkboxtotal-2452" for="checkboxtotal-2452"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2452"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Fourmi.png" alt="Fourmi - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Fourmi</h4></span><span class="first infosline"><strong>Période : </strong> Toute l'année</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Navets pourris</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">80</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2453" name="" type="checkbox" >
+				<label id="checkboxtotal-2453" for="checkboxtotal-2453"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2453"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Geotrupidae.png" alt="Geotrupidae - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Geotrupidae</h4></span><span class="first infosline"><strong>Période : </strong> Juillet - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Sol</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">300</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2503" name="" type="checkbox" >
+				<label id="checkboxtotal-2503" for="checkboxtotal-2503"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2503"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Grand papillon pourpre.png" alt="Grand papillon pourpre - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Grand papillon pourpre</h4></span><span class="first infosline"><strong>Période : </strong> Mai - août</span>
+			<span class="infosline"><strong>Heure : </strong>4h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">3000</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2454" name="" type="checkbox" >
+				<label id="checkboxtotal-2454" for="checkboxtotal-2454"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2454"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Grand Planeur.png" alt="Grand Planeur - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Grand Planeur</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Toute l'année</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">1000</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2455" name="" type="checkbox" >
+				<label id="checkboxtotal-2455" for="checkboxtotal-2455"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2455"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Graphium sarpedon.png" alt="Graphium sarpedon - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Graphium sarpedon</h4></span><span class="first infosline"><strong>Période : </strong> Avril - août</span>
+			<span class="infosline"><strong>Heure : </strong>4h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">300</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2484" name="" type="checkbox" >
+				<label id="checkboxtotal-2484" for="checkboxtotal-2484"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2484"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Grillon des prés.png" alt="Grillon des prés - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Grillon des prés</h4></span><span class="first infosline"><strong>Période : </strong> Septembre - novembre</span>
+			<span class="infosline"><strong>Heure : </strong>17h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Sol</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">130</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2456" name="" type="checkbox" >
+				<label id="checkboxtotal-2456" for="checkboxtotal-2456"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2456"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Grillon du Midi.png" alt="Grillon du Midi - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Grillon du Midi</h4></span><span class="first infosline"><strong>Période : </strong> Septembre - octobre</span>
+			<span class="infosline"><strong>Heure : </strong>17h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Sol</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">430</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2457" name="" type="checkbox" >
+				<label id="checkboxtotal-2457" for="checkboxtotal-2457"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2457"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Guêpe.png" alt="Guêpe - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Guêpe</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Toute l'année</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">2500</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2458" name="" type="checkbox" >
+				<label id="checkboxtotal-2458" for="checkboxtotal-2458"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2458"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Ligie.png" alt="Ligie - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Ligie</h4></span><span class="first infosline"><strong>Période : </strong> Toute l'année</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Plage (rochers)</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">200</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2460" name="" type="checkbox" >
+				<label id="checkboxtotal-2460" for="checkboxtotal-2460"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2460"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Lucane cerf-volant.png" alt="Lucane cerf-volant - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Lucane cerf-volant</h4><span class="rareline">Très rare</span></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>23h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Très rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2462" name="" type="checkbox" >
+				<label id="checkboxtotal-2462" for="checkboxtotal-2462"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2462"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Lucane copris irisé.png" alt="Lucane copris irisé - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Lucane copris irisé</h4><span class="rareline">Très rare</span></span><span class="first infosline"><strong>Période : </strong> Juin - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>19h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">6000</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Très rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2463" name="" type="checkbox" >
+				<label id="checkboxtotal-2463" for="checkboxtotal-2463"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2463"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Lucane cyclommatus.png" alt="Lucane cyclommatus - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Lucane cyclommatus</h4><span class="rareline">Très rare</span></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>17h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Palmiers</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Très rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2464" name="" type="checkbox" >
+				<label id="checkboxtotal-2464" for="checkboxtotal-2464"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2464"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Lucane girafe.png" alt="Lucane girafe - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Lucane girafe</h4><span class="rareline">Très rare</span></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>17h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Très rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2465" name="" type="checkbox" >
+				<label id="checkboxtotal-2465" for="checkboxtotal-2465"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2465"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Lucane inclinatus.png" alt="Lucane inclinatus - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Lucane inclinatus</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2466" name="" type="checkbox" >
+				<label id="checkboxtotal-2466" for="checkboxtotal-2466"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2466"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Lucane lamprima.png" alt="Lucane lamprima - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Lucane lamprima</h4><span class="rareline">Très rare</span></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>17h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Palmiers</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Très rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2467" name="" type="checkbox" >
+				<label id="checkboxtotal-2467" for="checkboxtotal-2467"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2467"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Lucane miyama.png" alt="Lucane miyama - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Lucane miyama</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2468" name="" type="checkbox" >
+				<label id="checkboxtotal-2468" for="checkboxtotal-2468"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2468"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Luciole.png" alt="Luciole - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Luciole</h4></span><span class="first infosline"><strong>Période : </strong> Juin</span>
+			<span class="infosline"><strong>Heure : </strong>19h - 4h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Près de l'eau</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">300</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2469" name="" type="checkbox" >
+				<label id="checkboxtotal-2469" for="checkboxtotal-2469"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2469"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Machaon.png" alt="Machaon - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Machaon</h4></span><span class="first infosline"><strong>Période : </strong> Mars - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>4h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">240</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2470" name="" type="checkbox" >
+				<label id="checkboxtotal-2470" for="checkboxtotal-2470"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2470"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Mante orchidée.png" alt="Mante orchidée - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Mante orchidée</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Mars - novembre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Fleurs blanches</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">2400</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2471" name="" type="checkbox" >
+				<label id="checkboxtotal-2471" for="checkboxtotal-2471"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2471"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Mante religieuse.png" alt="Mante religieuse - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Mante religieuse</h4></span><span class="first infosline"><strong>Période : </strong> Mars - novembre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Fleurs</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">430</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2472" name="" type="checkbox" >
+				<label id="checkboxtotal-2472" for="checkboxtotal-2472"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2472"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Mille-pattes.png" alt="Mille-pattes - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Mille-pattes</h4></span><span class="first infosline"><strong>Période : </strong> Septembre - juin</span>
+			<span class="infosline"><strong>Heure : </strong>16h - 23h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Rochers</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">300</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2473" name="" type="checkbox" >
+				<label id="checkboxtotal-2473" for="checkboxtotal-2473"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2473"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Monarque.png" alt="Monarque - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Monarque</h4></span><span class="first infosline"><strong>Période : </strong> Septembre - novembre</span>
+			<span class="infosline"><strong>Heure : </strong>4h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">140</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2474" name="" type="checkbox" >
+				<label id="checkboxtotal-2474" for="checkboxtotal-2474"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2474"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Mormolyce.png" alt="Mormolyce - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Mormolyce</h4></span><span class="first infosline"><strong>Période : </strong> Mai - juin, septembre - novembre</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Souches d'arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">450</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2475" name="" type="checkbox" >
+				<label id="checkboxtotal-2475" for="checkboxtotal-2475"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2475"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Morpho bleu.png" alt="Morpho bleu - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Morpho bleu</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Juin - septembre, décembre - mars</span>
+			<span class="infosline"><strong>Heure : </strong>17h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">4000</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2476" name="" type="checkbox" >
+				<label id="checkboxtotal-2476" for="checkboxtotal-2476"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2476"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Mouche.png" alt="Mouche - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Mouche</h4></span><span class="first infosline"><strong>Période : </strong> Toute l'année</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Déchets et navets pourris</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">60</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2477" name="" type="checkbox" >
+				<label id="checkboxtotal-2477" for="checkboxtotal-2477"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2477"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Moustique.png" alt="Moustique - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Moustique</h4></span><span class="first infosline"><strong>Période : </strong> Juin - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>17h - 4h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">130</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2478" name="" type="checkbox" >
+				<label id="checkboxtotal-2478" for="checkboxtotal-2478"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2478"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Mue de cigale.png" alt="Mue de cigale - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Mue de cigale</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2479" name="" type="checkbox" >
+				<label id="checkboxtotal-2479" for="checkboxtotal-2479"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2479"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Papilio bianor.png" alt="Papilio bianor - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Papilio bianor</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Mars - juin</span>
+			<span class="infosline"><strong>Heure : </strong>4h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel (fleurs hybrides)</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">2500</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2481" name="" type="checkbox" >
+				<label id="checkboxtotal-2481" for="checkboxtotal-2481"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2481"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Papillon de nuit.png" alt="Papillon de nuit - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Papillon de nuit</h4></span><span class="first infosline"><strong>Période : </strong> Toute l'année</span>
+			<span class="infosline"><strong>Heure : </strong>19h - 4h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Lumières</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">130</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2483" name="" type="checkbox" >
+				<label id="checkboxtotal-2483" for="checkboxtotal-2483"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2483"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Patineur.png" alt="Patineur - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Patineur</h4></span><span class="first infosline"><strong>Période : </strong> Mai - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Surface de l'eau</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">130</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2485" name="" type="checkbox" >
+				<label id="checkboxtotal-2485" for="checkboxtotal-2485"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2485"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Phasme.png" alt="Phasme - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Phasme</h4></span><span class="first infosline"><strong>Période : </strong> Juillet - novembre</span>
+			<span class="infosline"><strong>Heure : </strong>4h - 8h, 17h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2486" name="" type="checkbox" >
+				<label id="checkboxtotal-2486" for="checkboxtotal-2486"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2486"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Phyllie.png" alt="Phyllie - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Phyllie</h4></span><span class="first infosline"><strong>Période : </strong> Juillet - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Sol</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">600</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2487" name="" type="checkbox" >
+				<label id="checkboxtotal-2487" for="checkboxtotal-2487"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2487"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Piéride de la rave.png" alt="Piéride de la rave - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Piéride de la rave</h4></span><span class="first infosline"><strong>Période : </strong> Septembre - juin</span>
+			<span class="infosline"><strong>Heure : </strong>4h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">160</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2488" name="" type="checkbox" >
+				<label id="checkboxtotal-2488" for="checkboxtotal-2488"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2488"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Psyché.png" alt="Psyché - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Psyché</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Toute l'année</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">600</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2489" name="" type="checkbox" >
+				<label id="checkboxtotal-2489" for="checkboxtotal-2489"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2489"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Puce.png" alt="Puce - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Puce</h4></span><span class="first infosline"><strong>Période : </strong> Avril - novembre</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Villageois</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">70</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2490" name="" type="checkbox" >
+				<label id="checkboxtotal-2490" for="checkboxtotal-2490"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2490"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Punaise.png" alt="Punaise - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Punaise</h4></span><span class="first infosline"><strong>Période : </strong> Mars - octobre</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Fleurs</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">120</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2491" name="" type="checkbox" >
+				<label id="checkboxtotal-2491" for="checkboxtotal-2491"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2491"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Punaise d'eau géante.png" alt="Punaise d'eau géante - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Punaise d'eau géante</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Avril - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>19h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Surface de l'eau</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">2000</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2493" name="" type="checkbox" >
+				<label id="checkboxtotal-2493" for="checkboxtotal-2493"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2493"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Rosalia batesi.png" alt="Rosalia batesi - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Rosalia batesi</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Mai - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Souches d'arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">3000</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2494" name="" type="checkbox" >
+				<label id="checkboxtotal-2494" for="checkboxtotal-2494"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2494"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Sauterelle.png" alt="Sauterelle - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Sauterelle</h4></span><span class="first infosline"><strong>Période : </strong> Juillet - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Sol</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">160</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2495" name="" type="checkbox" >
+				<label id="checkboxtotal-2495" for="checkboxtotal-2495"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2495"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Scarabée.png" alt="Scarabée - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Scarabée</h4><span class="rareline">Très rare</span></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>23h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Très rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2496" name="" type="checkbox" >
+				<label id="checkboxtotal-2496" for="checkboxtotal-2496"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2496"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Scarabée Atlas.png" alt="Scarabée Atlas - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Scarabée Atlas</h4><span class="rareline">Très rare</span></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>17h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Palmiers</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Très rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2497" name="" type="checkbox" >
+				<label id="checkboxtotal-2497" for="checkboxtotal-2497"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2497"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Scarabée bleu.png" alt="Scarabée bleu - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Scarabée bleu</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2498" name="" type="checkbox" >
+				<label id="checkboxtotal-2498" for="checkboxtotal-2498"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2498"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Scarabée éléphant.png" alt="Scarabée éléphant - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Scarabée éléphant</h4><span class="rareline">Très rare</span></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>17h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Palmiers</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Très rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2499" name="" type="checkbox" >
+				<label id="checkboxtotal-2499" for="checkboxtotal-2499"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2499"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Scarabée Goliath.png" alt="Scarabée Goliath - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Scarabée Goliath</h4><span class="rareline">Très rare</span></span><span class="first infosline"><strong>Période : </strong> Juin - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>17h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Palmiers</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">8000</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Très rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2500" name="" type="checkbox" >
+				<label id="checkboxtotal-2500" for="checkboxtotal-2500"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2500"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Scarabée Hercule.png" alt="Scarabée Hercule - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Scarabée Hercule</h4><span class="rareline">Très rare</span></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>17h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Palmiers</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">?</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Très rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2501" name="" type="checkbox" >
+				<label id="checkboxtotal-2501" for="checkboxtotal-2501"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2501"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Scarabée kabuto.png" alt="Scarabée kabuto - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Scarabée kabuto</h4><span class="rareline">Très rare</span></span><span class="first infosline"><strong>Période : </strong> Juillet - août</span>
+			<span class="infosline"><strong>Heure : </strong>17h - 8h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Arbres</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">1350</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Très rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2502" name="" type="checkbox" >
+				<label id="checkboxtotal-2502" for="checkboxtotal-2502"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2502"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Scorpion.png" alt="Scorpion - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Scorpion</h4><span class="rareline">Très rare</span></span><span class="first infosline"><strong>Période : </strong> Mai - octobre</span>
+			<span class="infosline"><strong>Heure : </strong>19h - 4h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Sol</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">8000</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Très rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2504" name="" type="checkbox" >
+				<label id="checkboxtotal-2504" for="checkboxtotal-2504"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2504"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Sympetrum.png" alt="Sympetrum - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Sympetrum</h4></span><span class="first infosline"><strong>Période : </strong> Septembre - octobre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 19h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">180</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2459" name="" type="checkbox" >
+				<label id="checkboxtotal-2459" for="checkboxtotal-2459"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2459"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Tarentule.png" alt="Tarentule - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Tarentule</h4><span class="rareline">Très rare</span></span><span class="first infosline"><strong>Période : </strong> Novembre - avril</span>
+			<span class="infosline"><strong>Heure : </strong>19h - 4h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Sol</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">8000</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Très rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2505" name="" type="checkbox" >
+				<label id="checkboxtotal-2505" for="checkboxtotal-2505"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2505"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Taupe-grillon.png" alt="Taupe-grillon - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Taupe-grillon</h4></span><span class="first infosline"><strong>Période : </strong> Novembre - mai</span>
+			<span class="infosline"><strong>Heure : </strong>Toute la journée</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Sous la terre</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">500</span> Clochettes</span>
+			<span class="sep"></span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2506" name="" type="checkbox" >
+				<label id="checkboxtotal-2506" for="checkboxtotal-2506"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2506"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Troides alexandrae.png" alt="Troides alexandrae - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Troides alexandrae</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Mai - septembre</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 16h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">4000</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2480" name="" type="checkbox" >
+				<label id="checkboxtotal-2480" for="checkboxtotal-2480"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2480"></label>
+		</div>
+		
+			<div class="mosaique select-village checkno-village">
+			<div class="fond fond_switch" style="background:url(https://www.animalcrossing-online.com/img/fond.png);"><img src="img/insectes/Troides Brookiana.png" alt="Troides Brookiana - Animal Crossing : New Horizons (Switch) [ACNH]" /></div>
+			<span class="name"><h4 class="name2">Troides Brookiana</h4><span class="rareline">Rare</span></span><span class="first infosline"><strong>Période : </strong> Avril - septembre, décembre - février</span>
+			<span class="infosline"><strong>Heure : </strong>8h - 17h</span>
+			<span class="infosline"><strong>Lieu : </strong><span class="place">Ciel</span></span>
+			<span class="infosline"><strong>Prix : </strong><span class="price">2500</span> Clochettes</span>
+			<span class="sep"></span><span class="rare">Rare</span><div class="checkbox checkbox-info checkbox-circle">
+				<input id="checkboxtotal-2434" name="" type="checkbox" >
+				<label id="checkboxtotal-2434" for="checkboxtotal-2434"></label>
+			</div>
+			<label class="zonetotale" for="checkboxtotal-2434"></label>
+		</div>
