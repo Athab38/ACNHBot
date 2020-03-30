@@ -3,7 +3,7 @@ const client = new Discord.Client();
 var insectesN = require('./insectesN.json');
 var poissonsN = require('./poissonsN.json');
 //TODO: traiter, eventuellement, plus de filtres (sans ordre)
-var listeCommandes = ["!insectes nord","!poissons nord","!aide"];
+var listeCommandes = ["!insectes nord","!poissons nord","!aide", "!details"];
 const nomMois = ["Janvier", "Février" ,"Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
 
 client.on('ready', () => {
@@ -12,10 +12,21 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   console.log(msg.content);
-  if (msg.content === '!insectes nord') {
-     msg.reply('voici la liste des insectes disponibles actuellement : \n' + listeInsectesNow(insectesN));
-  } else if (msg.content === '!poissons nord') {
-     msg.reply('voici la liste des poissons disponibles actuellement : \n' + listePoissonsNow(poissonsN));
+  // Vérifier le premier input de la commande
+  if(msg.content.split(' ')[0]==='!insectes' || msg.content.split(' ')[0]==='!poissons')
+  { // Si c'est une commande concernant les insectes ou les poissons
+    if(msg.content.split(' ')[1]!='nord' && msg.content.split(' ')[1]!='sud')
+    { // si le premier parametre n'est pas l'hemisphere
+      msg.reply("oups, tu as oublié l'hémisphère, saisis 'sud' ou 'nord'.");
+    }
+    else
+    { // si le premier parametre est l'hemisphere
+      if (msg.content.split(' ')[0]==='!insectes') {
+        msg.reply('voici la liste des insectes disponibles actuellement : \n' + listeInsectesNow(insectesN));
+      } else if (msg.content.split(' ')[0]==='!poissons') {
+        msg.reply('voici la liste des poissons disponibles actuellement : \n' + listePoissonsNow(poissonsN));
+      }
+    }
   } else if (msg.content.split(' ')[0] === '!details') {
     // Garder seulement le nom de l'animal, apres l'espace
     nomAnimal = msg.content.slice(9 , msg.content.length);
@@ -31,6 +42,7 @@ client.on('message', msg => {
   }
 });
 
+// Token du bot
 client.login('NjkzOTU0MjUxMzQ4NTA4NzUy.XoElTQ.XiXC-gm3DefG3BloLv7OiWROI-E');
 
 function listeInsectesNow(liste) {
@@ -128,4 +140,16 @@ function affichePoisson(animalJSON) {
   animal += "Taille: " + animalJSON.taille + "\n";
   animal += "\n";
   return animal;
+}
+
+// lister les commandes
+function commandesToString() {
+  var res = "";
+
+  for(i=0; i<listeCommandes.length; i++)
+  {
+    res += listeCommandes[i];
+  }
+
+  return res;
 }
