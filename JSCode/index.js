@@ -4,9 +4,10 @@ const client = new Discord.Client();
 var insectesN = require('./insectesN.json');
 var poissonsN = require('./poissonsN.json');
 //TODO: traiter, eventuellement, plus de filtres (sans ordre)
-var listeCommandes = ["!insectes nord","!poissons nord","!aide", "!details"];
+var listeCommandes = ["!insectes nord","!poissons nord","!aide", "!details", "!navets"];
 const nomMois = ["Janvier", "Février" ,"Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
 const nomJours = ["Lundi", "Mardi" ,"Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+var infoMax = "";
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -49,13 +50,21 @@ client.on('message', msg => {
         msg.reply("ton animal n'a pas été trouvé.");
       }
     }
-    } else if (msg.content === '!aide') {
+  } else if (msg.content === '!navets') {
+      infoNavets();
+      setTimeout(function () { trucnul(msg) }, 400);
+
+  } else if (msg.content === '!aide') {
       msg.reply('voici la liste des commandes disponibles : \n' + commandesToString());
     }
 });
 
 // Token du bot
 client.login('NjkzODI5NjE3NDIwNTk5MzM4.XoDb0A.giPfY0oShei-ws4yJS4ZuKqTito');
+
+function trucnul(msg) {
+  msg.reply("le prix du navet le plus haut est " + infoMax);
+}
 
 function listeInsectesNow(liste, start, end) {
   var animaux = "";
@@ -191,7 +200,6 @@ let jobBulletin = cron.schedule('00 00 06 * * *', function() {
 });
 
 function bulletinInsulaire() {
-  console.log('oui');
   client.login('NjkzODI5NjE3NDIwNTk5MzM4.XoDb0A.giPfY0oShei-ws4yJS4ZuKqTito');
   // channel bulletin-insulaire
   // nettoyer l'ancien bulletin bulletinInsulaire
@@ -335,4 +343,36 @@ function premierMoisPoissons() {
   }
   lastPoissons = lastPoissons.substring(0, lastPoissons.length - 2);
   return lastPoissons + '\n';
+}
+
+function infoNavets() {
+  let info = "";
+  //693798630267813950, id channel navets
+  client.channels.fetch('693798630267813950')
+    .then(channel => {
+    channel.messages.fetch()
+    .then(messages => {
+      infoMax = traiteMessageNavets(messages);
+      console.log(infoMax);
+    })
+    .catch(console.error);
+    })
+    .catch(console.error);
+    return infoMax;
+}
+
+function traiteMessageNavets(mess) {
+  let tabMess = mess.array();
+  let prixNavetMax = 0;
+  let prixNavet = 0;
+  let indiceMax = 0;
+  for (i = 0; i < tabMess.length; i++) {
+    prixNavet = parseInt(tabMess[i].content.replace(/\D/g, ""));
+    console.log(prixNavet);
+    if (prixNavet > prixNavetMax) {
+      prixNavetMax = prixNavet;
+      indiceMax = i;
+    }
+  }
+  return prixNavetMax + ' chez ' + tabMess[indiceMax].author.username + '#' + tabMess[indiceMax].author.discriminator;
 }
