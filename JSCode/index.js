@@ -14,6 +14,7 @@ client.on('ready', () => {
 
 // Traitement des commandes
 client.on('message', msg => {
+    if(msg.client.user.tag==="AC_Bot#4096")
     // Vérifier le premier input de la commande
     if(msg.content.split(' ')[0]==='!insectes' || msg.content.split(' ')[0]==='!poissons')
     { // Si c'est une commande concernant les insectes ou les poissons
@@ -23,10 +24,10 @@ client.on('message', msg => {
         }
         else
         { // si le premier parametre est l'hemisphere
-            if (msg.content.split(' ')[1]!='nord')
+            if (msg.content.split(' ')[1]=='nord')
             { // si l'hemisphere est le nord
                 msg.reply('voici la liste des insectes disponibles actuellement : \n' + listeAnimauxNow(insectesN));
-            } else if (msg.content.split(' ')[1]!='sud')
+            } else if (msg.content.split(' ')[1]=='sud')
             { // si l'hemisphere est le sud
                 msg.reply('voici la liste des poissons disponibles actuellement : \n' + listeAnimauxNow(poissonsN));
             }
