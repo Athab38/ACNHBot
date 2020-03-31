@@ -370,20 +370,9 @@ function traiteMessageNavets(mess) {
   let prixNavetMax = parseInt('-1');
   let prixNavet = 0;
   let indiceMax = 0;
-  // var date = new Date(1585569643372);
-  // var j = date.getDay();
-  // var m = date.getMonth();
-  // var a = date.getFullYear();
-  // let txt = dayToString(j) + ' ';
-  // txt += date.getDate() + ' ';
-  // txt += monthToString(m) + ' ';
-  // txt += date.getHours() + 'h';
-  // txt += date.getMinutes();
-  // console.log(txt);
-  //console.log(tabMess[0]);
   for (i = 0; i < tabMess.length; i++) {
     if (navetActuel(tabMess[i].createdTimestamp)) {
-      prixNavet = parseInt(tabMess[i].content.replace(/\D/g, ""));
+      prixNavet = parseInt(tabMess[i].content.match(/\s\d+(\s|$)/g));
       console.log(prixNavet);
       if (prixNavet > prixNavetMax) {
         prixNavetMax = prixNavet;
