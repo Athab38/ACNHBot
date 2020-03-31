@@ -370,18 +370,18 @@ function traiteMessageNavets(mess) {
   let prixNavetMax = parseInt('-1');
   let prixNavet = 0;
   let indiceMax = 0;
+  let prixtest2 = "81 chez moi ce matin";
+  let prixtest = "oui 81 chez moi ce matin";
   for (i = 0; i < tabMess.length; i++) {
     if (navetActuel(tabMess[i].createdTimestamp)) {
       prixNavet = parseInt(tabMess[i].content.match(/\s\d+(\s|$)/g));
-      console.log(prixNavet);
       if (prixNavet > prixNavetMax) {
         prixNavetMax = prixNavet;
         indiceMax = i;
       }
     }
   }
-
-
+  console.log('maxi '+prixNavetMax);
   return prixNavetMax + ' chez ' + tabMess[indiceMax].author.username + '#' + tabMess[indiceMax].author.discriminator;
 }
 
@@ -389,9 +389,9 @@ function navetActuel(time) {
   var date = new Date(time);
   var dateActu = new Date();
   if (date.getFullYear() === dateActu.getFullYear() && date.getMonth() === dateActu.getMonth() && date.getDay() === dateActu.getDay()) {
-    if (dateActu.getHours() <= 12 && date.getHours() <= 12 && dateActu.getHours() >= 6 && date.getHours() >= 6) {
+    if (dateActu.getHours() < 12 && date.getHours() < 12 && dateActu.getHours() >= 6 && date.getHours() >= 6) {
       return true;
-    } else if ((dateActu.getHours() > 12 && date.getHours() > 12) && (dateActu.getHours() <= 22 && date.getHours() <= 22)) {
+    } else if ((dateActu.getHours() >= 12 && date.getHours() >= 12) && (dateActu.getHours() < 22 && date.getHours() < 22)) {
       return true;
     } else {
       return false;
