@@ -1,12 +1,19 @@
 const Discord = require('discord.js');
 const cron = require('node-cron');
 const client = new Discord.Client();
-var insectesN = require('./insectesN.json');
-var poissonsN = require('./poissonsN.json');
+var insectesN = require('./nord/insectesN.json');
+var poissonsN = require('./nord/poissonsN.json');
+var insectesS = require('./sud/insectesS.json');
+var poissonsS = require('./sud/poissonsS.json');
 //TODO: traiter, eventuellement, plus de filtres (sans ordre)
-var listeCommandes = ["!insectes nord","!poissons nord","!aide", "!details"];
+var listeCommandes = ["!insectes nord|sud : cette commande te donnes les insectes actuellement disponibles dans l'hémisphère nord|sud ainsi que leur détails (prix, taille, localisation...)",
+"!poissons nord|sud : cette commande te donnes les poissons actuellement disponibles dans l'hémisphère nord|sud ainsi que leur détails (prix, taille, localisation...)",
+"!aide : cette commande t'affiches les différentes commandes disponibles",
+"!details : cette commande t'affiches les détails d'un poisson ou d'un insecte en particulier (prix, taille, localisation...). Exemple : !details poisson-scorpion. Optionnel : sud après l'animal pour les détails sur l'hémisphère sud",
+"!navets : cette commande t'affiches le prix le plus haut du cours du navet indiqué dans le channel #navets, pensez à compléter ce channel avec vos prix pour connaître le meilleur !"];
 const nomMois = ["Janvier", "Février" ,"Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
 const nomJours = ["Lundi", "Mardi" ,"Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+var infoMax = "";
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -15,23 +22,35 @@ client.on('ready', () => {
 client.on('message', msg => {
   console.log(msg.content);
   // Vérifier le premier input de la commande
-  if(msg.content.split(' ')[0]==='!insectes' || msg.content.split(' ')[0]==='!poissons')
+  if(msg.content.split(' ')[0 ]==='!insectes' || msg.content.split(' ')[0] ==='!poissons')
   { // Si c'est une commande concernant les insectes ou les poissons
-    if(msg.content.split(' ')[1]!='nord' && msg.content.split(' ')[1]!='sud')
+    if(msg.content.split(' ')[1] != 'nord' && msg.content.split(' ')[1] != 'sud')
     { // si le premier parametre n'est pas l'hemisphere
-      msg.reply("tu as oublié l'hémisphère, saisis 'sud' ou 'nord' après ta commande.");
+      msg.reply("tu dois seulement écrire 'nord' ou 'sud' après cette commande");
     }
     else
     {
       if (msg.content.split(' ')[0] === '!insectes') {
-        msg.reply('voici la liste des insectes disponibles actuellement : \n' + listeInsectesNow(insectesN, 0, Math.floor(insectesN.length/3)));
-        msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(insectesN.length/3), Math.floor(2*insectesN.length/3)));
-        msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(2*insectesN.length/3), insectesN.length));
+        if (msg.content.split(' ')[1] === 'nord') {
+          msg.reply('voici la liste des insectes disponibles actuellement : \n' + listeInsectesNow(insectesN, 0, Math.floor(insectesN.length/3)));
+          msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(insectesN.length/3), Math.floor(2*insectesN.length/3)));
+          msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(2*insectesN.length/3), insectesN.length));
+        } else if (msg.content.split(' ')[1] === 'sud') {
+          msg.reply('voici la liste des insectes disponibles actuellement : \n' + listeInsectesNow(insectesS, 0, Math.floor(insectesS.length/3)));
+          msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(insectesS.length/3), Math.floor(2*insectesS.length/3)));
+          msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(2*insectesS.length/3), insectesS.length));
+        }
 
       } else if (msg.content.split(' ')[0] === '!poissons') {
-        msg.reply('voici la liste des poissons disponibles actuellement : \n' + listePoissonsNow(poissonsN, 0, Math.floor(poissonsN.length/3)));
-        msg.reply('\n' + listeInsectesNow(poissonsN, Math.floor(poissonsN.length/3), Math.floor(2*poissonsN.length/3)));
-        msg.reply('\n' + listeInsectesNow(poissonsN, Math.floor(2*poissonsN.length/3), poissonsN.length));
+        if (msg.content.split(' ')[1] === 'nord') {
+          msg.reply('voici la liste des poissons disponibles actuellement : \n' + listePoissonsNow(poissonsN, 0, Math.floor(poissonsN.length/3)));
+          msg.reply('\n' + listeInsectesNow(poissonsN, Math.floor(poissonsN.length/3), Math.floor(2*poissonsN.length/3)));
+          msg.reply('\n' + listeInsectesNow(poissonsN, Math.floor(2*poissonsN.length/3), poissonsN.length));
+        } else if (msg.content.split(' ')[1] === 'sud') {
+          msg.reply('voici la liste des insectes disponibles actuellement : \n' + listeInsectesNow(poissonsS, 0, Math.floor(poissonsS.length/3)));
+          msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(poissonsS.length/3), Math.floor(2*poissonsS.length/3)));
+          msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(2*poissonsS.length/3), poissonsS.length));
+        }
 
       }
     }
@@ -39,23 +58,56 @@ client.on('message', msg => {
     if (!msg.content.split(' ')[1]) {
       msg.reply('tu dois préciser un animal, par exemple !details Taupe-grillon');
     } else {
+      if (msg.content.slice(-4) != ' sud') {
+        nomAnimal = msg.content.slice(9 , msg.content.length);
+        // Garder seulement le nom de l'animal, apres l'espace
+        infoAnimal = findAnimal(nomAnimal, insectesN, poissonsN);
+        console.log(infoAnimal);
+    } else {
+      nomAnimal = msg.content.slice(0 , -4);
+      nomAnimal = nomAnimal.slice(9 , msg.content.length);
       // Garder seulement le nom de l'animal, apres l'espace
-      nomAnimal = msg.content.slice(9 , msg.content.length);
-      infoAnimal = findAnimal(nomAnimal);
-      console.log(infoAnimal);
+      infoAnimal = findAnimal(nomAnimal, insectesS, poissonsS);
+    }
       if (infoAnimal != null) {
         msg.reply("voici le détail de l'animal : \n" + infoAnimal);
       } else {
-        msg.reply("ton animal n'a pas été trouvé.");
+        nomAnimal = nomAnimal.toUpperCase();
+        nomAnimal = nomAnimal.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        var matchProche = false;
+        for (i = 0; !matchProche && i < insectesN.length; i++) {
+          if (levDist(nomAnimal, insectesN[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) < 3) {
+            matchProche = true;
+            msg.reply("ton animal n'a pas été trouvé, voulais-tu rechercher " + insectesN[i].nom.toLowerCase() + "?");
+          } else if (levDist(nomAnimal, poissonsN[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) < 3) {
+            matchProche = true;
+            msg.reply("ton animal n'a pas été trouvé, voulais-tu rechercher " + poissonsN[i].nom.toLowerCase() + "?");
+          }
+        }
+        if (!matchProche) {
+          msg.reply("ton animal n'a pas été trouvé.");
+        }
       }
     }
-    } else if (msg.content === '!aide') {
+  } else if (msg.content === '!navets') {
+      infoNavets();
+      setTimeout(function () { trucnul(msg) }, 400);
+
+  } else if (msg.content === '!aide') {
       msg.reply('voici la liste des commandes disponibles : \n' + commandesToString());
     }
 });
 
 // Token du bot
 client.login('NjkzODI5NjE3NDIwNTk5MzM4.XoDb0A.giPfY0oShei-ws4yJS4ZuKqTito');
+
+function trucnul(msg) {
+  if (infoMax.includes('-1 ')) {
+    msg.reply("il n'y a pas d'infos sur les navets actuellement");
+  } else {
+    msg.reply("le prix du navet le plus haut est " + infoMax);
+  }
+}
 
 function listeInsectesNow(liste, start, end) {
   var animaux = "";
@@ -90,7 +142,7 @@ function monthToString(mois) {
 }
 
 function dayToString(day) {
-  return nomJours[day];
+  return nomJours[day-1];
 }
 
 function isActualM(periode) {
@@ -134,17 +186,18 @@ function isActualH(heure) {
     }
 }
 
-function findAnimal(nomAnimal) {
+function findAnimal(nomAnimal, insecte, poisson) {
   var found = false;
   nomAnimal = nomAnimal.toUpperCase();
-  for (i = 0; !found && i < insectesN.length; i++) {
-    if (!found && insectesN[i].nom.toUpperCase() === nomAnimal) {
+  nomAnimal = nomAnimal.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  for (i = 0; !found && i < insecte.length; i++) {
+    if (!found && (insecte[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) === nomAnimal) {
       found = true;
-      return afficheInsecte(insectesN[i]);
+      return afficheInsecte(insecte[i]);
     }
-    if (!found && poissonsN[i].nom.toUpperCase() === nomAnimal) {
+    if (!found && poisson[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") === nomAnimal) {
       found = true;
-      return affichePoisson(poissonsN[i]);
+      return affichePoisson(poisson[i]);
     }
   }
   return null;
@@ -186,12 +239,11 @@ function commandesToString() {
 }
 
 //se lance à 6h du matin tous les jours
-let jobBulletin = cron.schedule('00 00 06 * * *', function() {
+let jobBulletin = cron.schedule('00 20 09 * * *', function() {
   bulletinInsulaire();
 });
 
 function bulletinInsulaire() {
-  console.log('oui');
   client.login('NjkzODI5NjE3NDIwNTk5MzM4.XoDb0A.giPfY0oShei-ws4yJS4ZuKqTito');
   // channel bulletin-insulaire
   // nettoyer l'ancien bulletin bulletinInsulaire
@@ -214,7 +266,7 @@ function texteBulletinInsulaire() {
   txt += date.getDate() + ' ';
   txt += monthToString(m) + ' ';
   txt += a + ' et voici votre bulletin insulaire quotidien !\n';
-  txt += "S'il vous manque un de ces insectes ou poissons, dépêchez-vous, c'est le dernier mois pour les attraper : \n";
+  txt += "S'il te manque un de ces insectes ou poissons, dépêches-toi, c'est le dernier mois pour les attraper : \n";
   txt += "\tInsectes : \n";
   txt += "\t" + "\t" + dernierMoisInsectes();
   txt += "\tPoissons : \n";
@@ -335,4 +387,103 @@ function premierMoisPoissons() {
   }
   lastPoissons = lastPoissons.substring(0, lastPoissons.length - 2);
   return lastPoissons + '\n';
+}
+
+function infoNavets() {
+  let info = "";
+  //693798630267813950, id channel navets
+  client.channels.fetch('693798630267813950')
+    .then(channel => {
+    channel.messages.fetch()
+    .then(messages => {
+      infoMax = traiteMessageNavets(messages);
+      console.log(infoMax);
+    })
+    .catch(console.error);
+    })
+    .catch(console.error);
+    return infoMax;
+}
+
+function traiteMessageNavets(mess) {
+  let tabMess = mess.array();
+  let prixNavetMax = parseInt('-1');
+  let prixNavet = 0;
+  let indiceMax = 0;
+  for (i = 0; i < tabMess.length; i++) {
+    if (navetActuel(tabMess[i].createdTimestamp)) {
+      prixNavet = parseInt(tabMess[i].content.match(/(\s|^)\d+(\s|$)/g));
+      if (prixNavet > prixNavetMax) {
+        prixNavetMax = prixNavet;
+        indiceMax = i;
+      }
+    }
+  }
+  console.log('maxi '+prixNavetMax);
+  return prixNavetMax + ' chez ' + tabMess[indiceMax].author.username + '#' + tabMess[indiceMax].author.discriminator;
+}
+
+function navetActuel(time) {
+  var date = new Date(time);
+  var dateActu = new Date();
+  if (date.getFullYear() === dateActu.getFullYear() && date.getMonth() === dateActu.getMonth() && date.getDay() === dateActu.getDay()) {
+    if (dateActu.getHours() < 12 && date.getHours() < 12 && dateActu.getHours() >= 6 && date.getHours() >= 6) {
+      return true;
+    } else if ((dateActu.getHours() >= 12 && date.getHours() >= 12) && (dateActu.getHours() < 22 && date.getHours() < 22)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+}
+// found on http://jsfiddle.net/DoDSoftware/SWX77/39/, compute the difference bewteen two strings
+function levDist(s, t) {
+    var d = []; //2d matrix
+
+    // Step 1
+    var n = s.length;
+    var m = t.length;
+
+    if (n == 0) return m;
+    if (m == 0) return n;
+
+    //Create an array of arrays in javascript (a descending loop is quicker)
+    for (var i = n; i >= 0; i--) d[i] = [];
+
+    // Step 2
+    for (var i = n; i >= 0; i--) d[i][0] = i;
+    for (var j = m; j >= 0; j--) d[0][j] = j;
+
+    // Step 3
+    for (var i = 1; i <= n; i++) {
+        var s_i = s.charAt(i - 1);
+
+        // Step 4
+        for (var j = 1; j <= m; j++) {
+
+            //Check the jagged ld total so far
+            if (i == j && d[i][j] > 4) return n;
+
+            var t_j = t.charAt(j - 1);
+            var cost = (s_i == t_j) ? 0 : 1; // Step 5
+
+            //Calculate the minimum
+            var mi = d[i - 1][j] + 1;
+            var b = d[i][j - 1] + 1;
+            var c = d[i - 1][j - 1] + cost;
+
+            if (b < mi) mi = b;
+            if (c < mi) mi = c;
+
+            d[i][j] = mi; // Step 6
+
+            //Damerau transposition
+            if (i > 1 && j > 1 && s_i == t.charAt(j - 2) && s.charAt(i - 2) == t_j) {
+                d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + cost);
+            }
+        }
+    }
+    // Step 7
+    return d[n][m];
 }
