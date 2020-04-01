@@ -148,7 +148,7 @@ function commandesToString() {
 
   for(i=0; i<listeCommandes.length; i++)
   {
-    res += listeCommandes[i];
+    res += listeCommandes[i] + "\n";
   }
 
   return res;
