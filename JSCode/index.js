@@ -1,3 +1,4 @@
+//Link to authorize : https://discordapp.com/api/oauth2/authorize?client_id=693829617420599338&permissions=8&scope=bot
 require('dotenv').config({path:'../.env'});
 const token = process.env.DISCORD_TOKEN;
 const Discord = require('discord.js');
@@ -273,7 +274,7 @@ function texteBulletinInsulaire() {
   txt += "\t" + "\t" + dernierMoisInsectes();
   txt += "\tPoissons : \n";
   txt += "\t" + "\t" + dernierMoisPoissons();
-  txt += "Pour ce qui est des nouveaux poissons et insectes de ce mois-ci, voici la liste : \n"
+  txt += "Pour ce qui est des nouveaux poissons et insectes de ce mois-ci, voici la liste : \n";
   txt += "\tInsectes : \n";
   txt += "\t" + "\t" + premierMoisInsectes();
   txt += "\tPoissons : \n";
