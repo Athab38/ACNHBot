@@ -140,7 +140,7 @@
    },
    {
       "nom":"Citrin",
-      "période":"Mars - juin, septembre - Octobre",
+      "période":"Mars - Juin, Septembre - Octobre",
       "heure":"4h - 19h",
       "lieu":"Ciel",
       "prix":160
@@ -154,7 +154,7 @@
    },
    {
       "nom":"Coccinelle",
-      "période":"Mars - juin, Octobre",
+      "période":"Mars - Juin, Octobre",
       "heure":"8h - 17h",
       "lieu":"Fleurs",
       "prix":200
@@ -367,14 +367,14 @@
    },
    {
       "nom":"Mormolyce",
-      "période":"Mai - juin, septembre - Novembre",
+      "période":"Mai - Juin, Septembre - Novembre",
       "heure":"Toute la journée",
       "lieu":"Souches d'arbres",
       "prix":450
    },
    {
       "nom":"Morpho bleu",
-      "période":"Juin - septembre, décembre - Mars",
+      "période":"Juin - Septembre, Décembre - Mars",
       "heure":"17h - 8h",
       "lieu":"Ciel",
       "prix":4000,
@@ -586,7 +586,7 @@
    },
    {
       "nom":"Troides Brookiana",
-      "période":"Avril - septembre, décembre - Février",
+      "période":"Avril - Septembre, Décembre - Février",
       "heure":"8h - 17h",
       "lieu":"Ciel",
       "prix":2500,

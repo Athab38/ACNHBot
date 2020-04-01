@@ -1,10 +1,16 @@
 const Discord = require('discord.js');
 const cron = require('node-cron');
 const client = new Discord.Client();
-var insectesN = require('./insectesN.json');
-var poissonsN = require('./poissonsN.json');
+var insectesN = require('./nord/insectesN.json');
+var poissonsN = require('./nord/poissonsN.json');
+var insectesS = require('./sud/insectesS.json');
+var poissonsS = require('./sud/poissonsS.json');
 //TODO: traiter, eventuellement, plus de filtres (sans ordre)
-var listeCommandes = ["!insectes nord","!poissons nord","!aide", "!details", "!navets"];
+var listeCommandes = ["!insectes nord : cette commande te donnes les insectes actuellement disponibles dans l'hémisphère nord ainsi que leur détails (prix, taille, localisation...)",
+"!poissons nord : cette commande te donnes les poissons actuellement disponibles dans l'hémisphère nord ainsi que leur détails (prix, taille, localisation...)",
+"!aide : cette commande t'affiches les différentes commandes disponibles",
+"!details : cette commande t'affiches les détails d'un poisson ou d'un insecte en particulier (prix, taille, localisation...). Exemple : !details poisson-scorpion",
+"!navets : cette commande t'affiches le prix le plus haut du cours du navet indiqué dans le channel #navets, pensez à compléter ce channel avec vos prix pour connaître le meilleur !"];
 const nomMois = ["Janvier", "Février" ,"Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
 const nomJours = ["Lundi", "Mardi" ,"Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
 var infoMax = "";
@@ -16,23 +22,35 @@ client.on('ready', () => {
 client.on('message', msg => {
   console.log(msg.content);
   // Vérifier le premier input de la commande
-  if(msg.content.split(' ')[0]==='!insectes' || msg.content.split(' ')[0]==='!poissons')
+  if(msg.content.split(' ')[0 ]==='!insectes' || msg.content.split(' ')[0] ==='!poissons')
   { // Si c'est une commande concernant les insectes ou les poissons
-    if(msg.content.split(' ')[1]!='nord' && msg.content.split(' ')[1]!='sud')
+    if(msg.content.split(' ')[1] != 'nord' && msg.content.split(' ')[1] != 'sud')
     { // si le premier parametre n'est pas l'hemisphere
-      msg.reply("tu as oublié l'hémisphère, saisis 'sud' ou 'nord' après ta commande.");
+      msg.reply("tu dois seulement écrire 'nord' ou 'sud' après cette commande");
     }
     else
     {
       if (msg.content.split(' ')[0] === '!insectes') {
-        msg.reply('voici la liste des insectes disponibles actuellement : \n' + listeInsectesNow(insectesN, 0, Math.floor(insectesN.length/3)));
-        msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(insectesN.length/3), Math.floor(2*insectesN.length/3)));
-        msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(2*insectesN.length/3), insectesN.length));
+        if (msg.content.split(' ')[1] === 'nord') {
+          msg.reply('voici la liste des insectes disponibles actuellement : \n' + listeInsectesNow(insectesN, 0, Math.floor(insectesN.length/3)));
+          msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(insectesN.length/3), Math.floor(2*insectesN.length/3)));
+          msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(2*insectesN.length/3), insectesN.length));
+        } else if (msg.content.split(' ')[1] === 'sud') {
+          msg.reply('voici la liste des insectes disponibles actuellement : \n' + listeInsectesNow(insectesS, 0, Math.floor(insectesS.length/3)));
+          msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(insectesS.length/3), Math.floor(2*insectesS.length/3)));
+          msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(2*insectesS.length/3), insectesS.length));
+        }
 
       } else if (msg.content.split(' ')[0] === '!poissons') {
-        msg.reply('voici la liste des poissons disponibles actuellement : \n' + listePoissonsNow(poissonsN, 0, Math.floor(poissonsN.length/3)));
-        msg.reply('\n' + listeInsectesNow(poissonsN, Math.floor(poissonsN.length/3), Math.floor(2*poissonsN.length/3)));
-        msg.reply('\n' + listeInsectesNow(poissonsN, Math.floor(2*poissonsN.length/3), poissonsN.length));
+        if (msg.content.split(' ')[1] === 'nord') {
+          msg.reply('voici la liste des poissons disponibles actuellement : \n' + listePoissonsNow(poissonsN, 0, Math.floor(poissonsN.length/3)));
+          msg.reply('\n' + listeInsectesNow(poissonsN, Math.floor(poissonsN.length/3), Math.floor(2*poissonsN.length/3)));
+          msg.reply('\n' + listeInsectesNow(poissonsN, Math.floor(2*poissonsN.length/3), poissonsN.length));
+        } else if (msg.content.split(' ')[1] === 'sud') {
+          msg.reply('voici la liste des insectes disponibles actuellement : \n' + listeInsectesNow(poissonsS, 0, Math.floor(poissonsS.length/3)));
+          msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(poissonsS.length/3), Math.floor(2*poissonsS.length/3)));
+          msg.reply('\n' + listeInsectesNow(insectesN, Math.floor(2*poissonsS.length/3), poissonsS.length));
+        }
 
       }
     }
@@ -40,10 +58,19 @@ client.on('message', msg => {
     if (!msg.content.split(' ')[1]) {
       msg.reply('tu dois préciser un animal, par exemple !details Taupe-grillon');
     } else {
+      if (msg.content.slice(-4) != ' sud') {
+        nomAnimal = msg.content.slice(9 , msg.content.length);
+        // Garder seulement le nom de l'animal, apres l'espace
+        infoAnimal = findAnimal(nomAnimal, insectesN, poissonsN);
+        console.log(infoAnimal);
+    } else {
+      nomAnimal = msg.content.slice(0 , -4);
+      console.log(nomAnimal);
+      nomAnimal = nomAnimal.slice(9 , msg.content.length);
+      console.log(nomAnimal);
       // Garder seulement le nom de l'animal, apres l'espace
-      nomAnimal = msg.content.slice(9 , msg.content.length);
-      infoAnimal = findAnimal(nomAnimal);
-      console.log(infoAnimal);
+      infoAnimal = findAnimal(nomAnimal, insectesS, poissonsS);
+    }
       if (infoAnimal != null) {
         msg.reply("voici le détail de l'animal : \n" + infoAnimal);
       } else {
@@ -103,7 +130,7 @@ function monthToString(mois) {
 }
 
 function dayToString(day) {
-  return nomJours[day];
+  return nomJours[day-1];
 }
 
 function isActualM(periode) {
@@ -147,17 +174,17 @@ function isActualH(heure) {
     }
 }
 
-function findAnimal(nomAnimal) {
+function findAnimal(nomAnimal, insecte, poisson) {
   var found = false;
   nomAnimal = nomAnimal.toUpperCase();
-  for (i = 0; !found && i < insectesN.length; i++) {
-    if (!found && insectesN[i].nom.toUpperCase() === nomAnimal) {
+  for (i = 0; !found && i < insecte.length; i++) {
+    if (!found && insecte[i].nom.toUpperCase() === nomAnimal) {
       found = true;
-      return afficheInsecte(insectesN[i]);
+      return afficheInsecte(insecte[i]);
     }
-    if (!found && poissonsN[i].nom.toUpperCase() === nomAnimal) {
+    if (!found && poisson[i].nom.toUpperCase() === nomAnimal) {
       found = true;
-      return affichePoisson(poissonsN[i]);
+      return affichePoisson(poisson[i]);
     }
   }
   return null;
@@ -199,7 +226,7 @@ function commandesToString() {
 }
 
 //se lance à 6h du matin tous les jours
-let jobBulletin = cron.schedule('00 00 06 * * *', function() {
+let jobBulletin = cron.schedule('00 20 09 * * *', function() {
   bulletinInsulaire();
 });
 
@@ -226,7 +253,7 @@ function texteBulletinInsulaire() {
   txt += date.getDate() + ' ';
   txt += monthToString(m) + ' ';
   txt += a + ' et voici votre bulletin insulaire quotidien !\n';
-  txt += "S'il vous manque un de ces insectes ou poissons, dépêchez-vous, c'est le dernier mois pour les attraper : \n";
+  txt += "S'il te manque un de ces insectes ou poissons, dépêches-toi, c'est le dernier mois pour les attraper : \n";
   txt += "\tInsectes : \n";
   txt += "\t" + "\t" + dernierMoisInsectes();
   txt += "\tPoissons : \n";
@@ -370,11 +397,9 @@ function traiteMessageNavets(mess) {
   let prixNavetMax = parseInt('-1');
   let prixNavet = 0;
   let indiceMax = 0;
-  let prixtest2 = "81 chez moi ce matin";
-  let prixtest = "oui 81 chez moi ce matin";
   for (i = 0; i < tabMess.length; i++) {
     if (navetActuel(tabMess[i].createdTimestamp)) {
-      prixNavet = parseInt(tabMess[i].content.match(/\s\d+(\s|$)/g));
+      prixNavet = parseInt(tabMess[i].content.match(/(\s|^)\d+(\s|$)/g));
       if (prixNavet > prixNavetMax) {
         prixNavetMax = prixNavet;
         indiceMax = i;
