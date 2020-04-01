@@ -1,4 +1,6 @@
+//Link to authorize : https://discordapp.com/api/oauth2/authorize?client_id=693829617420599338&permissions=8&scope=bot
 require('dotenv').config({path:'../.env'});
+const fs = require('fs')
 const token = process.env.DISCORD_TOKEN;
 const Discord = require('discord.js');
 const cron = require('node-cron');
@@ -273,7 +275,7 @@ function texteBulletinInsulaire() {
   txt += "\t" + "\t" + dernierMoisInsectes();
   txt += "\tPoissons : \n";
   txt += "\t" + "\t" + dernierMoisPoissons();
-  txt += "Pour ce qui est des nouveaux poissons et insectes de ce mois-ci, voici la liste : \n"
+  txt += "Pour ce qui est des nouveaux poissons et insectes de ce mois-ci, voici la liste : \n";
   txt += "\tInsectes : \n";
   txt += "\t" + "\t" + premierMoisInsectes();
   txt += "\tPoissons : \n";
@@ -489,3 +491,52 @@ function levDist(s, t) {
     // Step 7
     return d[n][m];
 }
+
+/*
+function ajoutRareteSud()
+{
+    // parcourir la liste nord et chercher l'élément dans le sud
+    for(i in insectesN)
+    {
+        if(insectesN[i].hasOwnProperty('rareté'))
+        {
+            console.log("création de l'attribut");
+            insectesS[i].rareté = insectesN[i].rareté;
+        }
+    }
+
+    const insJsonString = JSON.stringify(insectesS);
+    fs.writeFile('./sud/newInsectesS.json', insJsonString, err =>
+    {
+      if (err)
+      {
+        console.log('Error writing file', err)
+      } else
+      {
+        console.log('Successfully wrote file')
+      }
+    });
+
+    for(i in poissonsN)
+    {
+      if(poissonsN[i].hasOwnProperty('rareté'))
+      {
+        console.log("création de l'attribut");
+        poissonsS[i].rareté = poissonsN[i].rareté;
+      }
+    }
+
+    const poiJsonString = JSON.stringify(insectesS);
+    fs.writeFile('./sud/newPoissonsS.json', poiJsonString, err =>
+    {
+      if (err)
+      {
+        console.log('Error writing file', err)
+      } else
+      {
+        console.log('Successfully wrote file')
+      }
+    });
+}
+*/
+

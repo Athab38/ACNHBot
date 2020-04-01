@@ -18,7 +18,8 @@
       "période":"Octobre - Mars",
       "heure":"8h - 17h",
       "lieu":"Ciel",
-      "prix":3000
+      "prix":3000,
+      "rareté":"Rare"
    },
    {
       "nom":"Anax napolitain",
@@ -39,21 +40,24 @@
       "période":"Octobre - Mars",
       "heure":"19h - 4h",
       "lieu":"Arbres",
-      "prix":3000
+      "prix":3000,
+      "rareté":"Rare"
    },
    {
       "nom":"Bernard-l'ermite",
       "période":"Toute l'année",
       "heure":"19h - 8h",
       "lieu":"Plage",
-      "prix":1000
+      "prix":1000,
+      "rareté":"Rare"
    },
    {
       "nom":"Bousier",
       "période":"Juin - Août",
       "heure":"Toute la journée",
       "lieu":"Boules de neige",
-      "prix":2500
+      "prix":2500,
+      "rareté":"Rare"
    },
    {
       "nom":"Bupreste",
@@ -88,14 +92,16 @@
       "période":"Octobre - Mars",
       "heure":"8h - 16h",
       "lieu":"Ciel",
-      "prix":2500
+      "prix":2500,
+      "rareté":"Rare"
    },
    {
       "nom":"Cicindèle",
       "période":" Août - Avril",
       "heure":"Toute la journée",
       "lieu":"Sol",
-      "prix":1500
+      "prix":1500,
+      "rareté":"Rare"
    },
    {
       "nom":"Cigale cercope",
@@ -221,7 +227,8 @@
       "période":"Toute l'année",
       "heure":"8h - 19h",
       "lieu":"Ciel",
-      "prix":1000
+      "prix":1000,
+      "rareté":"Rare"
    },
    {
       "nom":"Graphium sarpedon",
@@ -249,7 +256,8 @@
       "période":"Toute l'année",
       "heure":"Toute la journée",
       "lieu":"Arbres",
-      "prix":2500
+      "prix":2500,
+      "rareté":"Rare"
    },
    {
       "nom":"Ligie",
@@ -263,49 +271,56 @@
       "période":"Janvier - Février",
       "heure":"23h - 8h",
       "lieu":"Arbres",
-      "prix":-1
+      "prix":-1,
+      "rareté":"Très rare"
    },
    {
       "nom":"Lucane copris irisé",
       "période":"Décembre - Mars",
       "heure":"19h - 8h",
       "lieu":"Arbres",
-      "prix":6000
+      "prix":6000,
+      "rareté":"Très rare"
    },
    {
       "nom":"Lucane cyclommatus",
       "période":"Janvier - Février",
       "heure":"17h - 8h",
       "lieu":"Palmiers",
-      "prix":-1
+      "prix":-1,
+      "rareté":"Très rare"
    },
    {
       "nom":"Lucane girafe",
       "période":"Janvier - Février",
       "heure":"17h - 8h",
       "lieu":"Arbres",
-      "prix":-1
+      "prix":-1,
+      "rareté":"Très rare"
    },
    {
       "nom":"Lucane inclinatus",
       "période":"Janvier - Février",
       "heure":"Toute la journée",
       "lieu":"Arbres",
-      "prix":-1
+      "prix":-1,
+      "rareté":"Rare"
    },
    {
       "nom":"Lucane lamprima",
       "période":"Janvier - Février",
       "heure":"17h - 8h",
       "lieu":"Palmiers",
-      "prix":-1
+      "prix":-1,
+      "rareté":"Très rare"
    },
    {
       "nom":"Lucane miyama",
       "période":"Janvier - Février",
       "heure":"Toute la journée",
       "lieu":"Arbres",
-      "prix":-1
+      "prix":-1,
+      "rareté":"Rare"
    },
    {
       "nom":"Luciole",
@@ -326,7 +341,8 @@
       "période":"Septembre - Mai",
       "heure":"8h - 17h",
       "lieu":"Fleurs blanches",
-      "prix":2400
+      "prix":2400,
+      "rareté":"Rare"
    },
    {
       "nom":"Mante religieuse",
@@ -361,7 +377,8 @@
       "période":"Décembre - Mars, Juin - Septembre",
       "heure":"17h - 8h",
       "lieu":"Ciel",
-      "prix":4000
+      "prix":4000,
+      "rareté":"Rare"
    },
    {
       "nom":"Mouche",
@@ -382,14 +399,16 @@
       "période":"Janvier - Février",
       "heure":"Toute la journée",
       "lieu":"Arbres",
-      "prix":-1
+      "prix":-1,
+      "rareté":"Rare"
    },
    {
       "nom":"Papilio bianor",
       "période":"Septembre - Décembre",
       "heure":"4h - 19h",
       "lieu":"Ciel (fleurs hybrides)",
-      "prix":2500
+      "prix":2500,
+      "rareté":"Rare"
    },
    {
       "nom":"Papillon de nuit",
@@ -431,7 +450,8 @@
       "période":"Toute l'année",
       "heure":"Toute la journée",
       "lieu":"Arbres",
-      "prix":600
+      "prix":600,
+      "rareté":"Rare"
    },
    {
       "nom":"Puce",
@@ -452,14 +472,16 @@
       "période":"Octobre - Mars",
       "heure":"19h - 8h",
       "lieu":"Surface de l'eau",
-      "prix":2000
+      "prix":2000,
+      "rareté":"Rare"
    },
    {
       "nom":"Rosalia batesi",
       "période":"Novembre - Mars",
       "heure":"Toute la journée",
       "lieu":"Souches d'arbres",
-      "prix":3000
+      "prix":3000,
+      "rareté":"Rare"
    },
    {
       "nom":"Sauterelle",
@@ -473,56 +495,64 @@
       "période":"Janvier - Février",
       "heure":"23h - 8h",
       "lieu":"Arbres",
-      "prix":-1
+      "prix":-1,
+      "rareté":"Très rare"
    },
    {
       "nom":"Scarabée Atlas",
       "période":"Janvier - Février",
       "heure":"17h - 8h",
       "lieu":"Palmiers",
-      "prix":-1
+      "prix":-1,
+      "rareté":"Très rare"
    },
    {
       "nom":"Scarabée bleu",
       "période":"Janvier - Février",
       "heure":"Toute la journée",
       "lieu":"Arbres",
-      "prix":-1
+      "prix":-1,
+      "rareté":"Rare"
    },
    {
       "nom":"Scarabée éléphant",
       "période":"Janvier - Février",
       "heure":"17h - 8h",
       "lieu":"Palmiers",
-      "prix":-1
+      "prix":-1,
+      "rareté":"Très rare"
    },
    {
       "nom":"Scarabée Goliath",
       "période":"Décembre - Mars",
       "heure":"17h - 8h",
       "lieu":"Palmiers",
-      "prix":8000
+      "prix":8000,
+      "rareté":"Très rare"
    },
    {
       "nom":"Scarabée Hercule",
       "période":"Janvier - Février",
       "heure":"17h - 8h",
       "lieu":"Palmiers",
-      "prix":-1
+      "prix":-1,
+      "rareté":"Très rare"
    },
    {
       "nom":"Scarabée kabuto",
       "période":"Janvier - Février",
       "heure":"17h - 8h",
       "lieu":"Arbres",
-      "prix":1350
+      "prix":1350,
+      "rareté":"Très rare"
    },
    {
       "nom":"Scorpion",
       "période":"Novembre - Avril",
       "heure":"19h - 4h",
       "lieu":"Sol",
-      "prix":8000
+      "prix":8000,
+      "rareté":"Très rare"
    },
    {
       "nom":"Sympetrum",
@@ -536,7 +566,8 @@
       "période":"Mai - Octobre",
       "heure":"19h - 4h",
       "lieu":"Sol",
-      "prix":8000
+      "prix":8000,
+      "rareté":"Très rare"
    },
    {
       "nom":"Taupe-grillon",
@@ -550,13 +581,15 @@
       "période":"Novembre - Mars",
       "heure":"8h - 16h",
       "lieu":"Ciel",
-      "prix":4000
+      "prix":4000,
+      "rareté":"Rare"
    },
    {
       "nom":"Troides Brookiana",
       "période":"Octobre - Mars, Juin - Août",
       "heure":"8h - 17h",
       "lieu":"Ciel",
-      "prix":2500
+      "prix":2500,
+      "rareté":"Rare"
    }
 ]
