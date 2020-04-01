@@ -9,10 +9,9 @@ Link to authorize : https://discordapp.com/api/oauth2/authorize?client_id=693829
 Type in your Discord chat "!aide" to display all the available functions. 
 
 # Develop
-You need to create a Discord bot following this link : https://discordapp.com/developers/applications by adding a new application and create a new bot. 
-Then retrieve and fill its token in a .env file like following :
+You need to create a Discord bot following this link : https://discordapp.com/developers/applications by adding a new application and create a new bot ; Then retrieve and fill its token in a .env file like following :
 
-DISCORD_TOKEN = <input your token>
+DISCORD_TOKEN = token
 
 To launch the bot : 
 apt install npm
