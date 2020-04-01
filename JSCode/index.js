@@ -1,3 +1,5 @@
+require('dotenv').config({path:'../.env'});
+const token = process.env.DISCORD_TOKEN;
 const Discord = require('discord.js');
 const cron = require('node-cron');
 const client = new Discord.Client();
@@ -99,7 +101,7 @@ client.on('message', msg => {
 });
 
 // Token du bot
-client.login('NjkzODI5NjE3NDIwNTk5MzM4.XoDb0A.giPfY0oShei-ws4yJS4ZuKqTito');
+client.login(token);
 
 function trucnul(msg) {
   if (infoMax.includes('-1 ')) {
