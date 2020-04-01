@@ -6,10 +6,10 @@ var poissonsN = require('./nord/poissonsN.json');
 var insectesS = require('./sud/insectesS.json');
 var poissonsS = require('./sud/poissonsS.json');
 //TODO: traiter, eventuellement, plus de filtres (sans ordre)
-var listeCommandes = ["!insectes nord : cette commande te donnes les insectes actuellement disponibles dans l'hémisphère nord ainsi que leur détails (prix, taille, localisation...)",
-"!poissons nord : cette commande te donnes les poissons actuellement disponibles dans l'hémisphère nord ainsi que leur détails (prix, taille, localisation...)",
+var listeCommandes = ["!insectes nord|sud : cette commande te donnes les insectes actuellement disponibles dans l'hémisphère nord|sud ainsi que leur détails (prix, taille, localisation...)",
+"!poissons nord|sud : cette commande te donnes les poissons actuellement disponibles dans l'hémisphère nord|sud ainsi que leur détails (prix, taille, localisation...)",
 "!aide : cette commande t'affiches les différentes commandes disponibles",
-"!details : cette commande t'affiches les détails d'un poisson ou d'un insecte en particulier (prix, taille, localisation...). Exemple : !details poisson-scorpion",
+"!details : cette commande t'affiches les détails d'un poisson ou d'un insecte en particulier (prix, taille, localisation...). Exemple : !details poisson-scorpion. Optionnel : sud après l'animal pour les détails sur l'hémisphère sud",
 "!navets : cette commande t'affiches le prix le plus haut du cours du navet indiqué dans le channel #navets, pensez à compléter ce channel avec vos prix pour connaître le meilleur !"];
 const nomMois = ["Janvier", "Février" ,"Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
 const nomJours = ["Lundi", "Mardi" ,"Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
@@ -65,16 +65,28 @@ client.on('message', msg => {
         console.log(infoAnimal);
     } else {
       nomAnimal = msg.content.slice(0 , -4);
-      console.log(nomAnimal);
       nomAnimal = nomAnimal.slice(9 , msg.content.length);
-      console.log(nomAnimal);
       // Garder seulement le nom de l'animal, apres l'espace
       infoAnimal = findAnimal(nomAnimal, insectesS, poissonsS);
     }
       if (infoAnimal != null) {
         msg.reply("voici le détail de l'animal : \n" + infoAnimal);
       } else {
-        msg.reply("ton animal n'a pas été trouvé.");
+        nomAnimal = nomAnimal.toUpperCase();
+        nomAnimal = nomAnimal.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        var matchProche = false;
+        for (i = 0; !matchProche && i < insectesN.length; i++) {
+          if (levDist(nomAnimal, insectesN[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) < 3) {
+            matchProche = true;
+            msg.reply("ton animal n'a pas été trouvé, voulais-tu rechercher " + insectesN[i].nom.toLowerCase() + "?");
+          } else if (levDist(nomAnimal, poissonsN[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) < 3) {
+            matchProche = true;
+            msg.reply("ton animal n'a pas été trouvé, voulais-tu rechercher " + poissonsN[i].nom.toLowerCase() + "?");
+          }
+        }
+        if (!matchProche) {
+          msg.reply("ton animal n'a pas été trouvé.");
+        }
       }
     }
   } else if (msg.content === '!navets') {
@@ -177,12 +189,13 @@ function isActualH(heure) {
 function findAnimal(nomAnimal, insecte, poisson) {
   var found = false;
   nomAnimal = nomAnimal.toUpperCase();
+  nomAnimal = nomAnimal.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   for (i = 0; !found && i < insecte.length; i++) {
-    if (!found && insecte[i].nom.toUpperCase() === nomAnimal) {
+    if (!found && (insecte[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) === nomAnimal) {
       found = true;
       return afficheInsecte(insecte[i]);
     }
-    if (!found && poisson[i].nom.toUpperCase() === nomAnimal) {
+    if (!found && poisson[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") === nomAnimal) {
       found = true;
       return affichePoisson(poisson[i]);
     }
@@ -423,4 +436,54 @@ function navetActuel(time) {
     }
   }
 
+}
+// found on http://jsfiddle.net/DoDSoftware/SWX77/39/, compute the difference bewteen two strings
+function levDist(s, t) {
+    var d = []; //2d matrix
+
+    // Step 1
+    var n = s.length;
+    var m = t.length;
+
+    if (n == 0) return m;
+    if (m == 0) return n;
+
+    //Create an array of arrays in javascript (a descending loop is quicker)
+    for (var i = n; i >= 0; i--) d[i] = [];
+
+    // Step 2
+    for (var i = n; i >= 0; i--) d[i][0] = i;
+    for (var j = m; j >= 0; j--) d[0][j] = j;
+
+    // Step 3
+    for (var i = 1; i <= n; i++) {
+        var s_i = s.charAt(i - 1);
+
+        // Step 4
+        for (var j = 1; j <= m; j++) {
+
+            //Check the jagged ld total so far
+            if (i == j && d[i][j] > 4) return n;
+
+            var t_j = t.charAt(j - 1);
+            var cost = (s_i == t_j) ? 0 : 1; // Step 5
+
+            //Calculate the minimum
+            var mi = d[i - 1][j] + 1;
+            var b = d[i][j - 1] + 1;
+            var c = d[i - 1][j - 1] + cost;
+
+            if (b < mi) mi = b;
+            if (c < mi) mi = c;
+
+            d[i][j] = mi; // Step 6
+
+            //Damerau transposition
+            if (i > 1 && j > 1 && s_i == t.charAt(j - 2) && s.charAt(i - 2) == t_j) {
+                d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + cost);
+            }
+        }
+    }
+    // Step 7
+    return d[n][m];
 }
