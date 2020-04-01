@@ -1,0 +1,689 @@
+[
+   {
+      "nom":"Anchois",
+      "période":"Toute l'année",
+      "heure":"4h - 21h",
+      "lieu":"Océan",
+      "prix":200,
+      "taille":"Petite",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Arapaïma",
+      "période":"Juin - Septembre",
+      "heure":"16h - 9h",
+      "lieu":"Rivière",
+      "prix":10000,
+      "taille":"Énorme",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Arowana",
+      "période":"Juin - Septembre",
+      "heure":"16h - 9h",
+      "lieu":"Rivière",
+      "prix":10000,
+      "taille":"Moyenne",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Ayu",
+      "période":"Juillet - Septembre",
+      "heure":"Toute la journée",
+      "lieu":"Rivière",
+      "prix":900,
+      "taille":"Petite/moyenne"
+   },
+   {
+      "nom":"Bar",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Rivière",
+      "prix":400,
+      "taille":"Très grande"
+   },
+   {
+      "nom":"Bar commun",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":400,
+      "taille":"Très grande"
+   },
+   {
+      "nom":"Bichir",
+      "période":"Juin - Septembre",
+      "heure":"21h - 4h",
+      "lieu":"Rivière",
+      "prix":4000,
+      "taille":"Grande",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Bouvière",
+      "période":"Novembre - Mars",
+      "heure":"Toute la journée",
+      "lieu":"Rivière",
+      "prix":900,
+      "taille":"Minuscule"
+   },
+   {
+      "nom":"Brochet",
+      "période":"Septembre - Décembre",
+      "heure":"Toute la journée",
+      "lieu":"Rivière",
+      "prix":1800,
+      "taille":"Moyenne/grande",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Calmar",
+      "période":"Décembre - Août",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":500,
+      "taille":"Moyenne",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Carangue grosse tête",
+      "période":"Mai - Octobre",
+      "heure":"Toute la journée",
+      "lieu":"Océan (ponton)",
+      "prix":4500,
+      "taille":"Énorme",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Carassin",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Rivière",
+      "prix":160,
+      "taille":"Petite"
+   },
+   {
+      "nom":"Cardeau",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":800,
+      "taille":"Très grande",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Carpe",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Étang",
+      "prix":300,
+      "taille":"Moyenne"
+   },
+   {
+      "nom":"Carpe koï",
+      "période":"Toute l'année",
+      "heure":"16h - 9h",
+      "lieu":"Étang",
+      "prix":4000,
+      "taille":"Moyenne",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Chevaine",
+      "période":"Toute l'année",
+      "heure":"9h - 16h",
+      "lieu":"Rivière",
+      "prix":200,
+      "taille":"Minuscule"
+   },
+   {
+      "nom":"Chinchard",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":150,
+      "taille":"Petite"
+   },
+   {
+      "nom":"Clione",
+      "période":"Décembre - Mars",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":1000,
+      "taille":"Minuscule"
+   },
+   {
+      "nom":"Combattant",
+      "période":"Mai - Octobre",
+      "heure":"9h - 16h",
+      "lieu":"Rivière",
+      "prix":2500,
+      "taille":"Petite",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Coryphène",
+      "période":"Mai - Octobre",
+      "heure":"Toute la journée",
+      "lieu":"Océan (ponton)",
+      "prix":6000,
+      "taille":"Très grande",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Crabe chinois",
+      "période":"Septembre - Novembre",
+      "heure":"16h - 9h",
+      "lieu":"Rivière",
+      "prix":2000,
+      "taille":"Petite",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Crapet",
+      "période":"Toute l'année",
+      "heure":"9h - 16h",
+      "lieu":"Rivière",
+      "prix":180,
+      "taille":"Petite"
+   },
+   {
+      "nom":"Cyprin doré",
+      "période":"Toute l'année",
+      "heure":"9h - 16h",
+      "lieu":"Étang",
+      "prix":1300,
+      "taille":"Minuscule",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Cœlacanthe",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Océan (pluie/neige/appât)",
+      "prix":15000,
+      "taille":"Énorme",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Dai yu",
+      "période":"Décembre - Mars",
+      "heure":"16h - 9h",
+      "lieu":"Rivière (falaise)",
+      "prix":15000,
+      "taille":"Énorme",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Dorade",
+      "période":"Juin - Septembre",
+      "heure":"4h - 21h",
+      "lieu":"Rivière",
+      "prix":15000,
+      "taille":"Très grande",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Ecrevisse",
+      "période":"Avril - Septembre",
+      "heure":"Toute la journée",
+      "lieu":"Étang",
+      "prix":200,
+      "taille":"Petite"
+   },
+   {
+      "nom":"Eperlan",
+      "période":"Décembre - Février",
+      "heure":"Toute la journée",
+      "lieu":"Rivière",
+      "prix":320,
+      "taille":"Petite"
+   },
+   {
+      "nom":"Esturgeon",
+      "période":"Septembre - Mars",
+      "heure":"Toute la journée",
+      "lieu":"Embouchure de rivière",
+      "prix":10000,
+      "taille":"Énorme",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Fondule barré",
+      "période":"Avril - Août",
+      "heure":"Toute la journée",
+      "lieu":"Étang",
+      "prix":300,
+      "taille":"Minuscule"
+   },
+   {
+      "nom":"Gar",
+      "période":"Juin - Septembre",
+      "heure":"16h - 9h",
+      "lieu":"Étang",
+      "prix":6000,
+      "taille":"Énorme",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Gobie d'eau douce",
+      "période":"Toute l'année",
+      "heure":"16h - 9h",
+      "lieu":"Rivière",
+      "prix":400,
+      "taille":"Petite",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Grand requin blanc",
+      "période":"Juin - Septembre",
+      "heure":"16h - 9h",
+      "lieu":"Océan",
+      "prix":15000,
+      "taille":"Énorme (aileron)",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Grenouille",
+      "période":"Mai - Août",
+      "heure":"Toute la journée",
+      "lieu":"Étang",
+      "prix":120,
+      "taille":"Petite"
+   },
+   {
+      "nom":"Guppy",
+      "période":"Avril - Novembre",
+      "heure":"9h - 16h",
+      "lieu":"Rivière",
+      "prix":1300,
+      "taille":"Minuscule"
+   },
+   {
+      "nom":"Hippocampe",
+      "période":"Avril - Novembre",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":1100,
+      "taille":"Minuscule"
+   },
+   {
+      "nom":"Limande",
+      "période":"Octobre - Avril",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":300,
+      "taille":"Moyenne"
+   },
+   {
+      "nom":"Loche d'étang",
+      "période":"Mars - Mai",
+      "heure":"Toute la journée",
+      "lieu":"Rivière",
+      "prix":400,
+      "taille":"Petite/moyenne"
+   },
+   {
+      "nom":"Lune de mer",
+      "période":"Juillet - Septembre",
+      "heure":"4h - 21h",
+      "lieu":"Océan",
+      "prix":4000,
+      "taille":"Énorme (aileron)",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Macropinna",
+      "période":"Toute l'année",
+      "heure":"21h - 4h",
+      "lieu":"Océan",
+      "prix":15000,
+      "taille":"Petite",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Marlin bleu",
+      "période":"Juillet - Septembre, Novembre - Avril",
+      "heure":"Toute la journée",
+      "lieu":"Océan (ponton)",
+      "prix":10000,
+      "taille":"Énorme",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Murène",
+      "période":"Août - Octobre",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":2000,
+      "taille":"Très grande",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Murène ruban bleue",
+      "période":"Juin - Octobre",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":600,
+      "taille":"Fine"
+   },
+   {
+      "nom":"Napoléon",
+      "période":"Juillet - Août",
+      "heure":"4h - 21h",
+      "lieu":"Océan",
+      "prix":10000,
+      "taille":"Énorme",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Néon bleu",
+      "période":"Avril - Novembre",
+      "heure":"9h - 16h",
+      "lieu":"Rivière",
+      "prix":500,
+      "taille":"Minuscule"
+   },
+   {
+      "nom":"Omble",
+      "période":"Mars - Juin, Septembre - Novembre",
+      "heure":"16h - 9h",
+      "lieu":"Rivière (falaise)",
+      "prix":3800,
+      "taille":"Moyenne/grande",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Perche jaune",
+      "période":"Octobre - Mars",
+      "heure":"Toute la journée",
+      "lieu":"Rivière",
+      "prix":300,
+      "taille":"Petite/moyenne"
+   },
+   {
+      "nom":"Piranha",
+      "période":"Juin - Septembre",
+      "heure":"9h - 16h, 21h - 4h",
+      "lieu":"Rivière",
+      "prix":2500,
+      "taille":"Petite",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Poisson arc-en-ciel",
+      "période":"Mai - Octobre",
+      "heure":"9h - 16h",
+      "lieu":"Rivière",
+      "prix":800,
+      "taille":"Minuscule"
+   },
+   {
+      "nom":"Poisson chirurgien",
+      "période":"Avril - Septembre",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":1000,
+      "taille":"Petite"
+   },
+   {
+      "nom":"Poisson docteur",
+      "période":"Mai - Septembre",
+      "heure":"9h - 16h",
+      "lieu":"Rivière",
+      "prix":1500,
+      "taille":"Petite"
+   },
+   {
+      "nom":"Poisson lanterne",
+      "période":"Novembre - Mars",
+      "heure":"16h - 9h",
+      "lieu":"Océan",
+      "prix":2500,
+      "taille":"Grande",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Poisson rouge",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Étang",
+      "prix":1300,
+      "taille":"Minuscule",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Poisson-ange",
+      "période":"Mai - Octobre",
+      "heure":"16h - 9h",
+      "lieu":"Rivière",
+      "prix":3000,
+      "taille":"Petite",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Poisson-ballon",
+      "période":"Novembre - Février",
+      "heure":"21h - 4h",
+      "lieu":"Océan",
+      "prix":5000,
+      "taille":"Moyenne",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Poisson-clown",
+      "période":"Avril - Septembre",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":650,
+      "taille":"Minuscule"
+   },
+   {
+      "nom":"Poisson-papillon",
+      "période":"Avril - Septembre",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":1000,
+      "taille":"Petite"
+   },
+   {
+      "nom":"Poisson-porc-épic",
+      "période":"Juillet - Septembre",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":250,
+      "taille":"Moyenne"
+   },
+   {
+      "nom":"Poisson-ruban",
+      "période":"Décembre - Mai",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":9000,
+      "taille":"Énorme",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Poisson-scorpion",
+      "période":"Avril - Novembre",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":500,
+      "taille":"Moyenne"
+   },
+   {
+      "nom":"Raie",
+      "période":"Août - Novembre",
+      "heure":"4h - 21h",
+      "lieu":"Océan",
+      "prix":3000,
+      "taille":"Énorme",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Ranchu",
+      "période":"Toute l'année",
+      "heure":"9h - 16h",
+      "lieu":"Étang",
+      "prix":4500,
+      "taille":"Petite",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Rémora rayé",
+      "période":"Juin - Septembre",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":1500,
+      "taille":"Moyenne (aileron)",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Requin marteau",
+      "période":"Juin - Septembre",
+      "heure":"16h - 9h",
+      "lieu":"Océan",
+      "prix":8000,
+      "taille":"Énorme (aileron)",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Requin scie",
+      "période":"Juin - Septembre",
+      "heure":"16h - 9h",
+      "lieu":"Océan",
+      "prix":12000,
+      "taille":"Énorme (aileron)",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Requin-baleine",
+      "période":"Juin - Septembre",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":13000,
+      "taille":"Énorme (aileron)",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Saumon",
+      "période":"Septembre",
+      "heure":"Toute la journée",
+      "lieu":"Embouchure de rivière",
+      "prix":700,
+      "taille":"Grande"
+   },
+   {
+      "nom":"Saumon masou",
+      "période":"Mars - Juin, Septembre - Novembre",
+      "heure":"16h - 9h",
+      "lieu":"Rivière (falaise)",
+      "prix":1000,
+      "taille":"Petite/moyenne"
+   },
+   {
+      "nom":"Saumon roi",
+      "période":"Septembre",
+      "heure":"Toute la journée",
+      "lieu":"Embouchure de rivière",
+      "prix":1800,
+      "taille":"Énorme",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Scarus",
+      "période":"Mars - Novembre",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":5000,
+      "taille":"Moyenne",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Silure",
+      "période":"Mai - Octobre",
+      "heure":"16h - 9h",
+      "lieu":"Étang",
+      "prix":800,
+      "taille":"Moyenne"
+   },
+   {
+      "nom":"Têtard",
+      "période":"Mars - Juillet",
+      "heure":"Toute la journée",
+      "lieu":"Étang",
+      "prix":100,
+      "taille":"Minuscule",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Tête-de-serpent",
+      "période":"Juin - Août",
+      "heure":"9h - 16h",
+      "lieu":"Étang",
+      "prix":5500,
+      "taille":"Grande",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Thon",
+      "période":"Novembre - Avril",
+      "heure":"Toute la journée",
+      "lieu":"Océan (ponton)",
+      "prix":7000,
+      "taille":"Énorme",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Tilapia",
+      "période":"Juin - Octobre",
+      "heure":"Toute la journée",
+      "lieu":"Rivière",
+      "prix":800,
+      "taille":"Moyenne"
+   },
+   {
+      "nom":"Tortue serpentine",
+      "période":"Avril - Octobre",
+      "heure":"21h - 4h",
+      "lieu":"Rivière",
+      "prix":5000,
+      "taille":"Moyenne",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Tortue trionyx",
+      "période":"Août - Septembre",
+      "heure":"16h - 9h",
+      "lieu":"Rivière",
+      "prix":3750,
+      "taille":"Moyenne",
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Truite dorée",
+      "période":"Mars - Mai, Septembre - Novembre",
+      "heure":"16h - 9h",
+      "lieu":"Rivière (falaise)",
+      "prix":15000,
+      "taille":"Moyenne",
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Vandoise",
+      "période":"Toute l'année",
+      "heure":"16h - 9h",
+      "lieu":"Rivière",
+      "prix":240,
+      "taille":"Moyenne"
+   },
+   {
+      "nom":"Vivaneau",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Océan",
+      "prix":3000,
+      "taille":"Grande",
+      "rareté":"Rare"
+   }
+]
