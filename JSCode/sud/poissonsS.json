@@ -1,642 +1,595 @@
 [
    {
-      "nom":"Anchois",
-      "période":"Toute l'année",
-      "heure":"4h - 21h",
-      "lieu":"Océan",
-      "prix":200,
-      "taille":"Petite"
+      "nom":"Abeille naine",
+      "période":"Septembre - Janvier",
+      "heure":"8h - 17h",
+      "lieu":"Ciel",
+      "prix":200
    },
    {
-      "nom":"Arapaïma",
-      "période":"Décembre - Mars",
-      "heure":"16h - 9h",
-      "lieu":"Rivière",
-      "prix":10000,
-      "taille":"Énorme"
+      "nom":"Acrida cinerea",
+      "période":"Octobre - Mai",
+      "heure":"8h - 19h",
+      "lieu":"Sol",
+      "prix":200
    },
    {
-      "nom":"Arowana",
-      "période":"Décembre - Mars",
-      "heure":"16h - 9h",
-      "lieu":"Rivière",
-      "prix":10000,
-      "taille":"Moyenne"
-   },
-   {
-      "nom":"Ayu",
-      "période":"Janvier - Mars",
-      "heure":"Toute la journée",
-      "lieu":"Rivière",
-      "prix":900,
-      "taille":"Petite/moyenne"
-   },
-   {
-      "nom":"Bar",
-      "période":"Toute l'année",
-      "heure":"Toute la journée",
-      "lieu":"Rivière",
-      "prix":400,
-      "taille":"Très grande"
-   },
-   {
-      "nom":"Bar commun",
-      "période":"Toute l'année",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":400,
-      "taille":"Très grande"
-   },
-   {
-      "nom":"Bichir",
-      "période":"Décembre - Mars",
-      "heure":"21h - 4h",
-      "lieu":"Rivière",
-      "prix":4000,
-      "taille":"Grande"
-   },
-   {
-      "nom":"Bouvière",
-      "période":"Mai - Septembre",
-      "heure":"Toute la journée",
-      "lieu":"Rivière",
-      "prix":900,
-      "taille":"Minuscule"
-   },
-   {
-      "nom":"Brochet",
-      "période":"Mars - Juin",
-      "heure":"Toute la journée",
-      "lieu":"Rivière",
-      "prix":1800,
-      "taille":"Moyenne/grande"
-   },
-   {
-      "nom":"Calmar",
-      "période":"Juin - Février",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":500,
-      "taille":"Moyenne"
-   },
-   {
-      "nom":"Carangue grosse tête",
-      "période":"Novembre - Avril",
-      "heure":"Toute la journée",
-      "lieu":"Océan (ponton)",
-      "prix":4500,
-      "taille":"Énorme"
-   },
-   {
-      "nom":"Carassin",
-      "période":"Toute l'année",
-      "heure":"Toute la journée",
-      "lieu":"Rivière",
-      "prix":160,
-      "taille":"Petite"
-   },
-   {
-      "nom":"Cardeau",
-      "période":"Toute l'année",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":800,
-      "taille":"Très grande"
-   },
-   {
-      "nom":"Carpe",
-      "période":"Toute l'année",
-      "heure":"Toute la journée",
-      "lieu":"Étang",
-      "prix":300,
-      "taille":"Moyenne"
-   },
-   {
-      "nom":"Carpe koï",
-      "période":"Toute l'année",
-      "heure":"16h - 9h",
-      "lieu":"Étang",
-      "prix":4000,
-      "taille":"Moyenne"
-   },
-   {
-      "nom":"Chevaine",
-      "période":"Toute l'année",
-      "heure":"9h - 16h",
-      "lieu":"Rivière",
-      "prix":200,
-      "taille":"Minuscule"
-   },
-   {
-      "nom":"Chinchard",
-      "période":"Toute l'année",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":150,
-      "taille":"Petite"
-   },
-   {
-      "nom":"Clione",
-      "période":"Juin - Septembre",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":1000,
-      "taille":"Minuscule"
-   },
-   {
-      "nom":"Combattant",
-      "période":"Novembre - Avril",
-      "heure":"9h - 16h",
-      "lieu":"Rivière",
-      "prix":2500,
-      "taille":"Petite"
-   },
-   {
-      "nom":"Coryphène",
-      "période":"Novembre - Avril",
-      "heure":"Toute la journée",
-      "lieu":"Océan (ponton)",
-      "prix":6000,
-      "taille":"Très grande"
-   },
-   {
-      "nom":"Crabe chinois",
-      "période":"Mars - Mai",
-      "heure":"16h - 9h",
-      "lieu":"Rivière",
-      "prix":2000,
-      "taille":"Petite"
-   },
-   {
-      "nom":"Crapet",
-      "période":"Toute l'année",
-      "heure":"9h - 16h",
-      "lieu":"Rivière",
-      "prix":180,
-      "taille":"Petite"
-   },
-   {
-      "nom":"Cyprin doré",
-      "période":"Toute l'année",
-      "heure":"9h - 16h",
-      "lieu":"Étang",
-      "prix":1300,
-      "taille":"Minuscule"
-   },
-   {
-      "nom":"Cœlacanthe",
-      "période":"Toute l'année",
-      "heure":"Toute la journée",
-      "lieu":"Océan (pluie/neige/appât)",
-      "prix":15000,
-      "taille":"Énorme"
-   },
-   {
-      "nom":"Dai yu",
-      "période":"Juin - Septembre",
-      "heure":"16h - 9h",
-      "lieu":"Rivière (falaise)",
-      "prix":15000,
-      "taille":"Énorme"
-   },
-   {
-      "nom":"Dorade",
-      "période":"Décembre - Mars",
-      "heure":"4h - 21h",
-      "lieu":"Rivière",
-      "prix":15000,
-      "taille":"Très grande"
-   },
-   {
-      "nom":"Ecrevisse",
+      "nom":"Agrias",
       "période":"Octobre - Mars",
-      "heure":"Toute la journée",
-      "lieu":"Étang",
-      "prix":200,
-      "taille":"Petite"
+      "heure":"8h - 17h",
+      "lieu":"Ciel",
+      "prix":3000,
+      "rareté":"Rare"
    },
    {
-      "nom":"Eperlan",
+      "nom":"Anax napolitain",
+      "période":"Octobre - Avril",
+      "heure":"8h - 17h",
+      "lieu":"Ciel",
+      "prix":230
+   },
+   {
+      "nom":"Araignée",
+      "période":"Toute l'année",
+      "heure":"19h - 8h",
+      "lieu":"Arbres",
+      "prix":600
+   },
+   {
+      "nom":"Attacus Atlas",
+      "période":"Octobre - Mars",
+      "heure":"19h - 4h",
+      "lieu":"Arbres",
+      "prix":3000,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Bernard-l'ermite",
+      "période":"Toute l'année",
+      "heure":"19h - 8h",
+      "lieu":"Plage",
+      "prix":1000,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Bousier",
       "période":"Juin - Août",
       "heure":"Toute la journée",
-      "lieu":"Rivière",
-      "prix":320,
-      "taille":"Petite"
+      "lieu":"Boules de neige",
+      "prix":2500,
+      "rareté":"Rare"
    },
    {
-      "nom":"Esturgeon",
-      "période":"Mars - Septembre",
-      "heure":"Toute la journée",
-      "lieu":"Embouchure de rivière",
-      "prix":10000,
-      "taille":"Énorme"
-   },
-   {
-      "nom":"Fondule barré",
+      "nom":"Bupreste",
       "période":"Octobre - Février",
       "heure":"Toute la journée",
-      "lieu":"Étang",
-      "prix":300,
-      "taille":"Minuscule"
+      "lieu":"Souches d'arbres",
+      "prix":2400
    },
    {
-      "nom":"Gar",
-      "période":"Décembre - Mars",
-      "heure":"16h - 9h",
-      "lieu":"Étang",
-      "prix":6000,
-      "taille":"Énorme"
-   },
-   {
-      "nom":"Gobie d'eau douce",
-      "période":"Toute l'année",
-      "heure":"16h - 9h",
-      "lieu":"Rivière",
-      "prix":400,
-      "taille":"Petite"
-   },
-   {
-      "nom":"Grand requin blanc",
-      "période":"Décembre - Mars",
-      "heure":"16h - 9h",
-      "lieu":"Océan",
-      "prix":15000,
-      "taille":"Énorme (aileron)"
-   },
-   {
-      "nom":"Grenouille",
-      "période":"Novembre - Février",
-      "heure":"Toute la journée",
-      "lieu":"Étang",
-      "prix":120,
-      "taille":"Petite"
-   },
-   {
-      "nom":"Guppy",
-      "période":"Octobre - Mai",
-      "heure":"9h - 16h",
-      "lieu":"Rivière",
-      "prix":1300,
-      "taille":"Minuscule"
-   },
-   {
-      "nom":"Hippocampe",
-      "période":"Octobre - Mai",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":1100,
-      "taille":"Minuscule"
-   },
-   {
-      "nom":"Limande",
-      "période":"Avril - Octobre",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":300,
-      "taille":"Moyenne"
-   },
-   {
-      "nom":"Loche d'étang",
-      "période":"Septembre - Novembre",
-      "heure":"Toute la journée",
-      "lieu":"Rivière",
-      "prix":400,
-      "taille":"Petite/moyenne"
-   },
-   {
-      "nom":"Lune de mer",
-      "période":"Janvier - Mars",
-      "heure":"4h - 21h",
-      "lieu":"Océan",
-      "prix":4000,
-      "taille":"Énorme (aileron)"
-   },
-   {
-      "nom":"Macropinna",
-      "période":"Toute l'année",
-      "heure":"21h - 4h",
-      "lieu":"Océan",
-      "prix":15000,
-      "taille":"Petite"
-   },
-   {
-      "nom":"Marlin bleu",
-      "période":"Janvier - Mars, Mai - Octobre",
-      "heure":"Toute la journée",
-      "lieu":"Océan (ponton)",
-      "prix":10000,
-      "taille":"Énorme"
-   },
-   {
-      "nom":"Murène",
-      "période":"Février - Avril",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":2000,
-      "taille":"Très grande"
-   },
-   {
-      "nom":"Murène ruban bleue",
-      "période":"Décembre - Avril",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":600,
-      "taille":"Fine"
-   },
-   {
-      "nom":"Napoléon",
-      "période":"Janvier - Février",
-      "heure":"4h - 21h",
-      "lieu":"Océan",
-      "prix":10000,
-      "taille":"Énorme"
-   },
-   {
-      "nom":"Néon bleu",
-      "période":"Octobre - Mai",
-      "heure":"9h - 16h",
-      "lieu":"Rivière",
-      "prix":500,
-      "taille":"Minuscule"
-   },
-   {
-      "nom":"Omble",
-      "période":"Septembre - Décembre, Mars - Mai",
-      "heure":"16h - 9h",
-      "lieu":"Rivière (falaise)",
-      "prix":3800,
-      "taille":"Moyenne/grande"
-   },
-   {
-      "nom":"Perche jaune",
-      "période":"Avril - Septembre",
-      "heure":"Toute la journée",
-      "lieu":"Rivière",
-      "prix":300,
-      "taille":"Petite/moyenne"
-   },
-   {
-      "nom":"Piranha",
-      "période":"Décembre - Mars",
-      "heure":"9h - 16h, 21h - 4h",
-      "lieu":"Rivière",
-      "prix":2500,
-      "taille":"Petite"
-   },
-   {
-      "nom":"Poisson arc-en-ciel",
-      "période":"Novembre - Avril",
-      "heure":"9h - 16h",
-      "lieu":"Rivière",
-      "prix":800,
-      "taille":"Minuscule"
-   },
-   {
-      "nom":"Poisson chirurgien",
-      "période":"Octobre - Mars",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":1000,
-      "taille":"Petite"
-   },
-   {
-      "nom":"Poisson docteur",
-      "période":"Novembre - Mars",
-      "heure":"9h - 16h",
-      "lieu":"Rivière",
-      "prix":1500,
-      "taille":"Petite"
-   },
-   {
-      "nom":"Poisson lanterne",
-      "période":"Mai - Septembre",
-      "heure":"16h - 9h",
-      "lieu":"Océan",
-      "prix":2500,
-      "taille":"Grande"
-   },
-   {
-      "nom":"Poisson rouge",
+      "nom":"Capricorne des agrumes",
       "période":"Toute l'année",
       "heure":"Toute la journée",
-      "lieu":"Étang",
-      "prix":1300,
-      "taille":"Minuscule"
+      "lieu":"Souches d'arbres",
+      "prix":350
    },
    {
-      "nom":"Poisson-ange",
-      "période":"Novembre - Avril",
-      "heure":"16h - 9h",
-      "lieu":"Rivière",
-      "prix":3000,
-      "taille":"Petite"
+      "nom":"Catacanthus",
+      "période":"Septembre - Avril",
+      "heure":"19h - 8h",
+      "lieu":"Fleurs",
+      "prix":1000
    },
    {
-      "nom":"Poisson-ballon",
-      "période":"Mai - Août",
-      "heure":"21h - 4h",
-      "lieu":"Océan",
-      "prix":5000,
-      "taille":"Moyenne"
-   },
-   {
-      "nom":"Poisson-clown",
-      "période":"Octobre - Mars",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":650,
-      "taille":"Minuscule"
-   },
-   {
-      "nom":"Poisson-papillon",
-      "période":"Octobre - Mars",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":1000,
-      "taille":"Petite"
-   },
-   {
-      "nom":"Poisson-porc-épic",
-      "période":"Janvier - Mars",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":250,
-      "taille":"Moyenne"
-   },
-   {
-      "nom":"Poisson-ruban",
-      "période":"Juin - Novembre",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":9000,
-      "taille":"Énorme"
-   },
-   {
-      "nom":"Poisson-scorpion",
-      "période":"Octobre - Mai",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":500,
-      "taille":"Moyenne"
-   },
-   {
-      "nom":"Raie",
-      "période":"Février - Mai",
-      "heure":"4h - 21h",
-      "lieu":"Océan",
-      "prix":3000,
-      "taille":"Énorme"
-   },
-   {
-      "nom":"Ranchu",
-      "période":"Toute l'année",
-      "heure":"9h - 16h",
-      "lieu":"Étang",
-      "prix":4500,
-      "taille":"Petite"
-   },
-   {
-      "nom":"Rémora rayé",
-      "période":"Décembre - Mars",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":1500,
-      "taille":"Moyenne (aileron)"
-   },
-   {
-      "nom":"Requin marteau",
-      "période":"Décembre - Mars",
-      "heure":"16h - 9h",
-      "lieu":"Océan",
-      "prix":8000,
-      "taille":"Énorme (aileron)"
-   },
-   {
-      "nom":"Requin scie",
-      "période":"Décembre - Mars",
-      "heure":"16h - 9h",
-      "lieu":"Océan",
-      "prix":12000,
-      "taille":"Énorme (aileron)"
-   },
-   {
-      "nom":"Requin-baleine",
-      "période":"Décembre - Mars",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":13000,
-      "taille":"Énorme (aileron)"
-   },
-   {
-      "nom":"Saumon",
-      "période":"Mars",
-      "heure":"Toute la journée",
-      "lieu":"Embouchure de rivière",
-      "prix":700,
-      "taille":"Grande"
-   },
-   {
-      "nom":"Saumon masou",
-      "période":"Septembre - Décembre, Mars - Mai",
-      "heure":"16h - 9h",
-      "lieu":"Rivière (falaise)",
-      "prix":1000,
-      "taille":"Petite/moyenne"
-   },
-   {
-      "nom":"Saumon roi",
-      "période":"Mars",
-      "heure":"Toute la journée",
-      "lieu":"Embouchure de rivière",
-      "prix":1800,
-      "taille":"Énorme"
-   },
-   {
-      "nom":"Scarus",
-      "période":"Septembre - Mai",
-      "heure":"Toute la journée",
-      "lieu":"Océan",
-      "prix":5000,
-      "taille":"Moyenne"
-   },
-   {
-      "nom":"Silure",
-      "période":"Novembre - Avril",
-      "heure":"16h - 9h",
-      "lieu":"Étang",
-      "prix":800,
-      "taille":"Moyenne"
-   },
-   {
-      "nom":"Têtard",
-      "période":"Septembre - Janvier",
-      "heure":"Toute la journée",
-      "lieu":"Étang",
-      "prix":100,
-      "taille":"Minuscule"
-   },
-   {
-      "nom":"Tête-de-serpent",
+      "nom":"Cétoine dorée",
       "période":"Décembre - Février",
-      "heure":"9h - 16h",
-      "lieu":"Étang",
-      "prix":5500,
-      "taille":"Grande"
-   },
-   {
-      "nom":"Thon",
-      "période":"Mai - Octobre",
       "heure":"Toute la journée",
-      "lieu":"Océan (ponton)",
-      "prix":7000,
-      "taille":"Énorme"
+      "lieu":"Arbres",
+      "prix":200
    },
    {
-      "nom":"Tilapia",
-      "période":"Décembre - Avril",
+      "nom":"Chrysiridia rhipheus",
+      "période":"Octobre - Mars",
+      "heure":"8h - 16h",
+      "lieu":"Ciel",
+      "prix":2500,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Cicindèle",
+      "période":" Août - Avril",
       "heure":"Toute la journée",
-      "lieu":"Rivière",
-      "prix":800,
-      "taille":"Moyenne"
+      "lieu":"Sol",
+      "prix":1500,
+      "rareté":"Rare"
    },
    {
-      "nom":"Tortue serpentine",
-      "période":"Octobre - Avril",
-      "heure":"21h - 4h",
-      "lieu":"Rivière",
-      "prix":5000,
-      "taille":"Moyenne"
+      "nom":"Cigale cercope",
+      "période":"Janvier - Février",
+      "heure":"8h - 17h",
+      "lieu":"Arbres",
+      "prix":250
    },
    {
-      "nom":"Tortue trionyx",
+      "nom":"Cigale cicadelle",
       "période":"Février - Mars",
-      "heure":"16h - 9h",
-      "lieu":"Rivière",
-      "prix":3750,
-      "taille":"Moyenne"
+      "heure":"8h - 17h",
+      "lieu":"Arbres",
+      "prix":400
    },
    {
-      "nom":"Truite dorée",
-      "période":"Septembre - Novembre, Mars - Mai",
-      "heure":"16h - 9h",
-      "lieu":"Rivière (falaise)",
-      "prix":15000,
-      "taille":"Moyenne"
+      "nom":"Cigale géante",
+      "période":"Janvier - Février",
+      "heure":"8h - 17h",
+      "lieu":"Arbres",
+      "prix":500
    },
    {
-      "nom":"Vandoise",
-      "période":"Toute l'année",
-      "heure":"16h - 9h",
-      "lieu":"Rivière",
-      "prix":240,
-      "taille":"Moyenne"
+      "nom":"Cigale higurashi",
+      "période":"Janvier - Février",
+      "heure":"4h - 8h, 16h - 19h",
+      "lieu":"Arbres",
+      "prix":-1
    },
    {
-      "nom":"Vivaneau",
+      "nom":"Cigale hyalessa",
+      "période":"Janvier - Février",
+      "heure":"8h - 17h",
+      "lieu":"Arbres",
+      "prix":-1
+   },
+   {
+      "nom":"Citrin",
+      "période":"Septembre - Décembre, Mars - Avril",
+      "heure":"4h - 19h",
+      "lieu":"Ciel",
+      "prix":160
+   },
+   {
+      "nom":"Cloporte",
+      "période":"Mars - Décembre",
+      "heure":"23h - 16h",
+      "lieu":"Rochers",
+      "prix":250
+   },
+   {
+      "nom":"Coccinelle",
+      "période":"Septembre - Décembre, Avril",
+      "heure":"8h - 17h",
+      "lieu":"Fleurs",
+      "prix":200
+   },
+   {
+      "nom":"Cordulégastre",
+      "période":"Novembre - Avril",
+      "heure":"8h - 17h",
+      "lieu":"Ciel",
+      "prix":4500
+   },
+   {
+      "nom":"Criquet",
+      "période":"Février - Mai",
+      "heure":"8h - 19h",
+      "lieu":"Sol",
+      "prix":400
+   },
+   {
+      "nom":"Criquet pèlerin",
+      "période":"Février - Mai",
+      "heure":"8h - 19h",
+      "lieu":"Sol",
+      "prix":600
+   },
+   {
+      "nom":"Demoiselle",
+      "période":"Mai - Août",
+      "heure":"Toute la journée",
+      "lieu":"Ciel",
+      "prix":500
+   },
+   {
+      "nom":"Dytique",
+      "période":"Novembre - Mars",
+      "heure":"8h - 19h",
+      "lieu":"Surface de l'eau",
+      "prix":800
+   },
+   {
+      "nom":"Escargot",
       "période":"Toute l'année",
       "heure":"Toute la journée",
-      "lieu":"Océan",
+      "lieu":"Rochers (pluie)",
+      "prix":250
+   },
+   {
+      "nom":"Fourmi",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Navets pourris",
+      "prix":80
+   },
+   {
+      "nom":"Geotrupidae",
+      "période":"Janvier - Mars",
+      "heure":"Toute la journée",
+      "lieu":"Sol",
+      "prix":300
+   },
+   {
+      "nom":"Grand papillon pourpre",
+      "période":"Novembre - Février",
+      "heure":"4h - 19h",
+      "lieu":"Ciel",
+      "prix":3000
+   },
+   {
+      "nom":"Grand Planeur",
+      "période":"Toute l'année",
+      "heure":"8h - 19h",
+      "lieu":"Ciel",
+      "prix":1000,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Graphium sarpedon",
+      "période":"Octobre - Février",
+      "heure":"4h - 19h",
+      "lieu":"Ciel",
+      "prix":300
+   },
+   {
+      "nom":"Grillon des prés",
+      "période":"Mars - Mai",
+      "heure":"17h - 8h",
+      "lieu":"Sol",
+      "prix":130
+   },
+   {
+      "nom":"Grillon du Midi",
+      "période":"Mars - Avril",
+      "heure":"17h - 8h",
+      "lieu":"Sol",
+      "prix":430
+   },
+   {
+      "nom":"Guêpe",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Arbres",
+      "prix":2500,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Ligie",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Plage (rochers)",
+      "prix":200
+   },
+   {
+      "nom":"Lucane cerf-volant",
+      "période":"Janvier - Février",
+      "heure":"23h - 8h",
+      "lieu":"Arbres",
+      "prix":-1,
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Lucane copris irisé",
+      "période":"Décembre - Mars",
+      "heure":"19h - 8h",
+      "lieu":"Arbres",
+      "prix":6000,
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Lucane cyclommatus",
+      "période":"Janvier - Février",
+      "heure":"17h - 8h",
+      "lieu":"Palmiers",
+      "prix":-1,
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Lucane girafe",
+      "période":"Janvier - Février",
+      "heure":"17h - 8h",
+      "lieu":"Arbres",
+      "prix":-1,
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Lucane inclinatus",
+      "période":"Janvier - Février",
+      "heure":"Toute la journée",
+      "lieu":"Arbres",
+      "prix":-1,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Lucane lamprima",
+      "période":"Janvier - Février",
+      "heure":"17h - 8h",
+      "lieu":"Palmiers",
+      "prix":-1,
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Lucane miyama",
+      "période":"Janvier - Février",
+      "heure":"Toute la journée",
+      "lieu":"Arbres",
+      "prix":-1,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Luciole",
+      "période":"Décembre",
+      "heure":"19h - 4h",
+      "lieu":"Près de l'eau",
+      "prix":300
+   },
+   {
+      "nom":"Machaon",
+      "période":"Septembre - Mars",
+      "heure":"4h - 19h",
+      "lieu":"Ciel",
+      "prix":240
+   },
+   {
+      "nom":"Mante orchidée",
+      "période":"Septembre - Mai",
+      "heure":"8h - 17h",
+      "lieu":"Fleurs blanches",
+      "prix":2400,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Mante religieuse",
+      "période":"Septembre - Mai",
+      "heure":"8h - 17h",
+      "lieu":"Fleurs",
+      "prix":430
+   },
+   {
+      "nom":"Mille-pattes",
+      "période":"Mars - Décembre",
+      "heure":"16h - 23h",
+      "lieu":"Rochers",
+      "prix":300
+   },
+   {
+      "nom":"Monarque",
+      "période":"Mars - Mai",
+      "heure":"4h - 17h",
+      "lieu":"Ciel",
+      "prix":140
+   },
+   {
+      "nom":"Mormolyce",
+      "période":"Novembre - Décembre, Mars - Mai",
+      "heure":"Toute la journée",
+      "lieu":"Souches d'arbres",
+      "prix":450
+   },
+   {
+      "nom":"Morpho bleu",
+      "période":"Décembre - Mars, Juin - Septembre",
+      "heure":"17h - 8h",
+      "lieu":"Ciel",
+      "prix":4000,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Mouche",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Déchets et navets pourris",
+      "prix":60
+   },
+   {
+      "nom":"Moustique",
+      "période":"Décembre - Mars",
+      "heure":"17h - 4h",
+      "lieu":"Ciel",
+      "prix":130
+   },
+   {
+      "nom":"Mue de cigale",
+      "période":"Janvier - Février",
+      "heure":"Toute la journée",
+      "lieu":"Arbres",
+      "prix":-1,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Papilio bianor",
+      "période":"Septembre - Décembre",
+      "heure":"4h - 19h",
+      "lieu":"Ciel (fleurs hybrides)",
+      "prix":2500,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Papillon de nuit",
+      "période":"Toute l'année",
+      "heure":"19h - 4h",
+      "lieu":"Lumières",
+      "prix":130
+   },
+   {
+      "nom":"Patineur",
+      "période":"Novembre - Mars",
+      "heure":"8h - 19h",
+      "lieu":"Surface de l'eau",
+      "prix":130
+   },
+   {
+      "nom":"Phasme",
+      "période":"Janvier - Mai",
+      "heure":"4h - 8h, 17h - 19h",
+      "lieu":"Arbres",
+      "prix":-1
+   },
+   {
+      "nom":"Phyllie",
+      "période":"Janvier - Mars",
+      "heure":"Toute la journée",
+      "lieu":"Sol",
+      "prix":600
+   },
+   {
+      "nom":"Piéride de la rave",
+      "période":"Mars - Décembre",
+      "heure":"4h - 19h",
+      "lieu":"Ciel",
+      "prix":160
+   },
+   {
+      "nom":"Psyché",
+      "période":"Toute l'année",
+      "heure":"Toute la journée",
+      "lieu":"Arbres",
+      "prix":600,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Puce",
+      "période":"Octobre - Mai",
+      "heure":"Toute la journée",
+      "lieu":"Villageois",
+      "prix":70
+   },
+   {
+      "nom":"Punaise",
+      "période":"Septembre - Avril",
+      "heure":"Toute la journée",
+      "lieu":"Fleurs",
+      "prix":120
+   },
+   {
+      "nom":"Punaise d'eau géante",
+      "période":"Octobre - Mars",
+      "heure":"19h - 8h",
+      "lieu":"Surface de l'eau",
+      "prix":2000,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Rosalia batesi",
+      "période":"Novembre - Mars",
+      "heure":"Toute la journée",
+      "lieu":"Souches d'arbres",
       "prix":3000,
-      "taille":"Grande"
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Sauterelle",
+      "période":"Janvier - Mars",
+      "heure":"8h - 17h",
+      "lieu":"Sol",
+      "prix":160
+   },
+   {
+      "nom":"Scarabée",
+      "période":"Janvier - Février",
+      "heure":"23h - 8h",
+      "lieu":"Arbres",
+      "prix":-1,
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Scarabée Atlas",
+      "période":"Janvier - Février",
+      "heure":"17h - 8h",
+      "lieu":"Palmiers",
+      "prix":-1,
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Scarabée bleu",
+      "période":"Janvier - Février",
+      "heure":"Toute la journée",
+      "lieu":"Arbres",
+      "prix":-1,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Scarabée éléphant",
+      "période":"Janvier - Février",
+      "heure":"17h - 8h",
+      "lieu":"Palmiers",
+      "prix":-1,
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Scarabée Goliath",
+      "période":"Décembre - Mars",
+      "heure":"17h - 8h",
+      "lieu":"Palmiers",
+      "prix":8000,
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Scarabée Hercule",
+      "période":"Janvier - Février",
+      "heure":"17h - 8h",
+      "lieu":"Palmiers",
+      "prix":-1,
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Scarabée kabuto",
+      "période":"Janvier - Février",
+      "heure":"17h - 8h",
+      "lieu":"Arbres",
+      "prix":1350,
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Scorpion",
+      "période":"Novembre - Avril",
+      "heure":"19h - 4h",
+      "lieu":"Sol",
+      "prix":8000,
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Sympetrum",
+      "période":"Mars - Avril",
+      "heure":"8h - 19h",
+      "lieu":"Ciel",
+      "prix":180
+   },
+   {
+      "nom":"Tarentule",
+      "période":"Mai - Octobre",
+      "heure":"19h - 4h",
+      "lieu":"Sol",
+      "prix":8000,
+      "rareté":"Très rare"
+   },
+   {
+      "nom":"Taupe-grillon",
+      "période":"Mai - Novembre",
+      "heure":"Toute la journée",
+      "lieu":"Sous la terre",
+      "prix":500
+   },
+   {
+      "nom":"Troides alexandrae",
+      "période":"Novembre - Mars",
+      "heure":"8h - 16h",
+      "lieu":"Ciel",
+      "prix":4000,
+      "rareté":"Rare"
+   },
+   {
+      "nom":"Troides Brookiana",
+      "période":"Octobre - Mars, Juin - Août",
+      "heure":"8h - 17h",
+      "lieu":"Ciel",
+      "prix":2500,
+      "rareté":"Rare"
    }
 ]
