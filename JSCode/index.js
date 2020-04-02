@@ -124,7 +124,7 @@ function listeInsectesNow(liste, start, end) {
   for (i = start; i < end; i++) {
     if (liste[i].période === "Toute l'année" || isActualM(liste[i].période)) {
       if (liste[i].heure === "Toute la journée" || isActualH(liste[i].heure)) {
-        animaux += afficheInsecte(liste[i]);
+        animaux += afficheAnimal(liste[i]);
       }
     }
   }
@@ -136,7 +136,7 @@ function listePoissonsNow(liste, start, end) {
   for (i = start; i < end; i++) {
     if (liste[i].période === "Toute l'année" || isActualM(liste[i].période)) {
       if (liste[i].heure === "Toute la journée" || isActualH(liste[i].heure)) {
-        animaux += affichePoisson(liste[i]);
+        animaux += afficheAnimal(liste[i]);
       }
     }
   }
@@ -203,35 +203,29 @@ function findAnimal(nomAnimal, insecte, poisson) {
   for (i = 0; !found && i < insecte.length; i++) {
     if (!found && (insecte[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) === nomAnimal) {
       found = true;
-      return afficheInsecte(insecte[i]);
+      return afficheAnimal(insecte[i]);
     }
     if (!found && poisson[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") === nomAnimal) {
       found = true;
-      return affichePoisson(poisson[i]);
+      return afficheAnimal(poisson[i]);
     }
   }
   return null;
 }
 
-function afficheInsecte(animalJSON) {
+function afficheAnimal(animalJSON) {
   var animal = "";
   animal += "Nom: " + animalJSON.nom + "\n";
   animal += "Période: " + animalJSON.période + "\n";
   animal += "Heure: " + animalJSON.heure + "\n";
   animal += "Lieu: " + animalJSON.lieu + "\n";
   animal += "Prix: " + animalJSON.prix + " clochettes \n";
-  animal += "\n";
-  return animal;
-}
-
-function affichePoisson(animalJSON) {
-  var animal = "";
-  animal += "Nom: " + animalJSON.nom + "\n";
-  animal += "Période: " + animalJSON.période + "\n";
-  animal += "Heure: " + animalJSON.heure + "\n";
-  animal += "Lieu: " + animalJSON.lieu + "\n";
-  animal += "Prix: " + animalJSON.prix + " clochettes \n";
-  animal += "Taille: " + animalJSON.taille + "\n";
+  if (animalJSON.taille) {
+        animal += "Taille: " + animalJSON.taille + "\n";
+  }
+  if (animalJSON.rareté) {
+    animal += "Rareté: " + animalJSON.rareté + "\n";
+  }
   animal += "\n";
   return animal;
 }
@@ -264,6 +258,7 @@ function bulletinInsulaire() {
     .then(channel => channel.send(texteBulletinInsulaire()))
     .catch(console.error);
 }
+
 
 function texteBulletinInsulaire() {
   var txt = "";
