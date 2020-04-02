@@ -1,6 +1,5 @@
 //Link to authorize : https://discordapp.com/api/oauth2/authorize?client_id=693829617420599338&permissions=8&scope=bot
 require('dotenv').config({path:'../.env'});
-const fs = require('fs')
 const token = process.env.DISCORD_TOKEN;
 const Discord = require('discord.js');
 const cron = require('node-cron');
@@ -18,7 +17,8 @@ var listeCommandes = ["!insectes nord|sud : cette commande te donnes les insecte
 "!poissons nord|sud : cette commande te donnes les poissons actuellement disponibles dans l'hémisphère nord|sud ainsi que leur détails (prix, taille, localisation...)",
 "!aide : cette commande t'affiches les différentes commandes disponibles",
 "!details : cette commande t'affiches les détails d'un poisson ou d'un insecte en particulier (prix, taille, localisation...). Exemple : !details poisson-scorpion. Optionnel : sud après l'animal pour les détails sur l'hémisphère sud",
-"!navets : cette commande t'affiches le prix le plus haut du cours du navet indiqué dans le channel #navets, pensez à compléter ce channel avec vos prix pour connaître le meilleur !"];
+"!navets : cette commande t'affiches le prix le plus haut du cours du navet indiqué dans le channel #navets, pensez à compléter ce channel avec vos prix pour connaître le meilleur !",
+"!image : cette commande t'affiches l'image de l'animal. Exemple : !image Citrin."];
 const nomMois = ["Janvier", "Février" ,"Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
 const nomJours = ["Lundi", "Mardi" ,"Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
 var infoMax = "";
@@ -498,8 +498,9 @@ function levDist(s, t) {
     return d[n][m];
 }
 
+
 function afficheImage(msg) {
-  nomAnimal = msg.content.split(' ')[1];
+  nomAnimal = msg.content.slice(7 , msg.content.length);
   infoAnimal = findAnimal(nomAnimal, insectesN, poissonsS);
   if (infoAnimal != null) {
     if(fs.existsSync("./insectes/"+nomAnimal+".png")) {
