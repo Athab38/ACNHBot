@@ -501,6 +501,7 @@ function levDist(s, t) {
 
 function afficheImage(msg) {
   nomAnimal = msg.content.slice(7 , msg.content.length);
+  nomAnimal = nomAnimal.toLowerCase();
   nomAnimal = nomAnimal.charAt(0).toUpperCase() + nomAnimal.slice(1);
   infoAnimal = findAnimal(nomAnimal, insectesN, poissonsN);
   if (infoAnimal != null) {
