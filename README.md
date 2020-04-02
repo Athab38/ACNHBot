@@ -3,7 +3,7 @@ An Animal Crossing New Horizons bot for Discord
 
 ## Installation
 You need to add the bot to your server following this link :
-Link to authorize : https://discordapp.com/api/oauth2/authorize?client_id=693829617420599338&permissions=8&scope=bot
+https://discordapp.com/api/oauth2/authorize?client_id=693829617420599338&permissions=8&scope=bot
 
 ## Usage 
 Type in your Discord chat "!aide" to display all the available functions. 
