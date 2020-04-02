@@ -1,6 +1,5 @@
 //Link to authorize : https://discordapp.com/api/oauth2/authorize?client_id=693829617420599338&permissions=8&scope=bot
 require('dotenv').config({path:'../.env'});
-const fs = require('fs')
 const token = process.env.DISCORD_TOKEN;
 const Discord = require('discord.js');
 const cron = require('node-cron');
@@ -9,12 +8,17 @@ var insectesN = require('./nord/insectesN.json');
 var poissonsN = require('./nord/poissonsN.json');
 var insectesS = require('./sud/insectesS.json');
 var poissonsS = require('./sud/poissonsS.json');
+
+const http = require('https');
+const fs = require('fs');
+
 //TODO: traiter, eventuellement, plus de filtres (sans ordre)
 var listeCommandes = ["!insectes nord|sud : cette commande te donnes les insectes actuellement disponibles dans l'hémisphère nord|sud ainsi que leur détails (prix, taille, localisation...)",
 "!poissons nord|sud : cette commande te donnes les poissons actuellement disponibles dans l'hémisphère nord|sud ainsi que leur détails (prix, taille, localisation...)",
 "!aide : cette commande t'affiches les différentes commandes disponibles",
 "!details : cette commande t'affiches les détails d'un poisson ou d'un insecte en particulier (prix, taille, localisation...). Exemple : !details poisson-scorpion. Optionnel : sud après l'animal pour les détails sur l'hémisphère sud",
-"!navets : cette commande t'affiches le prix le plus haut du cours du navet indiqué dans le channel #navets, pensez à compléter ce channel avec vos prix pour connaître le meilleur !"];
+"!navets : cette commande t'affiches le prix le plus haut du cours du navet indiqué dans le channel #navets, pensez à compléter ce channel avec vos prix pour connaître le meilleur !",
+"!image : cette commande t'affiches l'image de l'animal. Exemple : !image Citrin."];
 const nomMois = ["Janvier", "Février" ,"Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
 const nomJours = ["Lundi", "Mardi" ,"Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
 var infoMax = "";
@@ -97,6 +101,8 @@ client.on('message', msg => {
       infoNavets();
       setTimeout(function () { trucnul(msg) }, 400);
 
+  } else if(msg.content.split(' ')[0] === '!image') {
+    afficheImage(msg);
   } else if (msg.content === '!aide') {
       msg.reply('voici la liste des commandes disponibles : \n' + commandesToString());
     }
@@ -243,12 +249,12 @@ function commandesToString() {
 }
 
 //se lance à 6h du matin tous les jours
-let jobBulletin = cron.schedule('00 20 09 * * *', function() {
+let jobBulletin = cron.schedule('10 31 09 * * *', function() {
   bulletinInsulaire();
 });
 
 function bulletinInsulaire() {
-  client.login('NjkzODI5NjE3NDIwNTk5MzM4.XoDb0A.giPfY0oShei-ws4yJS4ZuKqTito');
+  client.login(token);
   // channel bulletin-insulaire
   // nettoyer l'ancien bulletin bulletinInsulaire
   client.channels.fetch('694146170527940618')
@@ -492,51 +498,104 @@ function levDist(s, t) {
     return d[n][m];
 }
 
-/*
-function ajoutRareteSud()
-{
-    // parcourir la liste nord et chercher l'élément dans le sud
-    for(i in insectesN)
-    {
-        if(insectesN[i].hasOwnProperty('rareté'))
-        {
-            console.log("création de l'attribut");
-            insectesS[i].rareté = insectesN[i].rareté;
-        }
+
+function afficheImage(msg) {
+  nomAnimal = msg.content.slice(7 , msg.content.length);
+  infoAnimal = findAnimal(nomAnimal, insectesN, poissonsS);
+  if (infoAnimal != null) {
+    if(fs.existsSync("./insectes/"+nomAnimal+".png")) {
+      const attachment = new Discord.MessageAttachment("./insectes/"+nomAnimal+".png");
+      // Send the attachment in the message channel with a content
+      msg.channel.send(`${msg.author}, voici ton animal :`, attachment);
+    } else {
+      const attachment = new Discord.MessageAttachment("./poissons/"+nomAnimal+".png");
+      // Send the attachment in the message channel with a content
+      msg.channel.send(`${msg.author}, voici ton animal :`, attachment);
     }
-
-    const insJsonString = JSON.stringify(insectesS);
-    fs.writeFile('./sud/newInsectesS.json', insJsonString, err =>
-    {
-      if (err)
-      {
-        console.log('Error writing file', err)
-      } else
-      {
-        console.log('Successfully wrote file')
-      }
-    });
-
-    for(i in poissonsN)
-    {
-      if(poissonsN[i].hasOwnProperty('rareté'))
-      {
-        console.log("création de l'attribut");
-        poissonsS[i].rareté = poissonsN[i].rareté;
+  } else {
+    nomAnimal = nomAnimal.toUpperCase();
+    nomAnimal = nomAnimal.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    var matchProche = false;
+    for (i = 0; !matchProche && i < insectesN.length; i++) {
+      if (levDist(nomAnimal, insectesN[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) < 3) {
+        matchProche = true;
+        msg.reply("ton animal n'a pas été trouvé, voulais-tu rechercher " + insectesN[i].nom.toLowerCase() + "?");
+      } else if (levDist(nomAnimal, poissonsN[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) < 3) {
+        matchProche = true;
+        msg.reply("ton animal n'a pas été trouvé, voulais-tu rechercher " + poissonsN[i].nom.toLowerCase() + "?");
       }
     }
-
-    const poiJsonString = JSON.stringify(insectesS);
-    fs.writeFile('./sud/newPoissonsS.json', poiJsonString, err =>
-    {
-      if (err)
-      {
-        console.log('Error writing file', err)
-      } else
-      {
-        console.log('Successfully wrote file')
-      }
-    });
+    if (!matchProche) {
+      msg.reply("ton animal n'a pas été trouvé.");
+    }
+  }
 }
-*/
-
+// function pointerImagesAC()
+// {
+//     const glob = "https://www.animalcrossing-online.com/new-horizons-switch/img/";
+//     const insectes = "insectes/";
+//     const poissons = "poissons/";
+//     var nom = "";
+//     var nom_url = "";
+//     const png = ".png";
+//     var path = "";
+//     var inter = 10;
+//     // for(i in insectesN)
+//     // {
+//     //   setTimeout(function(i){
+//     //   try {
+//     //       nom = insectesN[i].nom;
+//     //       nom_url = nom.replace(/\s/g, "%20");
+//     //       path = glob+insectes+nom_url+png;
+//     //   if(fs.existsSync("./insectes/"+nom+png)) {
+//     //       console.log("The file exists.");
+//     //   } else {
+//     //           download(path, nom, png, "./insectes/");
+//     //           console.log("downloaded");
+//     //   }
+//     //   } catch (err) {
+//     //       console.error(err);
+//     //   }
+//     //               }, inter*i, i);
+//     // }
+//
+//     for(i in poissonsN)
+//     {
+//       setTimeout(function(i){
+//       try {
+//           nom = poissonsN[i].nom;
+//           nom_url = nom.replace(/\s/g, "%20");
+//           path = glob+poissons+nom_url+png;
+//       if(fs.existsSync("./poissons/"+nom+png)) {
+//           console.log("The file exists.");
+//       } else {
+//               download(path, nom, png, "./poissons/");
+//               console.log("downloaded");
+//       }
+//       } catch (err) {
+//           console.error(err);
+//       }
+//                   }, inter*i, i);
+//     }
+//
+//
+//     // for(i in poissonsN)
+//     // {
+//     //     nom = poissonsN[i].nom;
+//     //     nom_url = nom.replace(" ", "%20");
+//     //     path = glob+poissons+nom_url+png;
+//     //     const file = fs.createWriteStream(nom+png);
+//     //     const request = http.get(nom+png, function(response) {
+//     //       response.pipe(file);
+//     //     });
+//     // }
+// }
+//
+// function download(path, nom, png, dir) {
+//         const file = fs.createWriteStream(dir+nom+png);
+//         console.log(path);
+//         const request = http.get(path, function(response) {
+//           response.pipe(file);
+//         });
+//
+// }
