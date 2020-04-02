@@ -8,6 +8,10 @@ var insectesN = require('./nord/insectesN.json');
 var poissonsN = require('./nord/poissonsN.json');
 var insectesS = require('./sud/insectesS.json');
 var poissonsS = require('./sud/poissonsS.json');
+
+const http = require('https');
+const fs = require('fs');
+
 //TODO: traiter, eventuellement, plus de filtres (sans ordre)
 var listeCommandes = ["!insectes nord|sud : cette commande te donnes les insectes actuellement disponibles dans l'hémisphère nord|sud ainsi que leur détails (prix, taille, localisation...)",
 "!poissons nord|sud : cette commande te donnes les poissons actuellement disponibles dans l'hémisphère nord|sud ainsi que leur détails (prix, taille, localisation...)",
@@ -96,6 +100,8 @@ client.on('message', msg => {
       infoNavets();
       setTimeout(function () { trucnul(msg) }, 400);
 
+  } else if(msg.content.split(' ')[0] === '!image') {
+    afficheImage(msg);
   } else if (msg.content === '!aide') {
       msg.reply('voici la liste des commandes disponibles : \n' + commandesToString());
     }
@@ -242,12 +248,12 @@ function commandesToString() {
 }
 
 //se lance à 6h du matin tous les jours
-let jobBulletin = cron.schedule('00 20 09 * * *', function() {
+let jobBulletin = cron.schedule('10 31 09 * * *', function() {
   bulletinInsulaire();
 });
 
 function bulletinInsulaire() {
-  client.login('NjkzODI5NjE3NDIwNTk5MzM4.XoDb0A.giPfY0oShei-ws4yJS4ZuKqTito');
+  client.login(token);
   // channel bulletin-insulaire
   // nettoyer l'ancien bulletin bulletinInsulaire
   client.channels.fetch('694146170527940618')
@@ -490,3 +496,105 @@ function levDist(s, t) {
     // Step 7
     return d[n][m];
 }
+
+
+function afficheImage(msg) {
+  nomAnimal = msg.content.split(' ')[1];
+  infoAnimal = findAnimal(nomAnimal, insectesN, poissonsS);
+  if (infoAnimal != null) {
+    if(fs.existsSync("./insectes/"+nomAnimal+".png")) {
+      const attachment = new Discord.MessageAttachment("./insectes/"+nomAnimal+".png");
+      // Send the attachment in the message channel with a content
+      msg.channel.send(`${msg.author}, voici ton animal :`, attachment);
+    } else {
+      const attachment = new Discord.MessageAttachment("./poissons/"+nomAnimal+".png");
+      // Send the attachment in the message channel with a content
+      msg.channel.send(`${msg.author}, voici ton animal :`, attachment);
+    }
+  } else {
+    nomAnimal = nomAnimal.toUpperCase();
+    nomAnimal = nomAnimal.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    var matchProche = false;
+    for (i = 0; !matchProche && i < insectesN.length; i++) {
+      if (levDist(nomAnimal, insectesN[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) < 3) {
+        matchProche = true;
+        msg.reply("ton animal n'a pas été trouvé, voulais-tu rechercher " + insectesN[i].nom.toLowerCase() + "?");
+      } else if (levDist(nomAnimal, poissonsN[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) < 3) {
+        matchProche = true;
+        msg.reply("ton animal n'a pas été trouvé, voulais-tu rechercher " + poissonsN[i].nom.toLowerCase() + "?");
+      }
+    }
+    if (!matchProche) {
+      msg.reply("ton animal n'a pas été trouvé.");
+    }
+  }
+}
+// function pointerImagesAC()
+// {
+//     const glob = "https://www.animalcrossing-online.com/new-horizons-switch/img/";
+//     const insectes = "insectes/";
+//     const poissons = "poissons/";
+//     var nom = "";
+//     var nom_url = "";
+//     const png = ".png";
+//     var path = "";
+//     var inter = 10;
+//     // for(i in insectesN)
+//     // {
+//     //   setTimeout(function(i){
+//     //   try {
+//     //       nom = insectesN[i].nom;
+//     //       nom_url = nom.replace(/\s/g, "%20");
+//     //       path = glob+insectes+nom_url+png;
+//     //   if(fs.existsSync("./insectes/"+nom+png)) {
+//     //       console.log("The file exists.");
+//     //   } else {
+//     //           download(path, nom, png, "./insectes/");
+//     //           console.log("downloaded");
+//     //   }
+//     //   } catch (err) {
+//     //       console.error(err);
+//     //   }
+//     //               }, inter*i, i);
+//     // }
+//
+//     for(i in poissonsN)
+//     {
+//       setTimeout(function(i){
+//       try {
+//           nom = poissonsN[i].nom;
+//           nom_url = nom.replace(/\s/g, "%20");
+//           path = glob+poissons+nom_url+png;
+//       if(fs.existsSync("./poissons/"+nom+png)) {
+//           console.log("The file exists.");
+//       } else {
+//               download(path, nom, png, "./poissons/");
+//               console.log("downloaded");
+//       }
+//       } catch (err) {
+//           console.error(err);
+//       }
+//                   }, inter*i, i);
+//     }
+//
+//
+//     // for(i in poissonsN)
+//     // {
+//     //     nom = poissonsN[i].nom;
+//     //     nom_url = nom.replace(" ", "%20");
+//     //     path = glob+poissons+nom_url+png;
+//     //     const file = fs.createWriteStream(nom+png);
+//     //     const request = http.get(nom+png, function(response) {
+//     //       response.pipe(file);
+//     //     });
+//     // }
+// }
+//
+// function download(path, nom, png, dir) {
+//         const file = fs.createWriteStream(dir+nom+png);
+//         console.log(path);
+//         const request = http.get(path, function(response) {
+//           response.pipe(file);
+//         });
+//
+// }
