@@ -499,7 +499,7 @@ function levDist(s, t) {
 
 
 function afficheImage(msg) {
-  nomAnimal = msg.content.split(' ')[1];
+  nomAnimal = msg.content.slice(7 , msg.content.length);
   infoAnimal = findAnimal(nomAnimal, insectesN, poissonsS);
   if (infoAnimal != null) {
     if(fs.existsSync("./insectes/"+nomAnimal+".png")) {
