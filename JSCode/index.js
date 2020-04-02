@@ -1,5 +1,6 @@
 //Link to authorize : https://discordapp.com/api/oauth2/authorize?client_id=693829617420599338&permissions=8&scope=bot
 require('dotenv').config({path:'../.env'});
+const fs = require('fs')
 const token = process.env.DISCORD_TOKEN;
 const Discord = require('discord.js');
 const cron = require('node-cron');
@@ -496,7 +497,6 @@ function levDist(s, t) {
     // Step 7
     return d[n][m];
 }
-
 
 function afficheImage(msg) {
   nomAnimal = msg.content.split(' ')[1];
