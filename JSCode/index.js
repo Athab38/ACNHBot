@@ -69,13 +69,13 @@ client.on('message', msg => {
       if (msg.content.slice(-4) != ' sud') {
         nomAnimal = msg.content.slice(9 , msg.content.length);
         // Garder seulement le nom de l'animal, apres l'espace
-        infoAnimal = findAnimal(nomAnimal, insectesN, poissonsN);
+        infoAnimal = afficheAnimal(findAnimal(nomAnimal, insectesN, poissonsN));
         console.log(infoAnimal);
     } else {
       nomAnimal = msg.content.slice(0 , -4);
       nomAnimal = nomAnimal.slice(9 , msg.content.length);
       // Garder seulement le nom de l'animal, apres l'espace
-      infoAnimal = findAnimal(nomAnimal, insectesS, poissonsS);
+      infoAnimal = afficheImage(findAnimal(nomAnimal, insectesS, poissonsS));
     }
       if (infoAnimal != null) {
         msg.reply("voici le détail de l'animal : \n" + infoAnimal);
@@ -203,11 +203,11 @@ function findAnimal(nomAnimal, insecte, poisson) {
   for (i = 0; !found && i < insecte.length; i++) {
     if (!found && (insecte[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) === nomAnimal) {
       found = true;
-      return afficheAnimal(insecte[i]);
+      return insecte[i];
     }
     if (!found && poisson[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") === nomAnimal) {
       found = true;
-      return afficheAnimal(poisson[i]);
+      return poisson[i];
     }
   }
   return null;
@@ -500,6 +500,7 @@ function afficheImage(msg) {
   nomAnimal = nomAnimal.charAt(0).toUpperCase() + nomAnimal.slice(1);
   infoAnimal = findAnimal(nomAnimal, insectesN, poissonsN);
   if (infoAnimal != null) {
+    nomAnimal = infoAnimal.nom;
     if(fs.existsSync("./insectes/"+nomAnimal+".png")) {
       const attachment = new Discord.MessageAttachment("./insectes/"+nomAnimal+".png");
       // Send the attachment in the message channel with a content
