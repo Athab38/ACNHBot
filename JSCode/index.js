@@ -501,7 +501,7 @@ function levDist(s, t) {
 
 function afficheImage(msg) {
   nomAnimal = msg.content.slice(7 , msg.content.length);
-  infoAnimal = findAnimal(nomAnimal, insectesN, poissonsS);
+  infoAnimal = findAnimal(nomAnimal, insectesN, poissonsN);
   if (infoAnimal != null) {
     if(fs.existsSync("./insectes/"+nomAnimal+".png")) {
       const attachment = new Discord.MessageAttachment("./insectes/"+nomAnimal+".png");
