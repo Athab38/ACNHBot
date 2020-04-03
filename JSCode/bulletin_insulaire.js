@@ -4,14 +4,17 @@ var tools = require('./tools.js');
 function bulletinInsulaire() {
   CONST_VALUES.client.login(CONST_VALUES.token);
 
-  // channel bulletin-insulaire 694146170527940618
-  // nettoyer l'ancien bulletin bulletinInsulaire
-  CONST_VALUES.client.channels.fetch(CONST_VALUES.ID_bulletin)
-    .then(channel => channel.bulkDelete(1))
-    .catch(console.error);
-  CONST_VALUES.client.channels.fetch(CONST_VALUES.ID_bulletin)
-    .then(channel => channel.send(texteBulletinInsulaire()))
-    .catch(console.error);
+    for (let c of CONST_VALUES.client.guilds.cache) {
+      var channelID = findBulletinChannelID(c[1]);
+      // clean old bulletin
+      CONST_VALUES.client.channels.fetch(channelID)
+        .then(channel => channel.bulkDelete(1))
+        .catch(console.error);
+      CONST_VALUES.client.channels.fetch(channelID)
+        .then(channel => channel.send(texteBulletinInsulaire()))
+        .catch(console.error);
+    }
+
 }
 
 
@@ -147,5 +150,14 @@ function premierMoisPoissons() {
   return lastPoissons + '\n';
 }
 
+function findBulletinChannelID(server) {
+  for (let names of server.channels.cache) {
+    if (names[1].name.includes('bulletin')) {
+      return names[1].id;
+    }
+  }
+  return -1;
+}
 
-module.exports = {bulletinInsulaire};
+
+module.exports = {bulletinInsulaire, findBulletinChannelID};

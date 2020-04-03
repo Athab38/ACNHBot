@@ -3,10 +3,8 @@ var CONST_VALUES = require('./const.js');
 // global variable for turnips
 var infoMax = "";
 
-function infoNavets() {
-  let info = "";
-  //693798630267813950, id channel navets
-  CONST_VALUES.client.channels.fetch(CONST_VALUES.ID_turnip)
+function infoNavets(channelID) {
+  CONST_VALUES.client.channels.fetch(channelID)
     .then(channel => {
     channel.messages.fetch()
     .then(messages => {
@@ -58,4 +56,18 @@ function navetsInfo(msg) {
   }
 }
 
-module.exports = {infoNavets, navetsInfo};
+function findNavetChannelID(ServerID) {
+  for (let c of CONST_VALUES.client.guilds.cache) {
+    // c[0] is guild ID
+    if (parseInt(c[0]) == parseInt(ServerID)) {
+      for (let names of c[1].channels.cache) {
+        if (names[1].name.includes('navet')) {
+          return names[1].id;
+        }
+      }
+      return -1;
+    }
+  }
+}
+
+module.exports = {infoNavets, navetsInfo, findNavetChannelID};
