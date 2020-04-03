@@ -18,9 +18,10 @@ CONST_VALUES.client.on('ready', () => {
   console.log(`Logged in as ${CONST_VALUES.client.user.tag}!`);
  });
 
- // Cron job for bulletin insulaire, you can change the time using this format:
- // 00 -> seconds, 15 -> minutes, 09 -> hours
- let jobBulletin = CONST_VALUES.cron.schedule('00 09 17 * * *', function() {
+
+ // Cron job for bulletin insulaire (posts at 06:AM), you can change the time using this format:
+ // 00 -> seconds, 00 -> minutes, 06 -> hours
+ let jobBulletin = CONST_VALUES.cron.schedule('00 00 06 * * *', function() {
    fct_bulletin.bulletinInsulaire();
  });
 
@@ -102,8 +103,14 @@ CONST_VALUES.client.on('message', msg => {
       }
     }
   } else if (msg.content === CONST_VALUES.prefix + 'navets') {
-      fct_navets.infoNavets();
-      setTimeout(function () { fct_navets.navetsInfo(msg) }, 400);
+      var channelID = fct_navets.findNavetChannelID(msg.guild.id);
+      console.log(channelID);
+      if (channelID == -1) {
+        msg.reply("je n'ai pas trouvé de channel avec le mot-clé 'navet'. Crées-en un d'abord !")
+      } else {
+        fct_navets.infoNavets(channelID);
+        setTimeout(function () { fct_navets.navetsInfo(msg) }, 400);
+      }
 
   } else if(msg.content.split(' ')[0] === CONST_VALUES.prefix + 'image') {
     fct_image.afficheImage(msg);
