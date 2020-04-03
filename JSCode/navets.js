@@ -6,7 +6,7 @@ var infoMax = "";
 function infoNavets() {
   let info = "";
   //693798630267813950, id channel navets
-  CONST_VALUES.client.channels.fetch('693798630267813950')
+  CONST_VALUES.client.channels.fetch(CONST_VALUES.ID_turnip)
     .then(channel => {
     channel.messages.fetch()
     .then(messages => {
