@@ -7,7 +7,7 @@ https://discordapp.com/api/oauth2/authorize?client_id=693829617420599338&permiss
 
 ## Usage 
 Bot only in French for now.  
-You need to create two channels : First one must contain the word "bulletin" (for the daily bulletin) and the second one must contain the word "navet" (for turnips prices).  
+You need to create two channels : first one must contain the word "bulletin" (for the daily bulletin) and the second one must contain the word "navet" (for turnips prices).  
 Type in your Discord chat "!aide" to display all the available functions.  
 Available functions :   
 !insectes nord|sud   
