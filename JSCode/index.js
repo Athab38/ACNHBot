@@ -99,7 +99,7 @@ client.on('message', msg => {
     }
   } else if (msg.content === '!navets') {
       infoNavets();
-      setTimeout(function () { trucnul(msg) }, 400);
+      setTimeout(function () { navetsInfo(msg) }, 400);
 
   } else if(msg.content.split(' ')[0] === '!image') {
     afficheImage(msg);
@@ -111,7 +111,7 @@ client.on('message', msg => {
 // Token du bot
 client.login(token);
 
-function trucnul(msg) {
+function navetsInfo(msg) {
   if (infoMax.includes('-1 ')) {
     msg.reply("il n'y a pas d'infos sur les navets actuellement");
   } else {
@@ -243,13 +243,13 @@ function commandesToString() {
 }
 
 //se lance à 6h du matin tous les jours
-let jobBulletin = cron.schedule('10 31 09 * * *', function() {
+let jobBulletin = cron.schedule('00 15 09 * * *', function() {
   bulletinInsulaire();
 });
 
 function bulletinInsulaire() {
   client.login(token);
-  // channel bulletin-insulaire
+  // channel bulletin-insulaire 694146170527940618
   // nettoyer l'ancien bulletin bulletinInsulaire
   client.channels.fetch('694146170527940618')
     .then(channel => channel.bulkDelete(1))
