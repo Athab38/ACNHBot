@@ -1,5 +1,3 @@
-// Your channel ID's
-const ID_turnip = '693798630267813950';
 const ID_bulletin = '694146170527940618';
 
 // Setup consts
@@ -32,4 +30,4 @@ const prefix = "!";
 const http = require('https');
 const fs = require('fs');
 
-module.exports = {token, Discord, cron, client, prefix, insectesN, poissonsN, insectesS, poissonsS, http, fs, nomMois, nomJours, listeCommandes, ID_turnip, ID_bulletin};
+module.exports = {token, Discord, cron, client, prefix, insectesN, poissonsN, insectesS, poissonsS, http, fs, nomMois, nomJours, listeCommandes, ID_bulletin};
