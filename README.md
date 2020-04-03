@@ -23,8 +23,6 @@ Then retrieve and fill its token in a .env file like following :
 
 DISCORD_TOKEN = token  
   
-Don't forget to change the ID's for the turnip channel and for the bulletin channel in const.js with your channel ID's.  
-
 To launch the bot : 
 ```bash
 apt install npm
