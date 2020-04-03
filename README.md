@@ -3,7 +3,7 @@ An Animal Crossing New Horizons bot for Discord
 
 ## Installation
 You need to add the bot to your server following this link :
-https://discordapp.com/api/oauth2/authorize?client_id=693829617420599338&permissions=8&scope=bot.
+https://discordapp.com/api/oauth2/authorize?client_id=693829617420599338&permissions=8&scope=bot.  
 Don't forget to change the ID's for the turnip channel and for the bulletin in index.js with your channel ID's (functions bulletinInsulaire & infoNavets)
 
 ## Usage 
