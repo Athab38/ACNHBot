@@ -6,10 +6,10 @@ function bulletinInsulaire() {
 
   // channel bulletin-insulaire 694146170527940618
   // nettoyer l'ancien bulletin bulletinInsulaire
-  CONST_VALUES.client.channels.fetch('694146170527940618')
+  CONST_VALUES.client.channels.fetch(CONST_VALUES.ID_bulletin)
     .then(channel => channel.bulkDelete(1))
     .catch(console.error);
-  CONST_VALUES.client.channels.fetch('694146170527940618')
+  CONST_VALUES.client.channels.fetch(CONST_VALUES.ID_bulletin)
     .then(channel => channel.send(texteBulletinInsulaire()))
     .catch(console.error);
 }
