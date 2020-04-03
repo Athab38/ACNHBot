@@ -69,13 +69,13 @@ client.on('message', msg => {
       if (msg.content.slice(-4) != ' sud') {
         nomAnimal = msg.content.slice(9 , msg.content.length);
         // Garder seulement le nom de l'animal, apres l'espace
-        infoAnimal = findAnimal(nomAnimal, insectesN, poissonsN);
+        infoAnimal = afficheAnimal(findAnimal(nomAnimal, insectesN, poissonsN));
         console.log(infoAnimal);
     } else {
       nomAnimal = msg.content.slice(0 , -4);
       nomAnimal = nomAnimal.slice(9 , msg.content.length);
       // Garder seulement le nom de l'animal, apres l'espace
-      infoAnimal = findAnimal(nomAnimal, insectesS, poissonsS);
+      infoAnimal = afficheImage(findAnimal(nomAnimal, insectesS, poissonsS));
     }
       if (infoAnimal != null) {
         msg.reply("voici le détail de l'animal : \n" + infoAnimal);
@@ -99,7 +99,7 @@ client.on('message', msg => {
     }
   } else if (msg.content === '!navets') {
       infoNavets();
-      setTimeout(function () { trucnul(msg) }, 400);
+      setTimeout(function () { navetsInfo(msg) }, 400);
 
   } else if(msg.content.split(' ')[0] === '!image') {
     afficheImage(msg);
@@ -111,7 +111,7 @@ client.on('message', msg => {
 // Token du bot
 client.login(token);
 
-function trucnul(msg) {
+function navetsInfo(msg) {
   if (infoMax.includes('-1 ')) {
     msg.reply("il n'y a pas d'infos sur les navets actuellement");
   } else {
@@ -124,7 +124,7 @@ function listeInsectesNow(liste, start, end) {
   for (i = start; i < end; i++) {
     if (liste[i].période === "Toute l'année" || isActualM(liste[i].période)) {
       if (liste[i].heure === "Toute la journée" || isActualH(liste[i].heure)) {
-        animaux += afficheInsecte(liste[i]);
+        animaux += afficheAnimal(liste[i]);
       }
     }
   }
@@ -136,7 +136,7 @@ function listePoissonsNow(liste, start, end) {
   for (i = start; i < end; i++) {
     if (liste[i].période === "Toute l'année" || isActualM(liste[i].période)) {
       if (liste[i].heure === "Toute la journée" || isActualH(liste[i].heure)) {
-        animaux += affichePoisson(liste[i]);
+        animaux += afficheAnimal(liste[i]);
       }
     }
   }
@@ -203,35 +203,29 @@ function findAnimal(nomAnimal, insecte, poisson) {
   for (i = 0; !found && i < insecte.length; i++) {
     if (!found && (insecte[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) === nomAnimal) {
       found = true;
-      return afficheInsecte(insecte[i]);
+      return insecte[i];
     }
     if (!found && poisson[i].nom.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") === nomAnimal) {
       found = true;
-      return affichePoisson(poisson[i]);
+      return poisson[i];
     }
   }
   return null;
 }
 
-function afficheInsecte(animalJSON) {
+function afficheAnimal(animalJSON) {
   var animal = "";
   animal += "Nom: " + animalJSON.nom + "\n";
   animal += "Période: " + animalJSON.période + "\n";
   animal += "Heure: " + animalJSON.heure + "\n";
   animal += "Lieu: " + animalJSON.lieu + "\n";
   animal += "Prix: " + animalJSON.prix + " clochettes \n";
-  animal += "\n";
-  return animal;
-}
-
-function affichePoisson(animalJSON) {
-  var animal = "";
-  animal += "Nom: " + animalJSON.nom + "\n";
-  animal += "Période: " + animalJSON.période + "\n";
-  animal += "Heure: " + animalJSON.heure + "\n";
-  animal += "Lieu: " + animalJSON.lieu + "\n";
-  animal += "Prix: " + animalJSON.prix + " clochettes \n";
-  animal += "Taille: " + animalJSON.taille + "\n";
+  if (animalJSON.taille) {
+        animal += "Taille: " + animalJSON.taille + "\n";
+  }
+  if (animalJSON.rareté) {
+    animal += "Rareté: " + animalJSON.rareté + "\n";
+  }
   animal += "\n";
   return animal;
 }
@@ -249,13 +243,13 @@ function commandesToString() {
 }
 
 //se lance à 6h du matin tous les jours
-let jobBulletin = cron.schedule('10 31 09 * * *', function() {
+let jobBulletin = cron.schedule('00 15 09 * * *', function() {
   bulletinInsulaire();
 });
 
 function bulletinInsulaire() {
   client.login(token);
-  // channel bulletin-insulaire
+  // channel bulletin-insulaire 694146170527940618
   // nettoyer l'ancien bulletin bulletinInsulaire
   client.channels.fetch('694146170527940618')
     .then(channel => channel.bulkDelete(1))
@@ -264,6 +258,7 @@ function bulletinInsulaire() {
     .then(channel => channel.send(texteBulletinInsulaire()))
     .catch(console.error);
 }
+
 
 function texteBulletinInsulaire() {
   var txt = "";
@@ -501,8 +496,11 @@ function levDist(s, t) {
 
 function afficheImage(msg) {
   nomAnimal = msg.content.slice(7 , msg.content.length);
+  nomAnimal = nomAnimal.toLowerCase();
+  nomAnimal = nomAnimal.charAt(0).toUpperCase() + nomAnimal.slice(1);
   infoAnimal = findAnimal(nomAnimal, insectesN, poissonsN);
   if (infoAnimal != null) {
+    nomAnimal = infoAnimal.nom;
     if(fs.existsSync("./insectes/"+nomAnimal+".png")) {
       const attachment = new Discord.MessageAttachment("./insectes/"+nomAnimal+".png");
       // Send the attachment in the message channel with a content
