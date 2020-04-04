@@ -4,7 +4,7 @@ var CONST_VALUES = require('./const.js');
 function commandesToString() {
   var res = "";
 
-  for(i=0; i<CONST_VALUES.listeCommandes.length; i++) {
+  for(let i = 0; i < CONST_VALUES.listeCommandes.length; i++) {
     res += CONST_VALUES.listeCommandes[i] + '\n';
   }
   return res;
@@ -19,7 +19,15 @@ function monthToString(mois) {
 }
 
 function dayToString(day) {
-  return CONST_VALUES.nomJours[day-1];
+  return CONST_VALUES.nomJours[day];
+}
+
+function dayToInt(day) {
+return CONST_VALUES.nomJours.indexOf(day);
+}
+
+function chiffreToInt(chiffre) {
+  return CONST_VALUES.nomChiffres.indexOf(chiffre)
 }
 
 function isActualM(periode) {
@@ -63,4 +71,4 @@ function isActualH(heure) {
     }
 }
 
-module.exports = {commandesToString, monthToInt, monthToString, dayToString, isActualH, isActualM};
+module.exports = {commandesToString, monthToInt, monthToString, dayToString, dayToInt, chiffreToInt, isActualH, isActualM};
