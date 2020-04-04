@@ -31,7 +31,12 @@ function traiteMessageNavets(mess) {
       }
     }
   }
-  return prixNavetMax + ' chez ' + tabMess[indiceMax].author.username + '#' + tabMess[indiceMax].author.discriminator;
+  if (prixNavetMax == -1) {
+    // Space after -1 is important
+    return "-1 ";
+  } else {
+    return prixNavetMax + ' chez ' + tabMess[indiceMax].author.username + '#' + tabMess[indiceMax].author.discriminator;
+  }
 }
 
 function navetActuel(time) {
