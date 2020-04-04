@@ -18,10 +18,9 @@ CONST_VALUES.client.on('ready', () => {
   console.log(`Logged in as ${CONST_VALUES.client.user.tag}!`);
  });
 
-
  // Cron job for bulletin insulaire (posts at 06:AM), you can change the time using this format:
  // 00 -> seconds, 00 -> minutes, 06 -> hours
- let jobBulletin = CONST_VALUES.cron.schedule('00 00 06 * * *', function() {
+ let jobBulletin = CONST_VALUES.cron.schedule('20 13 14 * * *', function() {
    fct_bulletin.bulletinInsulaire();
  });
 
@@ -29,7 +28,7 @@ CONST_VALUES.client.on('ready', () => {
 CONST_VALUES.client.on('message', msg => {
   console.log(msg.content);
   // Vérifier le premier input de la commande
-  if(msg.content.split(' ')[0 ] === CONST_VALUES.prefix + 'insectes' || msg.content.split(' ')[0] === CONST_VALUES.prefix + 'poissons')
+  if(msg.content.split(' ')[0] === CONST_VALUES.prefix + 'insectes' || msg.content.split(' ')[0] === CONST_VALUES.prefix + 'poissons')
   { // Si c'est une commande concernant les insectes ou les poissons
     if(msg.content.split(' ')[1] != 'nord' && msg.content.split(' ')[1] != 'sud')
     { // si le premier parametre n'est pas l'hemisphere
@@ -104,7 +103,6 @@ CONST_VALUES.client.on('message', msg => {
     }
   } else if (msg.content === CONST_VALUES.prefix + 'navets') {
       var channelID = fct_navets.findNavetChannelID(msg.guild.id);
-      console.log(channelID);
       if (channelID == -1) {
         msg.reply("je n'ai pas trouvé de channel avec le mot-clé 'navet'. Crées-en un d'abord !")
       } else {
