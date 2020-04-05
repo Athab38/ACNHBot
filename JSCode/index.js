@@ -116,13 +116,22 @@ CONST_VALUES.client.on('message', msg => {
   } else if (msg.content === CONST_VALUES.prefix + 'aide') {
       msg.reply('voici la liste des commandes disponibles : \n' + tools.commandesToString());
   } else if (msg.content.split(' ')[0] === CONST_VALUES.prefix + 'notifme') {
-      //TODO : verify that it is an int, and not too much
+      //verify that it is an int, and not too much (10mn max)
       if (!msg.content.split(' ')[1]) {
-        msg.reply('tu dois préciser un temps en minutes');
-      } else {
-        var time = parseInt(msg.content.split(' ')[1]);
+        msg.reply('ton alerte a été lancée pour ' + CONST_VALUES.tempsReddit + ' minutes, fais attention à tes messages privés !');
         // milliseconds
-        fct_navets.getNewPostsActurnips(msg, 60000 * time);
+        fct_navets.getNewPostsActurnips(msg, 60000 * CONST_VALUES.tempsReddit, 0);
+      } else {
+        if (msg.content.split(' ')[1] == parseInt(msg.content.split(' ')[1])) {
+          var price = parseInt(msg.content.split(' ')[1]);
+          if (price < 100 || price > 800) {
+            msg.reply('le prix cherché doit être compris entre 100 et 800 !');
+          } else {
+              msg.reply('ton alerte a été lancée pour ' + CONST_VALUES.tempsReddit + ' minutes, avec un prix minimum de ' + price + ', fais attention à tes messages privés !');
+                // milliseconds
+                fct_navets.getNewPostsActurnips(msg, 60000 * CONST_VALUES.tempsReddit, price);
+          }
+        }
       }
-  }
+    }
 });

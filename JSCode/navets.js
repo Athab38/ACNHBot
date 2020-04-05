@@ -5,6 +5,10 @@ var CONST_VALUES = require('./const.js');
 // global variable for turnips
 var infoMax = "";
 var lastPost = "";
+// number of users launching !notifme at the same time
+var parallelUsers = -1;
+var tabMsg = [];
+var tabParamPrix = [];
 
 function infoNavets(channelID) {
   CONST_VALUES.client.channels.fetch(channelID)
@@ -21,28 +25,42 @@ function infoNavets(channelID) {
 
 
 
-function getNewPostsActurnips(msg, time) {
+function getNewPostsActurnips(msg, time, price) {
+  // new user using !notifme
+  parallelUsers++;
+  tabMsg.push(msg);
+  tabParamPrix.push(price);
   var dateNow = new Date().getTime();
   CONST_VALUES.r.getSubreddit('acturnips').getNew({limit : 1, skipReplies : true}).map(post => post.title).then(function(titles) {
     lastPost = titles[0];
-    console.log(lastPost);
   });
   var interval = setInterval(function() {
-    if (new Date().getTime() - dateNow > time) {
+    if (new Date().getTime() - dateNow > 600000) {
       clearInterval(interval);
+      // a user has finished
+      parallelUsers--;
+      tabMsg.shift();
+      tabParamPrix.shift();
       return;
     }
-    CONST_VALUES.r.getSubreddit('acturnips').getNew({limit : 1, skipReplies : true}).then(titles => notifyUser(titles, msg));
+    console.log(msg.author.tag);
+    CONST_VALUES.r.getSubreddit('acturnips').getNew({limit : 1, skipReplies : true}).then(titles => notifyUsers(titles, price));
   }, 3000);
 }
 
-function notifyUser(titles, msg) {
+function notifyUsers(titles) {
   if (lastPost !== titles[0].title) {
-    if (titles[0].title.includes(' buying ')) {
-      msg.author.send("Salut, un nouveau post reddit est disponible à : " + titles[0].url);
+    if (titles[0].title.toLowerCase().includes(' buying ') && titles[0].title.toLowerCase().includes('[sw]') && !titles[0].title.toLowerCase().includes(' selling ')) {
+      for (let i = 0; i < tabMsg.length; i++) {
+        var priceReddit = titles[0].title.match(/(\s|^)\d+(\s|$)/g);
+        if (tabParamPrix[i] != 0 && priceReddit >= tabParamPrix[i]) {
+          tabMsg[i].author.send("Salut, un nouveau post reddit est disponible à : " + titles[0].url);
+        }
+      }
     }
   }
   lastPost = titles[0].title;
+  console.log(lastPost + ' // ' + parallelUsers + '// ' + tabParamPrix);
 }
 
 function traiteMessageNavets(mess) {

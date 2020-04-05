@@ -28,6 +28,7 @@ const prefix = "!";
   prefix + "details : cette commande t'affiches les détails d'un poisson ou d'un insecte en particulier (prix, taille, localisation...). Exemple : !details poisson-scorpion. Optionnel : sud après l'animal pour les détails sur l'hémisphère sud",
   prefix + "navets : cette commande t'affiches le prix le plus haut du cours du navet indiqué dans le channel #navets, pensez à compléter ce channel avec vos prix pour connaître le meilleur !",
   prefix + "image : cette commande t'affiches l'image de l'animal. Exemple : !image Citrin."];
+  const tempsReddit = 10;
 
 // Additional libraries
 const http = require('https');
@@ -41,4 +42,4 @@ const r = new snoowrap({
   refreshToken: process.env.REFRESH_TOKEN
 });
 
-module.exports = {token, Discord, cron, client, prefix, insectesN, poissonsN, insectesS, poissonsS, http, fs, nomMois, nomJours, nomChiffres, listeCommandes, events, r};
+module.exports = {token, Discord, cron, client, prefix, insectesN, poissonsN, insectesS, poissonsS, http, fs, nomMois, nomJours, nomChiffres, listeCommandes, events, r, tempsReddit};
