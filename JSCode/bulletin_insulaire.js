@@ -232,6 +232,7 @@ function currentEvents() {
       }
     }
   }
+  
   if (found)  {
     return events;
   } else {
