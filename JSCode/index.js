@@ -24,6 +24,7 @@ CONST_VALUES.client.on('ready', () => {
    fct_bulletin.bulletinInsulaire();
  });
 
+
 // Main function
 CONST_VALUES.client.on('message', msg => {
   console.log(msg.content);
@@ -104,7 +105,7 @@ CONST_VALUES.client.on('message', msg => {
   } else if (msg.content === CONST_VALUES.prefix + 'navets') {
       var channelID = fct_navets.findNavetChannelID(msg.guild.id);
       if (channelID == -1) {
-        msg.reply("je n'ai pas trouvé de channel avec le mot-clé 'navet'. Crées-en un d'abord !")
+        msg.reply("je n'ai pas trouvé de channel avec le mot-clé 'navet'. Crée-en un d'abord !")
       } else {
         fct_navets.infoNavets(channelID);
         setTimeout(function () { fct_navets.navetsInfo(msg) }, 400);
@@ -114,5 +115,14 @@ CONST_VALUES.client.on('message', msg => {
     fct_image.afficheImage(msg);
   } else if (msg.content === CONST_VALUES.prefix + 'aide') {
       msg.reply('voici la liste des commandes disponibles : \n' + tools.commandesToString());
+  } else if (msg.content.split(' ')[0] === CONST_VALUES.prefix + 'notifme') {
+      //TODO : verify that it is an int, and not too much
+      if (!msg.content.split(' ')[1]) {
+        msg.reply('tu dois préciser un temps en minutes');
+      } else {
+        var time = parseInt(msg.content.split(' ')[1]);
+        // milliseconds
+        fct_navets.getNewPostsActurnips(msg, 60000 * time);
+      }
   }
 });

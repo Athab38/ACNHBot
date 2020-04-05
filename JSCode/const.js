@@ -1,10 +1,12 @@
-const ID_bulletin = '694146170527940618';
+'use strict';
+
 
 // Setup consts
 const token = process.env.DISCORD_TOKEN;
 const Discord = require('discord.js');
 const cron = require('node-cron');
 const client = new Discord.Client();
+const snoowrap = require('snoowrap');
 
 // Bot's prefix, change it as you wish
 const prefix = "!";
@@ -30,5 +32,13 @@ const prefix = "!";
 // Additional libraries
 const http = require('https');
 const fs = require('fs');
+// Create a new snoowrap requester with OAuth credentials.
+// For more information on getting credentials, see here: https://github.com/not-an-aardvark/reddit-oauth-helper
+const r = new snoowrap({
+  userAgent: 'node.js:ACNHBot (by /u/Ahtab)',
+  clientId: process.env.CLIENT_ID,
+  clientSecret: process.env.SECRET_TOKEN,
+  refreshToken: process.env.REFRESH_TOKEN
+});
 
-module.exports = {token, Discord, cron, client, prefix, insectesN, poissonsN, insectesS, poissonsS, http, fs, nomMois, nomJours, nomChiffres, listeCommandes, ID_bulletin, events};
+module.exports = {token, Discord, cron, client, prefix, insectesN, poissonsN, insectesS, poissonsS, http, fs, nomMois, nomJours, nomChiffres, listeCommandes, events, r};

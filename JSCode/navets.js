@@ -1,7 +1,10 @@
+'use strict';
+var snoowrap = require('snoowrap');
 var CONST_VALUES = require('./const.js');
 
 // global variable for turnips
 var infoMax = "";
+var lastPost = "";
 
 function infoNavets(channelID) {
   CONST_VALUES.client.channels.fetch(channelID)
@@ -9,12 +12,37 @@ function infoNavets(channelID) {
     channel.messages.fetch()
     .then(messages => {
       infoMax = traiteMessageNavets(messages);
-      console.log(infoMax);
     })
     .catch(console.error);
     })
     .catch(console.error);
     return infoMax;
+}
+
+
+
+function getNewPostsActurnips(msg, time) {
+  var dateNow = new Date().getTime();
+  CONST_VALUES.r.getSubreddit('acturnips').getNew({limit : 1, skipReplies : true}).map(post => post.title).then(function(titles) {
+    lastPost = titles[0];
+    console.log(lastPost);
+  });
+  var interval = setInterval(function() {
+    if (new Date().getTime() - dateNow > time) {
+      clearInterval(interval);
+      return;
+    }
+    CONST_VALUES.r.getSubreddit('acturnips').getNew({limit : 1, skipReplies : true}).then(titles => notifyUser(titles, msg));
+  }, 3000);
+}
+
+function notifyUser(titles, msg) {
+  if (lastPost !== titles[0].title) {
+    if (titles[0].title.includes(' buying ')) {
+      msg.author.send("Salut, un nouveau post reddit est disponible à : " + titles[0].url);
+    }
+  }
+  lastPost = titles[0].title;
 }
 
 function traiteMessageNavets(mess) {
@@ -75,4 +103,27 @@ function findNavetChannelID(ServerID) {
   }
 }
 
-module.exports = {infoNavets, navetsInfo, findNavetChannelID};
+// function getNewPostsActurnips() {
+//   CONST_VALUES.http.get('https://www.reddit.com/r/acturnips/new.json?limit=1', (resp) => {
+//   let data = '';
+//   // A chunk of data has been recieved.
+//   resp.on('data', (chunk) => {
+//     data += chunk;
+//   });
+//
+//   // The whole response has been received. Print out the result.
+//   resp.on('end', () => {
+//     for (c of JSON.parse(data).data.children) {
+//     lastPost = c.data.title + ' : ' + c.data.url;
+//     return lastPost;
+//     }
+//   });
+//
+// }).on("error", (err) => {
+//   console.log("Error: " + err.message);
+// });
+//
+// console.log('Dernier : ' + lastPost);
+// }
+
+module.exports = {infoNavets, navetsInfo, findNavetChannelID, getNewPostsActurnips};
