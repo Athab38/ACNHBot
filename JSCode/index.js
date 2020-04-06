@@ -118,18 +118,30 @@ CONST_VALUES.client.on('message', msg => {
   } else if (msg.content.split(' ')[0] === CONST_VALUES.prefix + 'notifme') {
       //verify that it is an int, and not too much (10mn max)
       if (!msg.content.split(' ')[1]) {
-        msg.reply('ton alerte a été lancée pour ' + CONST_VALUES.tempsReddit + ' minutes, fais attention à tes messages privés !');
-        // milliseconds
-        fct_navets.getNewPostsActurnips(msg, 60000 * CONST_VALUES.tempsReddit, 0);
+        msg.reply('tu dois préciser un prix à rechercher.');
       } else {
         if (msg.content.split(' ')[1] == parseInt(msg.content.split(' ')[1])) {
           var price = parseInt(msg.content.split(' ')[1]);
           if (price < 100 || price > 800) {
             msg.reply('le prix cherché doit être compris entre 100 et 800 !');
           } else {
+            if (msg.content.split(' ')[2]) {
+              if (msg.content.split(' ')[2] == parseInt(msg.content.split(' ')[2])) {
+                var temps = parseInt(msg.content.split(' ')[2]);
+                if (temps >= 1 && temps <= 60) {
+                  var pluriel = (temps > 1) ? "s" : "";
+                  msg.reply('ton alerte a été lancée pour ' + temps + ' minute' + pluriel + ' avec un prix minimum de ' + price + ', fais attention à tes messages privés !');
+                  // milliseconds
+                  fct_navets.getNewPostsActurnips(msg, 60000 * temps, price);
+                } else {
+                  msg.reply('le temps indiqué doit être compris entre 1 et 60 minutes.');
+                }
+              }
+            } else {
               msg.reply('ton alerte a été lancée pour ' + CONST_VALUES.tempsReddit + ' minutes, avec un prix minimum de ' + price + ', fais attention à tes messages privés !');
-                // milliseconds
-                fct_navets.getNewPostsActurnips(msg, 60000 * CONST_VALUES.tempsReddit, price);
+              // milliseconds
+              fct_navets.getNewPostsActurnips(msg, 60000 * CONST_VALUES.tempsReddit, price);
+            }
           }
         }
       }
