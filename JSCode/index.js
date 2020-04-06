@@ -20,7 +20,7 @@ CONST_VALUES.client.on('ready', () => {
 
  // Cron job for bulletin insulaire (posts at 06:AM), you can change the time using this format:
  // 00 -> seconds, 00 -> minutes, 06 -> hours
- let jobBulletin = CONST_VALUES.cron.schedule('20 13 14 * * *', function() {
+ let jobBulletin = CONST_VALUES.cron.schedule('00 00 06 * * *', function() {
    fct_bulletin.bulletinInsulaire();
  });
 
