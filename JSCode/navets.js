@@ -50,7 +50,7 @@ function getNewPostsActurnips(msg, time, price) {
       userToNotify.author.send("Les " + tempsUser + " minute" + pluriel + " sont écoulées, n'hésites pas à relancer la commande si tu n'as pas trouvé ce que tu voulais !");
       return;
     }
-    console.log(msg.author.tag);
+    //console.log(msg.author.tag);
     CONST_VALUES.r.getSubreddit('acturnips').getNew({limit : 1, skipReplies : true}).then(titles => notifyUsers(titles, price));
   }, 3000);
 }
@@ -67,7 +67,7 @@ function notifyUsers(titles) {
     }
   }
   lastPost = titles[0].title;
-  console.log(lastPost + ' // ' + parallelUsers + ' // ' + tabPrix + ' // ' + tabTemps +  ' // ' + tabMsg);
+  //console.log(lastPost + ' // ' + parallelUsers + ' // ' + tabPrix + ' // ' + tabTemps +  ' // ' + tabMsg);
 }
 
 function traiteMessageNavets(mess) {
