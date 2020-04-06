@@ -39,7 +39,8 @@ function getNewPostsActurnips(msg, time, price) {
       clearInterval(interval);
       // a user has finished
       parallelUsers--;
-      tabMsg.shift();
+      var userToNotify = tabMsg.shift();
+      userToNotify.author.send("Les 10 minutes sont écoulées, n'hésites pas à relancer la commande si tu n'as pas trouvé ce que tu voulais !");
       tabParamPrix.shift();
       return;
     }
