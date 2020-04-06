@@ -27,7 +27,8 @@ const prefix = "!";
   prefix + "poissons nord|sud : cette commande te donnes les poissons actuellement disponibles dans l'hémisphère nord|sud ainsi que leur détails (prix, taille, localisation...)",
   prefix + "details : cette commande t'affiches les détails d'un poisson ou d'un insecte en particulier (prix, taille, localisation...). Exemple : !details poisson-scorpion. Optionnel : sud après l'animal pour les détails sur l'hémisphère sud",
   prefix + "navets : cette commande t'affiches le prix le plus haut du cours du navet indiqué dans le channel #navets, pensez à compléter ce channel avec vos prix pour connaître le meilleur !",
-  prefix + "image : cette commande t'affiches l'image de l'animal. Exemple : !image Citrin."];
+  prefix + "image : cette commande t'affiches l'image de l'animal. Exemple : !image Citrin.",
+prefix + "notifme : cette commmande t'avertis en cas de nouveau post sur le subreddit /r/acturnips. Les paramètres à rentrer sont, dans l'ordre, le prix minimum recherché, puis le temps de recherche. Exemple : !notifme 200 20 pour rechercher les nouveaux posts pour des îles qui rachètent les navets à 200 clochettes ou plus, pendant 20 minutes."];
   const tempsReddit = 10;
 
 // Additional libraries
