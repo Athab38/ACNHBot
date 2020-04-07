@@ -16,6 +16,7 @@ Available functions :
 !details   
 !navets  
 !image  
+!notifme
 
 ## Develop
 You need to create a Discord bot following this link : https://discordapp.com/developers/applications by adding a new application and create a new bot.   
