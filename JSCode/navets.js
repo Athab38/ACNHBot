@@ -26,16 +26,28 @@ function infoNavets(channelID) {
 
 
 
-function getNewPostsActurnips(msg, time, price) {
-  // new user using !notifme
-  parallelUsers++;
-  tabMsg.push(msg);
-  tabPrix.push(price);
-  tabTemps.push(time);
-  var dateNow = new Date().getTime();
-  CONST_VALUES.r.getSubreddit('acturnips').getNew({limit : 1, skipReplies : true}).map(post => post.title).then(function(titles) {
-    lastPost = titles[0];
-  });
+function getNewPostsActurnips(msg, time, price, stop) {
+  if (!stop) {
+    // new user using !notifme
+    if (tabMsg !== undefined && tabMsg.length != 0 ) {
+      for (let i = 0; i < tabMsg.length; i++) {
+        if (msg.author === tabMsg[i].author) {
+          msg.reply("tu as déjà un notifme en cours. Attends son expiration ou fais !notifme stop pour l'arrêter manuellement.");
+          return;
+        }
+      }
+    }
+    var pluriel = (time/60000 > 1) ? "s" : "";
+    msg.reply('ton alerte a été lancée pour ' + time/60000 + ' minute' + pluriel + ' avec un prix minimum de ' + price + ', fais attention à tes messages privés !');
+    parallelUsers++;
+    tabMsg.push(msg);
+    tabPrix.push(price);
+    tabTemps.push(time);
+    var dateNow = new Date().getTime();
+    CONST_VALUES.r.getSubreddit('acturnips').getNew({limit : 1, skipReplies : true}).map(post => post.title).then(function(titles) {
+      lastPost = titles[0];
+    });
+  }
   var interval = setInterval(function() {
     if (new Date().getTime() - dateNow > time) {
       // a user has finished
@@ -48,6 +60,22 @@ function getNewPostsActurnips(msg, time, price) {
       var prixUser = tabPrix.splice(indiceUser, 1)[0];
       var pluriel = (tempsUser > 1) ? "s" : "";
       userToNotify.author.send("Les " + tempsUser + " minute" + pluriel + " sont écoulées, n'hésites pas à relancer la commande si tu n'as pas trouvé ce que tu voulais !");
+      return;
+    }
+    if (stop) {
+      clearInterval(interval);
+      if (tabMsg !== undefined && tabMsg.length != 0 ) {
+        for (let i = 0; i < tabMsg.length; i++) {
+          if (msg.author === tabMsg[i].author) {
+            var tempsUser = tabTemps.splice(i, 1)[0] / 60000;
+            var userToNotify = tabMsg.splice(i, 1)[0];
+            var prixUser = tabPrix.splice(i, 1)[0];
+            msg.reply("ton notifme en cours a été arrêté.");
+            return;
+          }
+        }
+      }
+      msg.reply("tu n'as aucun notifme en cours.");
       return;
     }
     //console.log(msg.author.tag);
