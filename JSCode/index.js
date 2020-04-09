@@ -113,8 +113,63 @@ CONST_VALUES.client.on('message', msg => {
 
   } else if(msg.content.split(' ')[0] === CONST_VALUES.prefix + 'image') {
     fct_image.afficheImage(msg);
-  } else if (msg.content === CONST_VALUES.prefix + 'aide') {
-      msg.reply('voici la liste des commandes disponibles : \n' + tools.commandesToString());
+  } else if (msg.content.split(' ')[0] === CONST_VALUES.prefix + 'aide') {
+    const embed = new CONST_VALUES.Discord.MessageEmbed();
+    embed.setColor(0xBABE);
+    if (!msg.content.split(' ')[1]) {
+      // Set the title of the field
+      embed.setTitle("Commandes d'Isabelle")
+      // Set the color of the embed
+      .setColor(0xBABE)
+      // Set the main content of the embed
+      .setDescription(`Le préfixe de ce bot pour les commandes est \`${CONST_VALUES.prefix}\``)
+      .addField("Animaux", "`insectes` `poissons` `details` `image`")
+      .addField("Navets", "`navets` `notifme`")
+      .setFooter("Pour plus de détails, utilise !aide commande. Exemple: !aide image");
+    } else {
+      // depends on what is requested
+      var cmd = msg.content.split(' ')[1];
+      switch (cmd) {
+        case 'insectes':
+          embed.setTitle("Commande insectes")
+          .addField("Utilisation", "`!insectes nord | sud`")
+          .addField("Description", "Donne la liste des insectes actuellement disponibles de l'hémisphère précisé.");
+          break;
+        case 'poissons':
+          embed.setTitle("Commande poissons")
+          .addField("Utilisation", "`!poissons nord | sud`")
+          .addField("Description", "Donne la liste des poissons actuellement disponibles de l'hémisphère précisé.");
+          break;
+        case 'details':
+          embed.setTitle("Commande details")
+          .addField("Utilisation", "`!details animal`")
+          .addField("Description", "Donne les détails de l'animal précisé.");
+          break;
+        case 'image':
+        embed.setTitle("Commande image")
+        .addField("Utilisation", "`!image animal`")
+        .addField("Description", "Donne l'image de l'animal précisé.");
+          break;
+        case 'navets':
+        embed.setTitle("Commande navets")
+        .addField("Utilisation", "`!navets`")
+        .addField("Description", "Affiche le prix le plus haut du cours du navet indiqué dans le channel #navets.");
+          break;
+        case 'notifme':
+        embed.setTitle("Commande notifme")
+        .addField("Utilisation", "`!notifme prix [temps]`\n`!notifme stop`")
+        .addField("Description", "Envoie un MP en cas de nouveau post sur le subreddit /r/acturnips.");
+          break;
+        default:
+          embed.setTitle("Erreur")
+          .setDescription(`Il n'y a pas de commande \`${cmd}\` :frowning:`)
+          .setColor(0xDB0101);
+          break;
+      }
+    }
+    // Send the embed to the same channel as the message
+    msg.channel.send(embed);
+    //msg.reply('voici la liste des commandes disponibles : \n' + tools.commandesToString());
   } else if (msg.content.split(' ')[0] === CONST_VALUES.prefix + 'notifme') {
       //verify that it is an int, and not too much (10mn max)
       if (!msg.content.split(' ')[1]) {
